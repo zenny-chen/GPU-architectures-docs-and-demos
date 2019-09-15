@@ -1,2 +1,43 @@
 # GPU-architectures-docs-and-demos
 各大GPU厂商以及平台商关于3D图形渲染的demo
+
+<br />
+
+1. [官方Vulkan编程指南](http://www.vulkanprogrammingguide.com)
+1. [nVidia的图形样例（含Vulkan API）](https://github.com/NVIDIAGameWorks/GraphicsSamples/tree/master/samples)
+1. [Google官方推荐的用于Android NDK的Vulkan API使用样例](https://github.com/LunarG/VulkanSamples)
+1. [Google官方的用于Android端的Vulkan API使用样例](https://github.com/googlesamples/android-vulkan-tutorials)
+1. [Intel技术大牛详解Vulkan API](https://github.com/GameTechDev/IntroductionToVulkan)
+1. [没有任何秘密的 API：Vulkan*](https://software.intel.com/zh-cn/articles/api-without-secrets-introduction-to-vulkan-preface)
+1. [How to Install LunarG Vulkan SDK for Ubuntu](https://support.amd.com/en-us/kb-articles/Pages/Install-LunarG-Vulkan-SDK.aspx)
+1. [PowerVR Developer Documentation](https://docs.imgtec.com)
+1. [SIGGRAPH 2018上提供的Vulkan API使用demo](http://web.engr.oregonstate.edu/~mjb/vulkan/)
+1. [Microsoft基于D3D12的图形编程样例](https://github.com/Microsoft/DirectX-Graphics-Samples)
+1. [nVidia关于最新D3D的样例](https://developer.nvidia.com/gameworks-directx-samples)
+1. [nVidia关于D3D11的样例](https://developer.nvidia.com/dx11-samples)
+1. [Introduction to 3D Game Programming With DirectX11 书中代码样例](https://github.com/jjuiddong/Introduction-to-3D-Game-Programming-With-DirectX11)
+1. [Introduction to 3D Game Programming with DirectX 12书中代码样例](https://github.com/d3dcoder/d3d12book/)
+1. [基于macOS的OpenGL的使用](https://developer.apple.com/opengl/)
+1. [基于iOS与tvOS的OpenGL ES的使用](https://developer.apple.com/opengl-es/)
+1. [Metal API介绍](https://developer.apple.com/metal/)
+1. [Google官方的Android上使用JNI OpenGL ES 2.0的样例](https://github.com/googlesamples/android-ndk/tree/master/hello-gl2)
+1. [Google官方的Android上使用JNI OpenGL ES 3.1的样例](https://github.com/googlesamples/android-ndk/tree/master/gles3jni)
+1. [Learn OpenGL ES 2.0 on Android in Java](http://www.learnopengles.com/android-lesson-one-getting-started/)
+1. [OpenGL Programming/Installation/Linux](https://en.wikibooks.org/wiki/OpenGL_Programming/Installation/Linux)
+1. [How to install OpenGL/GLUT libraries for Ubuntu](https://askubuntu.com/questions/96087/how-to-install-opengl-glut-libraries)
+1. [FreeGLUT API](http://freeglut.sourceforge.net/docs/api.php)
+1. [How do I get EGL and OpenGLES libraries for Ubuntu](https://askubuntu.com/questions/244133/how-do-i-get-egl-and-opengles-libraries-for-ubuntu-running-on-virtualbox)
+1. [Using OpenGL with GTK+](https://www.bassi.io/articles/2015/02/17/using-opengl-with-gtk/)
+1. Raspberry Pi comes with an OpenGL ES 2.0 example in `/opt/vc/src/hello_pi/hello_triangle2`
+1. [EGL guide for beginners](https://stackoverflow.com/questions/19212145/egl-guide-for-beginners)
+1. [WebGL官方样例](https://github.com/WebGLSamples)
+1. [WebGL_Compute_shader](https://github.com/9ballsyndrome/WebGL_Compute_shader)
+
+<br/>
+
+## 当前Xcode 10所能识别出的GLSL文件类别
+
+`.glsl`、`.vsh`、`.fsh`、`.gsh`、`.vert`、`.frag`、`.vert`、`.frag`、`.geom`
+
+[What is the correct file extension for GLSL shaders?](https://stackoverflow.com/questions/6432838/what-is-the-correct-file-extension-for-glsl-shaders)
+
