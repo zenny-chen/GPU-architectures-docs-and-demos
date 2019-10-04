@@ -14,6 +14,7 @@
 1. [SIGGRAPH 2018上提供的Vulkan API使用demo](http://web.engr.oregonstate.edu/~mjb/vulkan/)
 1. [Microsoft基于D3D12的图形编程样例](https://github.com/Microsoft/DirectX-Graphics-Samples)
 1. [microsoft/Xbox-ATG-Samples](https://github.com/microsoft/Xbox-ATG-Samples)
+1. [Direct3D 11.3 Functional Specification](https://microsoft.github.io/DirectX-Specs/d3d/archive/D3D11_3_FunctionalSpec.htm)
 1. [nVidia关于最新D3D的样例](https://developer.nvidia.com/gameworks-directx-samples)
 1. [nVidia关于D3D11的样例](https://developer.nvidia.com/dx11-samples)
 1. [Introduction to 3D Game Programming With DirectX11 书中代码样例](https://github.com/jjuiddong/Introduction-to-3D-Game-Programming-With-DirectX11)
