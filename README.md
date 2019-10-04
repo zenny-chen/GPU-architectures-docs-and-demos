@@ -9,6 +9,7 @@
 1. [Google官方的用于Android端的Vulkan API使用样例](https://github.com/googlesamples/android-vulkan-tutorials)
 1. [Intel技术大牛详解Vulkan API](https://github.com/GameTechDev/IntroductionToVulkan)
 1. [没有任何秘密的 API：Vulkan*](https://software.intel.com/zh-cn/articles/api-without-secrets-introduction-to-vulkan-preface)
+1. [A simple Vulkan Compute example](http://www.duskborn.com/posts/a-simple-vulkan-compute-example/)
 1. [How to Install LunarG Vulkan SDK for Ubuntu](https://support.amd.com/en-us/kb-articles/Pages/Install-LunarG-Vulkan-SDK.aspx)
 1. [PowerVR Developer Documentation](https://docs.imgtec.com)
 1. [SIGGRAPH 2018上提供的Vulkan API使用demo](http://web.engr.oregonstate.edu/~mjb/vulkan/)
