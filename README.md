@@ -16,6 +16,7 @@
 1. [Microsoft基于D3D12的图形编程样例](https://github.com/Microsoft/DirectX-Graphics-Samples)
 1. [microsoft/Xbox-ATG-Samples](https://github.com/microsoft/Xbox-ATG-Samples)
 1. [nBody DirectX 12 sample (asynchronous compute version)](https://gpuopen.com/gaming-product/nbody-directx-12-async-compute-edition/)
+1. [Learning DirectX 12 – Lesson 4 – Textures](https://www.3dgep.com/learning-directx-12-4)
 1. [Direct3D 11.3 Functional Specification](https://microsoft.github.io/DirectX-Specs/d3d/archive/D3D11_3_FunctionalSpec.htm)
 1. [nVidia关于最新D3D的样例](https://developer.nvidia.com/gameworks-directx-samples)
 1. [nVidia关于D3D11的样例](https://developer.nvidia.com/dx11-samples)
