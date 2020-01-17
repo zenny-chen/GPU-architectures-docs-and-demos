@@ -45,3 +45,10 @@
 1. 当前Xcode 10所能识别出的GLSL文件类别: `.glsl`、`.vsh`、`.fsh`、`.gsh`、`.vert`、`.frag`、`.vert`、`.frag`、`.geom`
 1. [What is the correct file extension for GLSL shaders?](https://stackoverflow.com/questions/6432838/what-is-the-correct-file-extension-for-glsl-shaders)
 
+<br />
+
+## CUDA相关文档
+
+1. [CUDA Toolkit Documentation](https://docs.nvidia.com/cuda/)
+1. [CUDA Installation Guide for Microsoft Windows](https://docs.nvidia.com/cuda/cuda-installation-guide-microsoft-windows/index.html)
+
