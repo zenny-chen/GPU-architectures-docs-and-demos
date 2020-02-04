@@ -37,6 +37,9 @@
 1. [EGL guide for beginners](https://stackoverflow.com/questions/19212145/egl-guide-for-beginners)
 1. [WebGL官方样例](https://github.com/WebGLSamples)
 1. [WebGL_Compute_shader](https://github.com/9ballsyndrome/WebGL_Compute_shader)
+1. [OpenGL on Windows](https://docs.microsoft.com/zh-cn/windows/win32/opengl/opengl)
+1. [OpenGL Win32 Tutorial Sample Code](https://www.opengl.org/archives/resources/code/samples/win32_tutorial/)
+1. [Using OpenGL on Windows: A Simple Example](https://www.cs.rit.edu/~ncs/Courses/570/UserGuide/OpenGLonWin-11.html)
 
 <br/>
 
