@@ -54,4 +54,6 @@
 
 1. [CUDA Toolkit Documentation](https://docs.nvidia.com/cuda/)
 1. [CUDA Installation Guide for Microsoft Windows](https://docs.nvidia.com/cuda/cuda-installation-guide-microsoft-windows/index.html)
+1. [CUDA编程入门----Thrust库简介](https://blog.csdn.net/he_wolf/article/details/23502793)（文章最后有NV官方文档介绍）
+
 
