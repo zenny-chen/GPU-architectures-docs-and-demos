@@ -60,6 +60,7 @@
 - [CUDA constant memory issue: invalid device symbol with cudaGetSymbolAddress](https://stackoverflow.com/questions/26735808/cuda-constant-memory-issue-invalid-device-symbol-with-cudagetsymboladdress)
 - [Unified Memory for CUDA Beginners](https://devblogs.nvidia.com/unified-memory-cuda-beginners/)
 - [CUDA - Unified memory (Pascal at least)](https://stackoverflow.com/questions/50679657/cuda-unified-memory-pascal-at-least)
+- [为什么不能使用`cudaHostRegister（）`来标记为WriteCombined已经存在的内存区域？](https://www.it1352.com/587955.html)
 - [How to Optimize Data Transfers in CUDA C/C++](https://devblogs.nvidia.com/how-optimize-data-transfers-cuda-cc/)
 - [CUDA总结：纹理内存](https://blog.csdn.net/kelvin_yan/article/details/54019017)
 - [\[CUDA\]纹理对象 Texture Object](https://blog.csdn.net/m0_38068229/article/details/89478981)
