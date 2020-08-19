@@ -72,6 +72,7 @@
 - [NVIDIA CUDA Math API](https://docs.nvidia.com/cuda/cuda-math-api/index.html)
 - [CUDA编程入门----Thrust库简介](https://blog.csdn.net/he_wolf/article/details/23502793)（文章最后有NV官方文档介绍）
 - [矩阵相乘在GPU上的终极优化：深度解析Maxas汇编器工作原理](https://www.toutiao.com/a6824717488391979532/)
+- [如何利用 NVIDIA 安培架构 GPU 的新一代 Tensor Core 对计算进行极致加速](https://mp.weixin.qq.com/s?srcid=0819SLpl2nBtb62AroWYJnmI&scene=23&sharer_sharetime=1597814989936&mid=2247486054&sharer_shareid=c0f8ad645f1b221a7a43ae65e09fb2ea&sn=e0507022e05c91857cce22195a504323&idx=1&__biz=MzU3MDc5MDM4MA%3D%3D&chksm=fceb52e5cb9cdbf34ab0b820f58283e4f430a140fd35d1746e1d4da25ed2205cc3f7320e909c&mpshare=1#rd)
 - CUDA编译选项`--compiler-options`的作用是可指定当前系统编译环境的额外编译选项。比如：`--compiler-options=/EHsc,-Ob2,/wd4819`。也可以写作为：`--compiler-options="/EHsc,-Ob2,/wd4819"`，`--compiler-options /EHsc,-Ob2,/wd4819`，或是：`--compiler-options "/EHsc,-Ob2,/wd4819"`。
 
 - 在CUDA编译选项中有一个 **-rdc**，意思是 *Generate Relocatable Device Code*。该选项默认是关闭的，即`-rdc=false`，在此情况下，每个cuda源文件只能包含自己的全局`__device__`和`__constant__`对象，而不能引用其他cuda源文件中所定义的全局对象，同时，即便在同一cuda源文件，一个全局对象也不能声明，因为声明了它就等于定义了它，再对它定义加初始化就会出现重复定义的错误。而在将它打开的情况下，即`-rdc=true`，那么全局对象的行为就跟普通C语言全局对象的行为一样了，在一个模块中，可以跨多个cuda源文件对同一全局对象引用，同时也能做定义前的声明。因此通常情况下，我们应该考虑将此编译选项打开。
