@@ -55,6 +55,7 @@
 - [CUDA Toolkit Documentation](https://docs.nvidia.com/cuda/)
 - [CUDA Installation Guide for Microsoft Windows](https://docs.nvidia.com/cuda/cuda-installation-guide-microsoft-windows/index.html)
 - [NVIDIA OptiX™ Ray Tracing Engine](https://developer.nvidia.com/optix)
+- [How to Get Started with OptiX 7](https://developer.nvidia.com/blog/how-to-get-started-with-optix-7/)
 - [CUDA: Common Function for both Host and Device Code](https://codeyarns.com/2011/03/14/cuda-common-function-for-both-host-and-device-code/)
 - [CUDA common **helper** functions](https://github.com/NVIDIA/cuda-samples/tree/master/Common)
 - [How to set cache configuration in CUDA](https://codeyarns.com/2011/06/27/how-to-set-cache-configuration-in-cuda/)
