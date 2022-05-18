@@ -7,10 +7,24 @@
 - [nVidia的图形样例（含Vulkan API）](https://github.com/NVIDIAGameWorks/GraphicsSamples/tree/master/samples)
 - [Google官方推荐的用于Android NDK的Vulkan API使用样例](https://github.com/LunarG/VulkanSamples)
 - [Google官方的用于Android端的Vulkan API使用样例](https://github.com/googlesamples/android-vulkan-tutorials)
+- [Vulkan C++ examples and demos](https://github.com/SaschaWillems/Vulkan)
 - [Intel技术大牛详解Vulkan API](https://github.com/GameTechDev/IntroductionToVulkan)
 - [没有任何秘密的 API：Vulkan*](https://software.intel.com/zh-cn/articles/api-without-secrets-introduction-to-vulkan-preface)
+- [Vulkan Cookbook 第一章 3 连接Vulkan Loader库](https://blog.csdn.net/qq_19473837/article/details/83056962)
 - [A simple Vulkan Compute example](http://www.duskborn.com/posts/a-simple-vulkan-compute-example/)
+- [\[vulkan\] compute shader](https://zhuanlan.zhihu.com/p/56106712)
+- [Vulkan中的同步与缓存控制](https://zhuanlan.zhihu.com/p/161619652)
+- [Vulkan Timeline Semaphores](https://www.khronos.org/blog/vulkan-timeline-semaphores)
+- [从Vulkan API看Shader的数据绑定机制](https://zhuanlan.zhihu.com/p/111882744)
+- [Vulkan推荐用法(三星设备)](https://zhuanlan.zhihu.com/p/97321638)
+- [\[译\]Vulkan教程(23)暂存buffer](https://www.cnblogs.com/bitzhuwei/p/Vulkan-Tutoria-23-Staging-buffer.html)
+- [一起学Vulkan图形开发](https://www.zhihu.com/column/chenyong2vulkan)
+- [Translate GLSL to SPIR-V for Vulkan at Runtime](https://lxjk.github.io/2020/03/10/Translate-GLSL-to-SPIRV-for-Vulkan-at-Runtime.html)
 - [How to Install LunarG Vulkan SDK for Ubuntu](https://support.amd.com/en-us/kb-articles/Pages/Install-LunarG-Vulkan-SDK.aspx)
+- [Layers Overview and Configuration](https://vulkan.lunarg.com/doc/view/1.2.131.1/windows/layer_configuration.html)
+- Vulkan中对`VK_INSTANCE_LAYERS`环境变量的设置：（Windows: `set VK_INSTANCE_LAYERS=VK_LAYER_LUNARG_api_dump;VK_LAYER_KHRONOS_validation`；Linux：`export VK_INSTANCE_LAYERS=VK_LAYER_LUNARG_api_dump:VK_LAYER_KHRONOS_validation`）
+- [Vulkan GFXReconstruct API Capture and Replay](https://vulkan.lunarg.com/doc/view/1.2.141.0/windows/capture_tools.html)
+- [Google官方OpenCL C转SPIR-V项目](https://github.com/google/clspv)
 - [PowerVR Developer Documentation](https://docs.imgtec.com)
 - [SIGGRAPH 2018上提供的Vulkan API使用demo](http://web.engr.oregonstate.edu/~mjb/vulkan/)
 - [Microsoft基于D3D12的图形编程样例](https://github.com/Microsoft/DirectX-Graphics-Samples)
@@ -40,25 +54,42 @@
 - [OpenGL on Windows](https://docs.microsoft.com/zh-cn/windows/win32/opengl/opengl)
 - [OpenGL Win32 Tutorial Sample Code](https://www.opengl.org/archives/resources/code/samples/win32_tutorial/)
 - [Using OpenGL on Windows: A Simple Example](https://www.cs.rit.edu/~ncs/Courses/570/UserGuide/OpenGLonWin-11.html)
+- [ROCm™ – 用于加速计算、支持高性能计算和机器学习的开放式软件生态系统](https://mp.weixin.qq.com/s?__biz=MjM5NDAyNjM0MA==&mid=2650787282&idx=8&sn=baa3373e1fa3b2564f223d5dc0dc9ca1&chksm=be856bd989f2e2cf954d48303447124992714e2b531448304d32da7b957e810203c0c46aacd9&mpshare=1&scene=23&srcid=0831IhBlly11evtjQ0cYgzs3&sharer_sharetime=1598879436131&sharer_shareid=35ac76bf9ad4a719bab0994dd606caf6#rd)
+- [Introduction to Turing Mesh Shaders](https://developer.nvidia.com/blog/introduction-turing-mesh-shaders/)
+- [Quick Introduction to Mesh Shaders (OpenGL and Vulkan)](https://www.geeks3d.com/20200519/introduction-to-mesh-shaders-opengl-and-vulkan/)
+- [HLSL for Vulkan: Resources](https://antiagainst.github.io/post/hlsl-for-vulkan-resources/)
+- [How to compile HLSL shaders with Vulkan?](https://stackoverflow.com/questions/61387495/how-to-compile-hlsl-shaders-with-vulkan)
+- [深度剖析：深度学习GPU共享技术](https://www.toutiao.com/i6906743227399881228/)
+- [NVIDIA TURING GPU ARCHITECTURE](https://images.nvidia.com/aem-dam/en-zz/Solutions/design-visualization/technologies/turing-architecture/NVIDIA-Turing-Architecture-Whitepaper.pdf)
+- [ROPs and TMUs What is it?](https://www.techpowerup.com/forums/threads/rops-and-tmus-what-is-it.227596/)
 
 <br/>
 
 ## GLSL源文件扩展名
 
-- 当前Xcode 10所能识别出的GLSL文件类别: `.glsl`、`.vsh`、`.fsh`、`.gsh`、`.vert`、`.frag`、`.vert`、`.frag`、`.geom`
+- 当前Xcode 10所能识别出的GLSL文件类别: `.glsl`、`.vsh`、`.fsh`、`.gsh`、`.vert`、`.frag`、`.geom`
+- 当前Android Studio所能识别出的GLSL文件类别：`.glsl`、`.vsh`、`.fsh`、`.comp`、`.geom`、`.vert`、`.frag`、`tesc`、`tese`
 - [What is the correct file extension for GLSL shaders?](https://stackoverflow.com/questions/6432838/what-is-the-correct-file-extension-for-glsl-shaders)
 
 <br />
 
 ## CUDA相关文档
 
+- [CUDA Compute Capability List](https://developer.nvidia.com/zh-cn/cuda-gpus#compute)
 - [CUDA Toolkit Documentation](https://docs.nvidia.com/cuda/)
 - [CUDA Installation Guide for Microsoft Windows](https://docs.nvidia.com/cuda/cuda-installation-guide-microsoft-windows/index.html)
 - [CUDA 11 Features Revealed](https://developer.nvidia.com/blog/cuda-11-features-revealed/)
+- [NVIDIA GPUDirect Storage Overview Guide](https://docs.nvidia.com/gpudirect-storage/overview-guide/index.html)
 - [NVIDIA OptiX™ Ray Tracing Engine](https://developer.nvidia.com/optix)
 - [How to Get Started with OptiX 7](https://developer.nvidia.com/blog/how-to-get-started-with-optix-7/)
+- [NVIDIA Omniverse™ Platform](https://developer.nvidia.com/nvidia-omniverse-platform)
+- [NVIDIA System Management Interface](https://developer.nvidia.com/nvidia-system-management-interface)（nvidia-smi）
+- Windows上查看CUDA程序崩溃信息使用Nsight，具体可见：[8. GPU Core Dump Files](https://docs.nvidia.com/nsight-visual-studio-edition/cuda-inspect-state/index.html#gpu-core-dump)。Linux上则使用 **cuda-gdb** 来查看core dump文件信息。要使CUDA程序崩溃时导出core dump文件，需要先开启CUDA程序调试信息（`-g`），然后设置环境变量：`CUDA_ENABLE_COREDUMP_ON_EXCEPTION=1`。
 - [CUDA: Common Function for both Host and Device Code](https://codeyarns.com/2011/03/14/cuda-common-function-for-both-host-and-device-code/)
 - [CUDA common **helper** functions](https://github.com/NVIDIA/cuda-samples/tree/master/Common)
+- CUDA中关于整型数据的intrinsic函数的介绍在《CUDA_Math_API》文档中。
+- [cuda 函数前缀 __host__ __device__ __global__ ____noinline__ 和 __forceinline__ 简介](https://blog.csdn.net/zdlnlhmj/article/details/104896470)
+- [The Aggregate Magic Algorithms](http://aggregate.org/MAGIC/)
 - [How to set cache configuration in CUDA](https://codeyarns.com/2011/06/27/how-to-set-cache-configuration-in-cuda/)
 - [How to Access Global Memory Efficiently in CUDA C/C++ Kernels](https://devblogs.nvidia.com/how-access-global-memory-efficiently-cuda-c-kernels/)
 - [CUDA \#pragma unroll](https://blog.csdn.net/nothinglefttosay/article/details/44725497)
@@ -73,9 +104,15 @@
 - [\[CUDA\]纹理对象 Texture Object](https://blog.csdn.net/m0_38068229/article/details/89478981)
 - [NVIDIA CUDA Math API](https://docs.nvidia.com/cuda/cuda-math-api/index.html)
 - [CUDA编程入门----Thrust库简介](https://blog.csdn.net/he_wolf/article/details/23502793)（文章最后有NV官方文档介绍）
+- [Thrust: sort_by_key slow due to memory allocation](https://stackoverflow.com/questions/6605498/thrust-sort-by-key-slow-due-to-memory-allocation)
 - [矩阵相乘在GPU上的终极优化：深度解析Maxas汇编器工作原理](https://www.toutiao.com/a6824717488391979532/)
 - [如何利用 NVIDIA 安培架构 GPU 的新一代 Tensor Core 对计算进行极致加速](https://mp.weixin.qq.com/s?srcid=0819SLpl2nBtb62AroWYJnmI&scene=23&sharer_sharetime=1597814989936&mid=2247486054&sharer_shareid=c0f8ad645f1b221a7a43ae65e09fb2ea&sn=e0507022e05c91857cce22195a504323&idx=1&__biz=MzU3MDc5MDM4MA%3D%3D&chksm=fceb52e5cb9cdbf34ab0b820f58283e4f430a140fd35d1746e1d4da25ed2205cc3f7320e909c&mpshare=1#rd)
+- [nVidia omniverse](https://www.nvidia.com/en-us/omniverse/)
+- [NVIDIA发布了那么多技术，哪些SDK值得开发者们关注？](https://mp.weixin.qq.com/s?__biz=MjM5NTE3Nzk4MQ==&mid=2651239720&idx=1&sn=ee3c8a6c831e9ce525994d94818d4ad4&chksm=bd0e61ba8a79e8ac42b009d693f52fe678ab34aeea4243f215c272ff32cc1b264b409180a7f3&mpshare=1&scene=23&srcid=0421vjj8MN30lK26ZUxC1zUH)
+- CUDA中用于判定当前是否为设备端代码还是主机端代码使用预定义宏 **`__CUDA_ARCH__`** 。它同时表示当前设备的compute capability，比如200表示计算能力2.0。详细参考《CUDA C Programming Guide》G.4.2.1. **`__CUDA_ARCH__`** 。
 - CUDA编译选项`--compiler-options`的作用是可指定当前系统编译环境的额外编译选项。比如：`--compiler-options=/EHsc,-Ob2,/wd4819`。也可以写作为：`--compiler-options="/EHsc,-Ob2,/wd4819"`，`--compiler-options /EHsc,-Ob2,/wd4819`，或是：`--compiler-options "/EHsc,-Ob2,/wd4819"`。
+
+- CUDA编译指定多个架构：`-gencode=arch=compute_35,code="sm_35,compute_35"  -gencode=arch=compute_50,code="sm_50,compute_50"  -gencode=arch=compute_60,code="sm_60,compute_60"`
 
 - 在CUDA编译选项中有一个 **-rdc**，意思是 *Generate Relocatable Device Code*。该选项默认是关闭的，即`-rdc=false`，在此情况下，每个cuda源文件只能包含自己的全局`__device__`和`__constant__`对象，而不能引用其他cuda源文件中所定义的全局对象，同时，即便在同一cuda源文件，一个全局对象也不能声明，因为声明了它就等于定义了它，再对它定义加初始化就会出现重复定义的错误。而在将它打开的情况下，即`-rdc=true`，那么全局对象的行为就跟普通C语言全局对象的行为一样了，在一个模块中，可以跨多个cuda源文件对同一全局对象引用，同时也能做定义前的声明。因此通常情况下，我们应该考虑将此编译选项打开。
 
@@ -83,5 +120,15 @@
 
 - **How to make it explicit that I am not using shared memory?** -- In Volta the L1 cache, texture cache, and shared memory are backed by a combined 128 KB data cache. As in previous architectures, such as Kepler, the portion of the cache dedicated to shared memory (known as the carveout) can be selected at runtime using cudaFuncSetAttribute() with the attribute cudaFuncAttributePreferredSharedMemoryCarveout. Volta supports shared memory capacities of 0, 8, 16, 32, 64, or 96 KB per SM. **You need to explicitly set shared memory capacity to 0.**
 
+<br />
 
+## 针对Vulkan API的一些常用且必要的GLSL扩展
+
+- [GL_EXT_shader_16bit_storage](https://github.com/KhronosGroup/GLSL/blob/master/extensions/ext/GL_EXT_shader_16bit_storage.txt)
+- [EXT_shader_explicit_arithmetic_types](https://github.com/KhronosGroup/GLSL/blob/master/extensions/ext/GL_EXT_shader_explicit_arithmetic_types.txt)
+- [GL_EXT_shader_atomic_int64](https://github.com/KhronosGroup/GLSL/blob/master/extensions/ext/GL_EXT_shader_atomic_int64.txt)
+- [GL_ARB_gpu_shader_int64](https://www.khronos.org/registry/OpenGL/extensions/ARB/ARB_gpu_shader_int64.txt)
+- [GL_EXT_shader_atomic_float](https://github.com/KhronosGroup/GLSL/blob/master/extensions/ext/GLSL_EXT_shader_atomic_float.txt)
+- [GL_ARB_shader_clock](https://www.khronos.org/registry/OpenGL/extensions/ARB/ARB_shader_clock.txt)
+- [GL_EXT_shader_realtime_clock](https://github.com/KhronosGroup/GLSL/blob/master/extensions/ext/GL_EXT_shader_realtime_clock.txt)
 
