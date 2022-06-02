@@ -103,6 +103,7 @@
 - [CUDA总结：纹理内存](https://blog.csdn.net/kelvin_yan/article/details/54019017)
 - [\[CUDA\]纹理对象 Texture Object](https://blog.csdn.net/m0_38068229/article/details/89478981)
 - [NVIDIA CUDA Math API](https://docs.nvidia.com/cuda/cuda-math-api/index.html)
+- [CUDA学习-计算实际线程ID](https://blog.csdn.net/weixin_51229250/article/details/121712045)
 - [CUDA获取时间函数](https://docs.nvidia.com/cuda/cuda-c-programming-guide/index.html#time-function)
 - [CUDA编程入门----Thrust库简介](https://blog.csdn.net/he_wolf/article/details/23502793)（文章最后有NV官方文档介绍）
 - [Thrust: sort_by_key slow due to memory allocation](https://stackoverflow.com/questions/6605498/thrust-sort-by-key-slow-due-to-memory-allocation)
@@ -132,4 +133,177 @@
 - [GL_EXT_shader_atomic_float](https://github.com/KhronosGroup/GLSL/blob/master/extensions/ext/GLSL_EXT_shader_atomic_float.txt)
 - [GL_ARB_shader_clock](https://www.khronos.org/registry/OpenGL/extensions/ARB/ARB_shader_clock.txt)
 - [GL_EXT_shader_realtime_clock](https://github.com/KhronosGroup/GLSL/blob/master/extensions/ext/GL_EXT_shader_realtime_clock.txt)
+
+<br />
+
+## CUDA样例程序（包含对 **`clock64()`** 函数的使用）
+
+```cuda
+
+#include "cuda_runtime.h"
+#include "device_launch_parameters.h"
+
+#include <cstdio>
+
+static constexpr auto arraySize = 1152U;
+
+static __global__ void addKernel(int c[], long long timeCosts[], const int a[], const int b[])
+{
+    auto const gtid = threadIdx.x + blockDim.x * blockIdx.x;
+    if (gtid >= arraySize) {
+        return;
+    }
+
+    auto ticksBegin = clock64();
+
+    c[gtid] = a[gtid] * a[gtid] + (b[gtid] - a[gtid]);
+
+    timeCosts[gtid] = clock64() - ticksBegin;
+}
+
+static void AddWithCUDATest(void)
+{
+    puts("======== The following is Add-With-CUDA Test ========");
+
+    int a[arraySize];
+    int b[arraySize];
+    int c[arraySize] = {  };
+    long long timeCosts[arraySize] = { };
+
+    cudaFuncAttributes attrs{ };
+    auto cudaStatus = cudaFuncGetAttributes(&attrs, addKernel);
+    if (cudaStatus != cudaSuccess)
+    {
+        printf("cudaFuncGetAttributes call failed: %s\n", cudaGetErrorString(cudaStatus));
+        return;
+    }
+
+    auto const maxThreadCount = attrs.maxThreadsPerBlock;
+
+    for (unsigned i = 0U; i < arraySize; ++i)
+    {
+        a[i] = i + 1;
+        b[i] = a[i] * 10;
+    }
+
+    int* dev_a = nullptr;
+    int* dev_b = nullptr;
+    int* dev_c = nullptr;
+    long long* dev_ts = nullptr;
+
+    do
+    {
+        cudaStatus = cudaMalloc(&dev_c, sizeof(c));
+        if (cudaStatus != cudaSuccess)
+        {
+            printf("cudaMalloc failed for dev_c: %s\n", cudaGetErrorString(cudaStatus));
+            break;
+        }
+
+        cudaStatus = cudaMalloc(&dev_a, sizeof(a));
+        if (cudaStatus != cudaSuccess)
+        {
+            printf("cudaMalloc failed for dev_a: %s\n", cudaGetErrorString(cudaStatus));
+            break;
+        }
+
+        cudaStatus = cudaMalloc(&dev_b, sizeof(b));
+        if (cudaStatus != cudaSuccess)
+        {
+            printf("cudaMalloc failed for dev_b: %s\n", cudaGetErrorString(cudaStatus));
+            break;
+        }
+
+        cudaStatus = cudaMalloc(&dev_ts, sizeof(timeCosts));
+        if (cudaStatus != cudaSuccess)
+        {
+            printf("cudaMalloc failed for dev_ts: %s\n", cudaGetErrorString(cudaStatus));
+            break;
+        }
+
+        cudaStatus = cudaMemcpy(dev_a, a, sizeof(a), cudaMemcpyHostToDevice);
+        if (cudaStatus != cudaSuccess)
+        {
+            printf("cudaMemcpy failed for dev_a: %s\n", cudaGetErrorString(cudaStatus));
+            break;
+        }
+
+        cudaStatus = cudaMemcpy(dev_b, b, sizeof(b), cudaMemcpyHostToDevice);
+        if (cudaStatus != cudaSuccess)
+        {
+            printf("cudaMemcpy failed for dev_a: %s\n", cudaGetErrorString(cudaStatus));
+            break;
+        }
+
+        auto const blockSize = (arraySize + maxThreadCount - 1) / maxThreadCount;
+
+        // Launch a kernel on the GPU with one thread for each element.
+        addKernel <<< blockSize, maxThreadCount >>> (dev_c, dev_ts, dev_a, dev_b);
+
+        cudaStatus = cudaMemcpy(c, dev_c, sizeof(c), cudaMemcpyDeviceToHost);
+        if (cudaStatus != cudaSuccess)
+        {
+            printf("cudaMemcpy failed for dev_c: %s\n", cudaGetErrorString(cudaStatus));
+            break;
+        }
+
+        cudaStatus = cudaMemcpy(c, dev_c, sizeof(c), cudaMemcpyDeviceToHost);
+        if (cudaStatus != cudaSuccess)
+        {
+            printf("cudaMemcpy failed for dev_c: %s\n", cudaGetErrorString(cudaStatus));
+            break;
+        }
+
+        cudaStatus = cudaMemcpy(timeCosts, dev_ts, sizeof(timeCosts), cudaMemcpyDeviceToHost);
+        if (cudaStatus != cudaSuccess)
+        {
+            printf("cudaMemcpy failed for dev_c: %s\n", cudaGetErrorString(cudaStatus));
+            break;
+        }
+
+        printf("{1,2,3,4,5} + {10,20,30,40,50} = {%d,%d,%d,%d,%d}\n", c[0], c[1], c[2], c[3], c[4]);
+        printf("ts[0, 1, -1, -2] = {%lld, %lld, %lld, %lld}\n", timeCosts[0], timeCosts[1], timeCosts[arraySize - 1], timeCosts[arraySize - 2]);
+    }
+    while (false);
+
+    if (dev_a != nullptr) {
+        cudaFree(dev_a);
+    }
+    if (dev_b != nullptr) {
+        cudaFree(dev_b);
+    }
+    if (dev_c != nullptr) {
+        cudaFree(dev_c);
+    }
+    if (dev_ts != nullptr) {
+        cudaFree(dev_ts);
+    }
+}
+
+int main(int argc, const char* argv[])
+{
+    auto cudaStatus = cudaSetDevice(0);
+    if (cudaStatus != cudaSuccess)
+    {
+        printf("cudaSetDevice call failed: %s\n", cudaGetErrorString(cudaStatus));
+        return;
+    }
+
+    AddWithCUDATest();
+
+    // cudaDeviceReset must be called before exiting in order for profiling and
+    // tracing tools such as Nsight and Visual Profiler to show complete traces.
+    cudaStatus = cudaDeviceReset();
+    if (cudaStatus != cudaSuccess)
+    {
+        printf("cudaDeviceReset failed: %s\n", cudaGetErrorString(cudaStatus));
+        return 1;
+    }
+
+    return 0;
+}
+
+```
+
+<br />
 
