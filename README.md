@@ -27,8 +27,8 @@
 - [Vulkan官方SDK下载](https://www.vulkan.org/tools#download-these-essential-development-tools)
 - 查看Vulkan设备信息：运行官方SDK目录下的Bin目录下的 **`vulkaninfoSDK`**
 - Windows端要想将glsl文件编译为spv文件，直接执行 **`glslc`**。具体用法比如：**`%VK_SDK_PATH%/Bin/glslc.exe  -fshader-stage=compute  -o simpleKernel.spv  simpleKernel.glsl`**。
-- 将SPIR-V可读性的汇编转为SPIR-V字节码文件（spv文件）：**`spirv-as`**。具体用法比如：**`%VK_SDK_PATH%/Bin/glslc.exe  -o simpleKernel.spv  simpleKernel.asm`**。
-- 将spv字节码反汇编为可读的SPIR-V的格式，使用 **`spirv-dis`**。具体用法比如：**`%VK_SDK_PATH%/Bin/spirv-dis simpleKernel.spv  -o simpleKernel.asm`**。
+- 将SPIR-V可读性的汇编转为SPIR-V字节码文件（spv文件）：**`spirv-as`**。具体用法比如：**`%VK_SDK_PATH%/Bin/glslc.exe  -o simpleKernel.spv  simpleKernel.spvasm`**。
+- 将spv字节码反汇编为可读的SPIR-V的格式，使用 **`spirv-dis`**。具体用法比如：**`%VK_SDK_PATH%/Bin/spirv-dis simpleKernel.spv  -o simpleKernel.spvasm`**。
 - [Google官方OpenCL C转SPIR-V项目](https://github.com/google/clspv)
 - [PowerVR Developer Documentation](https://docs.imgtec.com)
 - [SIGGRAPH 2018上提供的Vulkan API使用demo](http://web.engr.oregonstate.edu/~mjb/vulkan/)
@@ -73,8 +73,9 @@
 ## GLSL源文件扩展名
 
 - 当前Xcode 10所能识别出的GLSL文件类别: `.glsl`、`.vsh`、`.fsh`、`.gsh`、`.vert`、`.frag`、`.geom`
-- 当前Android Studio所能识别出的GLSL文件类别：`.glsl`、`.vsh`、`.fsh`、`.comp`、`.geom`、`.vert`、`.frag`、`tesc`、`tese`
+- 当前Android Studio所能识别出的GLSL文件类别：`.glsl`、`.vsh`、`.fsh`、`.comp`、`.geom`、`.vert`、`.frag`、`.tesc`、`.tese`
 - [What is the correct file extension for GLSL shaders?](https://stackoverflow.com/questions/6432838/what-is-the-correct-file-extension-for-glsl-shaders)
+- SPIR-V字节码文件扩展名：**`.spv`**；SPIR-V汇编文件扩展名：**`.spvasm`**。
 
 <br />
 
