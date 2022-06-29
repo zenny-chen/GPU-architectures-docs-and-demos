@@ -72,6 +72,25 @@
 
 ## GLSL源文件扩展名
 
+文件后缀名 | 表示的着色器种类 | 着色器种类英文名
+---- | ---- | ----
+.vert | 顶点着色器 | vertex shader
+.frag | 片段着色器 | fragment shader
+.geom | 几何着色器 | geometry shader
+.tesc | 细分曲面控制着色器 | tessellation control shader
+.tese | 细分曲面求值着色器 | tessellation evaluation shader
+.comp | 计算着色器 | compute shader
+.mesh | 网格着色器 | mesh shader
+.task | 任务着色器 | task shader
+.rgen | 光线生成着色器 | ray generation shader
+.rint | 光线求交着色器 | ray intersection shader
+.rahit | 光线任一击中着色器 | ray any hit shader
+.rchit | 光线最近命中着色器 | ray closest hit shader
+.rmiss | 光线未命中着色器 | ray miss shader
+.rcall | 光线可调用着色器 | ray callable shader
+.glsl | 通用GLSL着色器文件 | OpenGL Shading Language
+
+
 - 当前Xcode 10所能识别出的GLSL文件类别: `.glsl`、`.vsh`、`.fsh`、`.gsh`、`.vert`、`.frag`、`.geom`
 - 当前Android Studio所能识别出的GLSL文件类别：`.glsl`、`.vsh`、`.fsh`、`.comp`、`.geom`、`.vert`、`.frag`、`.tesc`、`.tese`
 - [What is the correct file extension for GLSL shaders?](https://stackoverflow.com/questions/6432838/what-is-the-correct-file-extension-for-glsl-shaders)
