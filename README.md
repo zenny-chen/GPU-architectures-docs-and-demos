@@ -15,6 +15,7 @@
 - [\[vulkan\] compute shader](https://zhuanlan.zhihu.com/p/56106712)
 - [Vulkan中的同步与缓存控制](https://zhuanlan.zhihu.com/p/161619652)
 - [Vulkan Timeline Semaphores](https://www.khronos.org/blog/vulkan-timeline-semaphores)
+- [Vulkan Subgroup Tutorial](https://www.khronos.org/blog/vulkan-subgroup-tutorial)
 - [从Vulkan API看Shader的数据绑定机制](https://zhuanlan.zhihu.com/p/111882744)
 - [Vulkan推荐用法(三星设备)](https://zhuanlan.zhihu.com/p/97321638)
 - [\[译\]Vulkan教程(23)暂存buffer](https://www.cnblogs.com/bitzhuwei/p/Vulkan-Tutoria-23-Staging-buffer.html)
