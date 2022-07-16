@@ -32,6 +32,8 @@
 - Windows端要想将glsl文件编译为spv文件，直接执行 **`glslc`**。具体用法比如：**`%VK_SDK_PATH%/Bin/glslc.exe  -fshader-stage=compute  -o simpleKernel.spv  simpleKernel.glsl`**。
 - 将SPIR-V可读性的汇编转为SPIR-V字节码文件（spv文件）：**`spirv-as`**。具体用法比如：**`%VK_SDK_PATH%/Bin/glslc.exe  -o simpleKernel.spv  simpleKernel.spvasm`**。
 - 将spv字节码反汇编为可读的SPIR-V的格式，使用 **`spirv-dis`**。具体用法比如：**`%VK_SDK_PATH%/Bin/spirv-dis simpleKernel.spv  -o simpleKernel.spvasm`**。
+- [HLSL for Vulkan: Resources](https://antiagainst.github.io/post/hlsl-for-vulkan-resources/)
+- [How to compile HLSL shaders with Vulkan?](https://stackoverflow.com/questions/61387495/how-to-compile-hlsl-shaders-with-vulkan)
 - [Google官方OpenCL C转SPIR-V项目](https://github.com/google/clspv)
 - [PowerVR Developer Documentation](https://docs.imgtec.com)
 - [SIGGRAPH 2018上提供的Vulkan API使用demo](http://web.engr.oregonstate.edu/~mjb/vulkan/)
@@ -42,7 +44,7 @@
 - [Direct3D 11.3 Functional Specification](https://microsoft.github.io/DirectX-Specs/d3d/archive/D3D11_3_FunctionalSpec.htm)
 - [nVidia关于最新D3D的样例](https://developer.nvidia.com/gameworks-directx-samples)
 - [nVidia关于D3D11的样例](https://developer.nvidia.com/dx11-samples)
-- [Introduction to 3D Game Programming With DirectX11 书中代码样例](https://github.com/jjuiddong/Introduction-to-3D-Game-Programming-With-DirectX11)
+- [Introduction to 3D Game Programming With DirectX 11书中代码样例](https://github.com/jjuiddong/Introduction-to-3D-Game-Programming-With-DirectX11)
 - [Introduction to 3D Game Programming with DirectX 12书中代码样例](https://github.com/d3dcoder/d3d12book/)
 - [基于macOS的OpenGL的使用](https://developer.apple.com/opengl/)
 - [基于iOS与tvOS的OpenGL ES的使用](https://developer.apple.com/opengl-es/)
@@ -65,11 +67,10 @@
 - [ROCm™ – 用于加速计算、支持高性能计算和机器学习的开放式软件生态系统](https://mp.weixin.qq.com/s?__biz=MjM5NDAyNjM0MA==&mid=2650787282&idx=8&sn=baa3373e1fa3b2564f223d5dc0dc9ca1&chksm=be856bd989f2e2cf954d48303447124992714e2b531448304d32da7b957e810203c0c46aacd9&mpshare=1&scene=23&srcid=0831IhBlly11evtjQ0cYgzs3&sharer_sharetime=1598879436131&sharer_shareid=35ac76bf9ad4a719bab0994dd606caf6#rd)
 - [Introduction to Turing Mesh Shaders](https://developer.nvidia.com/blog/introduction-turing-mesh-shaders/)
 - [Quick Introduction to Mesh Shaders (OpenGL and Vulkan)](https://www.geeks3d.com/20200519/introduction-to-mesh-shaders-opengl-and-vulkan/)
-- [HLSL for Vulkan: Resources](https://antiagainst.github.io/post/hlsl-for-vulkan-resources/)
-- [How to compile HLSL shaders with Vulkan?](https://stackoverflow.com/questions/61387495/how-to-compile-hlsl-shaders-with-vulkan)
 - [深度剖析：深度学习GPU共享技术](https://www.toutiao.com/i6906743227399881228/)
 - [NVIDIA TURING GPU ARCHITECTURE](https://images.nvidia.com/aem-dam/en-zz/Solutions/design-visualization/technologies/turing-architecture/NVIDIA-Turing-Architecture-Whitepaper.pdf)
 - [ROPs and TMUs What is it?](https://www.techpowerup.com/forums/threads/rops-and-tmus-what-is-it.227596/)
+- [关于Drawcall](https://zhuanlan.zhihu.com/p/364918045)
 
 <br/>
 
