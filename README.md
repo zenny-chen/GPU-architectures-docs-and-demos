@@ -5,6 +5,7 @@
 
 - [官方Vulkan编程指南](http://www.vulkanprogrammingguide.com)
 - [nVidia的图形样例（含Vulkan API）](https://github.com/NVIDIAGameWorks/GraphicsSamples/tree/master/samples)
+- [Android Vulkan 图形 API](https://developer.android.google.cn/ndk/guides/graphics)
 - [Google官方推荐的用于Android NDK的Vulkan API使用样例](https://github.com/LunarG/VulkanSamples)
 - [Google官方的用于Android端的Vulkan API使用样例](https://github.com/googlesamples/android-vulkan-tutorials)
 - [Vulkan C++ examples and demos](https://github.com/SaschaWillems/Vulkan)
