@@ -78,6 +78,7 @@
 - [NVIDIA TURING GPU ARCHITECTURE](https://images.nvidia.com/aem-dam/en-zz/Solutions/design-visualization/technologies/turing-architecture/NVIDIA-Turing-Architecture-Whitepaper.pdf)
 - [ROPs and TMUs What is it?](https://www.techpowerup.com/forums/threads/rops-and-tmus-what-is-it.227596/)
 - [关于Drawcall](https://zhuanlan.zhihu.com/p/364918045)
+- [Nvidia RT Cores vs. AMD Ray Accelerators – Explained](https://appuals.com/nvidia-rt-cores-vs-amd-ray-accelerators-explained/)
 
 <br/>
 
