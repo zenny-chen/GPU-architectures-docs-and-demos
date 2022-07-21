@@ -173,6 +173,13 @@
 
 <br />
 
+## GLSL中的一些内建函数用法
+
+- 将浮点数转为IEEE整数：`genIType floatBitsToInt(genType x);`和`genUType floatBitsToUint(genType x);`。
+- 将IEEE规格化浮点的整数转为浮点数：`genType intBitsToFloat(genIType x);`和`genType uintBitsToFloat(genUType x);`。
+
+<br />
+
 ## CUDA样例程序（包含对 **`clock64()`** 函数的使用）
 
 ```cuda
