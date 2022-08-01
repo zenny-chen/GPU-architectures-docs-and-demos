@@ -39,6 +39,7 @@
 - Windows系统端要想将glsl文件编译为spv文件，还可以使用Vulkan SDK自带的 **`glslc`**。具体用法比如：**`%VK_SDK_PATH%/Bin/glslc.exe  -fshader-stage=compute  -o simpleKernel.spv  simpleKernel.glsl`**。它能指定当前要编译的GLSL源文件属于哪种shader类型，因此文件后缀名基本可以随意定义。
 - 将SPIR-V可读性的汇编转为SPIR-V字节码文件（spv文件）：**`spirv-as`**。具体用法比如：**`%VK_SDK_PATH%/Bin/spirv-as  -o simpleKernel.spv  simpleKernel.spvasm`**。
 - 将spv字节码反汇编为可读的SPIR-V的格式，使用 **`spirv-dis`**。具体用法比如：**`%VK_SDK_PATH%/Bin/spirv-dis simpleKernel.spv  -o simpleKernel.spvasm`**。
+- 将spv字节码反编译为GLSL：使用 **`spirv-cross`**。具体用法比如：**`%VK_SDK_PATH%/Bin/spirv-cross  --vulkan-semantics  --output dst.glsl  src.spv`**
 - [HLSL for Vulkan: Resources](https://antiagainst.github.io/post/hlsl-for-vulkan-resources/)
 - [How to compile HLSL shaders with Vulkan?](https://stackoverflow.com/questions/61387495/how-to-compile-hlsl-shaders-with-vulkan)
 - [Google官方OpenCL C转SPIR-V项目](https://github.com/google/clspv)
