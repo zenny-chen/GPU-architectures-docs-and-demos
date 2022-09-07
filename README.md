@@ -182,8 +182,8 @@
 
 ## GLSL中的一些内建函数用法
 
-- 将浮点数转为IEEE整数：`genIType floatBitsToInt(genType x);`和`genUType floatBitsToUint(genType x);`。
-- 将IEEE规格化浮点的整数转为浮点数：`genType intBitsToFloat(genIType x);`和`genType uintBitsToFloat(genUType x);`。
+- 将浮点数转为IEEE整数：[floatBitsToInt](https://registry.khronos.org/OpenGL-Refpages/gl4/html/floatBitsToInt.xhtml)
+- 将IEEE规格化浮点的整数转为浮点数：[intBitsToFloat](https://registry.khronos.org/OpenGL-Refpages/gl4/html/intBitsToFloat.xhtml)
 - 从一个整数中获取指定位置与长度的比特值：[bitfieldExtract](https://registry.khronos.org/OpenGL-Refpages/gl4/html/bitfieldExtract.xhtml)
 - 对一个整数插入指定位置与长度的比特：[bitfieldInsert](https://registry.khronos.org/OpenGL-Refpages/gl4/html/bitfieldInsert.xhtml)
 - 对一个整数指定位置与长度的比特进行取反：[bitfieldReverse](https://registry.khronos.org/OpenGL-Refpages/gl4/html/bitfieldReverse.xhtml)
