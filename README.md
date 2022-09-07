@@ -113,6 +113,30 @@
 
 <br />
 
+## 针对Vulkan API的一些常用且必要的GLSL扩展
+
+- [GL_KHR_vulkan_glsl](https://github.com/KhronosGroup/GLSL/blob/master/extensions/khr/GL_KHR_vulkan_glsl.txt)
+- [GL_EXT_shader_16bit_storage](https://github.com/KhronosGroup/GLSL/blob/master/extensions/ext/GL_EXT_shader_16bit_storage.txt)
+- [EXT_shader_explicit_arithmetic_types](https://github.com/KhronosGroup/GLSL/blob/master/extensions/ext/GL_EXT_shader_explicit_arithmetic_types.txt)
+- [GL_EXT_shader_atomic_int64](https://github.com/KhronosGroup/GLSL/blob/master/extensions/ext/GL_EXT_shader_atomic_int64.txt)
+- [GL_ARB_gpu_shader_int64](https://www.khronos.org/registry/OpenGL/extensions/ARB/ARB_gpu_shader_int64.txt)
+- [GL_EXT_shader_atomic_float](https://github.com/KhronosGroup/GLSL/blob/master/extensions/ext/GLSL_EXT_shader_atomic_float.txt)
+- [GL_ARB_shader_clock](https://www.khronos.org/registry/OpenGL/extensions/ARB/ARB_shader_clock.txt)
+- [GL_EXT_shader_realtime_clock](https://github.com/KhronosGroup/GLSL/blob/master/extensions/ext/GL_EXT_shader_realtime_clock.txt)
+- [GL_EXT_demote_to_helper_invocation](https://github.com/KhronosGroup/GLSL/blob/master/extensions/ext/GLSL_EXT_demote_to_helper_invocation.txt)
+
+<br />
+
+## GLSL中的一些内建函数用法
+
+- 将浮点数转为IEEE整数：[floatBitsToInt](https://registry.khronos.org/OpenGL-Refpages/gl4/html/floatBitsToInt.xhtml)
+- 将IEEE规格化浮点的整数转为浮点数：[intBitsToFloat](https://registry.khronos.org/OpenGL-Refpages/gl4/html/intBitsToFloat.xhtml)
+- 从一个整数中获取指定位置与长度的比特值：[bitfieldExtract](https://registry.khronos.org/OpenGL-Refpages/gl4/html/bitfieldExtract.xhtml)
+- 对一个整数插入指定位置与长度的比特：[bitfieldInsert](https://registry.khronos.org/OpenGL-Refpages/gl4/html/bitfieldInsert.xhtml)
+- 对一个整数指定位置与长度的比特进行取反：[bitfieldReverse](https://registry.khronos.org/OpenGL-Refpages/gl4/html/bitfieldReverse.xhtml)
+
+<br />
+
 ## CUDA相关文档
 
 - [CUDA Compute Capability List](https://developer.nvidia.com/zh-cn/cuda-gpus#compute)
@@ -163,30 +187,6 @@
 - cudaMemcpy probably isn't actually taking that long--that will synchronize and wait for the kernel to complete. Launching a kernel is (almost) always asynchronous; when you call kernel<<<...>>>(...);, it's actually just queuing work for the GPU to perform at some point. It won't block the CPU and wait for that kernel to finish or anything like that. **However, since cudaMemcpy is a synchronous function, it implies that you want the results to be visible, so that will block the CPU until the GPU becomes idle** (indicating that all of your work has completed).
 
 - **How to make it explicit that I am not using shared memory?** -- In Volta the L1 cache, texture cache, and shared memory are backed by a combined 128 KB data cache. As in previous architectures, such as Kepler, the portion of the cache dedicated to shared memory (known as the carveout) can be selected at runtime using cudaFuncSetAttribute() with the attribute cudaFuncAttributePreferredSharedMemoryCarveout. Volta supports shared memory capacities of 0, 8, 16, 32, 64, or 96 KB per SM. **You need to explicitly set shared memory capacity to 0.**
-
-<br />
-
-## 针对Vulkan API的一些常用且必要的GLSL扩展
-
-- [GL_KHR_vulkan_glsl](https://github.com/KhronosGroup/GLSL/blob/master/extensions/khr/GL_KHR_vulkan_glsl.txt)
-- [GL_EXT_shader_16bit_storage](https://github.com/KhronosGroup/GLSL/blob/master/extensions/ext/GL_EXT_shader_16bit_storage.txt)
-- [EXT_shader_explicit_arithmetic_types](https://github.com/KhronosGroup/GLSL/blob/master/extensions/ext/GL_EXT_shader_explicit_arithmetic_types.txt)
-- [GL_EXT_shader_atomic_int64](https://github.com/KhronosGroup/GLSL/blob/master/extensions/ext/GL_EXT_shader_atomic_int64.txt)
-- [GL_ARB_gpu_shader_int64](https://www.khronos.org/registry/OpenGL/extensions/ARB/ARB_gpu_shader_int64.txt)
-- [GL_EXT_shader_atomic_float](https://github.com/KhronosGroup/GLSL/blob/master/extensions/ext/GLSL_EXT_shader_atomic_float.txt)
-- [GL_ARB_shader_clock](https://www.khronos.org/registry/OpenGL/extensions/ARB/ARB_shader_clock.txt)
-- [GL_EXT_shader_realtime_clock](https://github.com/KhronosGroup/GLSL/blob/master/extensions/ext/GL_EXT_shader_realtime_clock.txt)
-- [GL_EXT_demote_to_helper_invocation](https://github.com/KhronosGroup/GLSL/blob/master/extensions/ext/GLSL_EXT_demote_to_helper_invocation.txt)
-
-<br />
-
-## GLSL中的一些内建函数用法
-
-- 将浮点数转为IEEE整数：[floatBitsToInt](https://registry.khronos.org/OpenGL-Refpages/gl4/html/floatBitsToInt.xhtml)
-- 将IEEE规格化浮点的整数转为浮点数：[intBitsToFloat](https://registry.khronos.org/OpenGL-Refpages/gl4/html/intBitsToFloat.xhtml)
-- 从一个整数中获取指定位置与长度的比特值：[bitfieldExtract](https://registry.khronos.org/OpenGL-Refpages/gl4/html/bitfieldExtract.xhtml)
-- 对一个整数插入指定位置与长度的比特：[bitfieldInsert](https://registry.khronos.org/OpenGL-Refpages/gl4/html/bitfieldInsert.xhtml)
-- 对一个整数指定位置与长度的比特进行取反：[bitfieldReverse](https://registry.khronos.org/OpenGL-Refpages/gl4/html/bitfieldReverse.xhtml)
 
 <br />
 
