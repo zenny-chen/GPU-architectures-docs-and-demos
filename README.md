@@ -149,6 +149,7 @@
 - [cuda 函数前缀 __host__ __device__ __global__ ____noinline__ 和 __forceinline__ 简介](https://blog.csdn.net/zdlnlhmj/article/details/104896470)
 - [The Aggregate Magic Algorithms](http://aggregate.org/MAGIC/)
 - [How to set cache configuration in CUDA](https://codeyarns.com/2011/06/27/how-to-set-cache-configuration-in-cuda/)
+- [Preview support for alloca](https://developer.nvidia.com/blog/programming-efficiently-with-the-cuda-11-3-compiler-toolchain/)
 - [How to Access Global Memory Efficiently in CUDA C/C++ Kernels](https://devblogs.nvidia.com/how-access-global-memory-efficiently-cuda-c-kernels/)
 - [CUDA \#pragma unroll](https://blog.csdn.net/nothinglefttosay/article/details/44725497)
 - CUDA中获取显存总的大小及可用显存大小：`cudaError_t cudaMemGetInfo(size_t *free,  size_t *total);`。
