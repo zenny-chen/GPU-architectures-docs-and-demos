@@ -74,6 +74,8 @@
 - [GPU渲染架构-IMR \& TBR \& TBDR](https://zhuanlan.zhihu.com/p/531900597)
 - [深度剖析：深度学习GPU共享技术](https://www.toutiao.com/i6906743227399881228/)
 - [NVIDIA TURING GPU ARCHITECTURE](https://images.nvidia.com/aem-dam/en-zz/Solutions/design-visualization/technologies/turing-architecture/NVIDIA-Turing-Architecture-Whitepaper.pdf)
+- [NVIDIA Hopper Architecture In-Depth](https://developer.nvidia.com/blog/nvidia-hopper-architecture-in-depth/)
+- [GeForce RTX 4090天梯榜首发评测“践踏”摩尔定律，开启未来游戏画卷](https://mp.weixin.qq.com/s?__biz=MjM5NDMxNjkyNA==&mid=2651537889&idx=1&sn=92c94d45f93dae6f49bf5f0d82da6217&chksm=bd7676f28a01ffe46456f0fa7490b24083a63a8621b75d9c7bfc3c304a311ec7ecca457a9d5f&mpshare=1&scene=23&srcid=1011y2IeQqo4hL49pBpni0DM)
 - [ROPs and TMUs What is it?](https://www.techpowerup.com/forums/threads/rops-and-tmus-what-is-it.227596/)
 - [Nvidia RT Cores vs. AMD Ray Accelerators – Explained](https://appuals.com/nvidia-rt-cores-vs-amd-ray-accelerators-explained/)
 - [OpenSL ES播放PCM音频](https://www.toutiao.com/article/7153610070319071758/)
