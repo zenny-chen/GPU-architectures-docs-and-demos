@@ -11,7 +11,7 @@
 - [Google官方的用于Android端的Vulkan API使用样例](https://github.com/googlesamples/android-vulkan-tutorials)
 - [Vulkan C++ examples and demos](https://github.com/SaschaWillems/Vulkan)
 - [Intel技术大牛详解Vulkan API](https://github.com/GameTechDev/IntroductionToVulkan)
-- [没有任何秘密的 API：Vulkan*](https://software.intel.com/zh-cn/articles/api-without-secrets-introduction-to-vulkan-preface)
+- [API without Secrets: Introduction to Vulkan](https://github.com/GameTechDev/IntroductionToVulkan)
 - [Vulkan Tutorial](https://vulkan-tutorial.com/Introduction)
 - [Vulkan Cookbook 第一章 3 连接Vulkan Loader库](https://blog.csdn.net/qq_19473837/article/details/83056962)
 - [VkDeviceCreateInfo](https://registry.khronos.org/vulkan/specs/1.3/html/vkspec.html#VkDeviceCreateInfo)
