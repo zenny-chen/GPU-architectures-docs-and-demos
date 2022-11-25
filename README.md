@@ -137,7 +137,7 @@
 
 ## CUDA相关文档
 
-- [CUDA Compute Capability List](https://developer.nvidia.com/zh-cn/cuda-gpus#compute)
+- [CUDA Compute Capability List](https://developer.nvidia.com/cuda-gpus)
 - [CUDA Toolkit Documentation](https://docs.nvidia.com/cuda/)
 - [CUDA Installation Guide for Microsoft Windows](https://docs.nvidia.com/cuda/cuda-installation-guide-microsoft-windows/index.html)
 - [CUDA 11 Features Revealed](https://developer.nvidia.com/blog/cuda-11-features-revealed/)
