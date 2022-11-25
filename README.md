@@ -179,7 +179,8 @@
 - CUDA中用于判定当前是否为设备端代码还是主机端代码使用预定义宏 **`__CUDA_ARCH__`** 。它同时表示当前设备的compute capability，比如200表示计算能力2.0。详细参考《CUDA C Programming Guide》G.4.2.1. **`__CUDA_ARCH__`** 。
 - CUDA编译选项`--compiler-options`的作用是可指定当前系统编译环境的额外编译选项。比如：`--compiler-options=/EHsc,-Ob2,/wd4819`。也可以写作为：`--compiler-options="/EHsc,-Ob2,/wd4819"`，`--compiler-options /EHsc,-Ob2,/wd4819`，或是：`--compiler-options "/EHsc,-Ob2,/wd4819"`。
 
-- CUDA编译指定多个架构：`-gencode=arch=compute_35,code="sm_35,compute_35"  -gencode=arch=compute_50,code="sm_50,compute_50"  -gencode=arch=compute_60,code="sm_60,compute_60"`
+- CUDA编译时指定单个架构：比如就指定使用真实架构SM7.5：`-arch=sm_75`。
+- CUDA编译时指定多个架构：将虚拟架构（比如：Compute 7.5）与真实架构（比如：SM 7.5）进行结合，然后声明多个架构：`-gencode=arch=compute_52,code=sm_52  -gencode=arch=compute_60,code=sm_60`。
 
 - 在CUDA编译选项中有一个 **-rdc**，意思是 *Generate Relocatable Device Code*。该选项默认是关闭的，即`-rdc=false`，在此情况下，每个cuda源文件只能包含自己的全局`__device__`和`__constant__`对象，而不能引用其他cuda源文件中所定义的全局对象，同时，即便在同一cuda源文件，一个全局对象也不能声明，因为声明了它就等于定义了它，再对它定义加初始化就会出现重复定义的错误。而在将它打开的情况下，即`-rdc=true`，那么全局对象的行为就跟普通C语言全局对象的行为一样了，在一个模块中，可以跨多个cuda源文件对同一全局对象引用，同时也能做定义前的声明。因此通常情况下，我们应该考虑将此编译选项打开。
 
