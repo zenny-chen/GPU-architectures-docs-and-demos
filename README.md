@@ -170,7 +170,7 @@
 - [CUDA总结：纹理内存](https://blog.csdn.net/kelvin_yan/article/details/54019017)
 - [\[CUDA\]纹理对象 Texture Object](https://blog.csdn.net/m0_38068229/article/details/89478981)
 - [Textures & Surfaces](https://developer.download.nvidia.cn/CUDA/training/texture_webinar_aug_2011.pdf)
-- [CUDA学习笔记：Texture与Surface](https://zhuanlan.zhihu.com/p/414956511)（Surface与Texture不同在于其是可读且可写的。）
+- [CUDA学习笔记：Texture与Surface](https://zhuanlan.zhihu.com/p/414956511)（**Surface的性质**：Surface与Texture不同在于其是可读且可写的。）
 - [CUDA获取时间函数](https://docs.nvidia.com/cuda/cuda-c-programming-guide/index.html#time-function)
 - [CUDA编程入门----Thrust库简介](https://blog.csdn.net/he_wolf/article/details/23502793)（文章最后有NV官方文档介绍）
 - [Thrust: sort_by_key slow due to memory allocation](https://stackoverflow.com/questions/6605498/thrust-sort-by-key-slow-due-to-memory-allocation)
