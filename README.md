@@ -166,6 +166,7 @@
 - [CUDA - Unified memory (Pascal at least)](https://stackoverflow.com/questions/50679657/cuda-unified-memory-pascal-at-least)
 - [为什么不能使用`cudaHostRegister（）`来标记为WriteCombined已经存在的内存区域？](https://www.it1352.com/587955.html)
 - [How to Optimize Data Transfers in CUDA C/C++](https://devblogs.nvidia.com/how-optimize-data-transfers-cuda-cc/)
+- [“Pitch” in cudaMallocPitch()?](https://forums.developer.nvidia.com/t/pitch-in-cudamallocpitch/8065)（**Pitch** is the padded size of each “row” in the array. If you have an array that has 12 float rows, CUDA runs faster if you pad the data to 16 floats: The data is 12 floats wide, the padding is 4 floats, and the **pitch** is 16 floats. (Or 64 bytes, as **`cudaMallocPitch`** sees it.)）
 - [CUDA学习-计算实际线程ID](https://blog.csdn.net/weixin_51229250/article/details/121712045)
 - [CUDA总结：纹理内存](https://blog.csdn.net/kelvin_yan/article/details/54019017)
 - [\[CUDA\]纹理对象 Texture Object](https://blog.csdn.net/m0_38068229/article/details/89478981)
