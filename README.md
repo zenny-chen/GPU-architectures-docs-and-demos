@@ -372,3 +372,13 @@ int main(int argc, const char* argv[])
 
 <br />
 
+## 各厂商官方GPU相关架构文档与优化指南
+
+- [Vulkan at NVIDIA](https://developer.nvidia.com/vulkan)
+- [AMD GPUOpen Getting started: Development and performance](https://gpuopen.com/learn/getting-started-development-performance/)
+- [Intel® Game Dev Program](https://www.intel.com/content/www/us/en/developer/topic-technology/gamedev/overview.html)
+- [Developer and Optimization Guide for Intel® Processor Graphics Gen11 API](https://www.intel.com/content/www/us/en/developer/articles/guide/developer-and-optimization-guide-for-intel-processor-graphics-gen11-api.html)
+- [ARM-software: Vulkan Best Practice for Mobile Developers](https://github.com/ARM-software/vulkan_best_practice_for_mobile_developers)
+- [ARM Bifrost Architecture](https://developer.arm.com/Architectures/Bifrost#Technical-Information)
+- [Qualcomm® Adreno™ GPU](https://developer.qualcomm.com/sites/default/files/docs/adreno-gpu/snapdragon-game-toolkit/learn_guides.html)
+
