@@ -150,7 +150,6 @@
 - [NVIDIA Omniverse™ Platform](https://developer.nvidia.com/nvidia-omniverse-platform)
 - [NVIDIA System Management Interface](https://developer.nvidia.com/nvidia-system-management-interface)（nvidia-smi）
 - [NVIDIA CUDA Math API](https://docs.nvidia.com/cuda/cuda-math-api/index.html)
-- [CUDA Driver API Example](https://github.com/ponsheng/CUDA_driver_api_example)
 - [A HISTORY OF NVIDIA STREAM MULTIPROCESSOR](https://fabiensanglard.net/cuda/index.html)
 - Windows上查看CUDA程序崩溃信息使用Nsight，具体可见：[8. GPU Core Dump Files](https://docs.nvidia.com/nsight-visual-studio-edition/cuda-inspect-state/index.html#gpu-core-dump)。Linux上则使用 **cuda-gdb** 来查看core dump文件信息。要使CUDA程序崩溃时导出core dump文件，需要先开启CUDA程序调试信息（`-g`），然后设置环境变量：`CUDA_ENABLE_COREDUMP_ON_EXCEPTION=1`。
 - [CUDA: Common Function for both Host and Device Code](https://codeyarns.com/2011/03/14/cuda-common-function-for-both-host-and-device-code/)
@@ -203,12 +202,18 @@
 
 <br />
 
-## CUDA样例程序（包含对 **`clock64()`** 函数的使用）
+## CUDA样例程序（包含对CUDA Driver API以及 **`clock64()`** 函数的使用）
+
+- **`cuInit`** 函数的调用官方说明：[6.3. Initialization](https://docs.nvidia.com/cuda/cuda-driver-api/group__CUDA__INITIALIZE.html#group__CUDA__INITIALIZE_1g0a2f1517e1bd8502c7194c3a8c134bc3)
+- [cuInit \(3\)](https://helpmanual.io/man3/cuInit/)
+- 在使用CUDA Driver API时，需要连接 **`cuda.lib`** 静态库文件。可参考：[CUDA Driver API Example](https://github.com/ponsheng/CUDA_driver_api_example)
 
 ```cuda
 
 #include "cuda_runtime.h"
 #include "device_launch_parameters.h"
+// Invoke low-level CUDA driver APIs
+#include <cuda.h>
 
 #include <cstdio>
 
@@ -265,6 +270,19 @@ static void AddWithCUDATest(void)
         {
             printf("cudaMalloc failed for dev_c: %s\n", cudaGetErrorString(cudaStatus));
             break;
+        }
+        
+        CUdeviceptr baseAddr = 0;
+        size_t memSize = 0;
+        CUresult cuStatus = cuMemGetAddressRange(&baseAddr, &memSize, (CUdeviceptr(dev_c)));
+        if (cuStatus == CUDA_SUCCESS) {
+            printf("dev_c base address: 0x%.16llX, size: %zu bytes\n", (unsigned long long)baseAddr, memSize);
+        }
+        else
+        {
+            const char* errStr = "";
+            cuGetErrorString(cuStatus, &errStr);
+            printf("Call `cuMemGetAddressRange` failed: %s\n", errStr);
         }
 
         cudaStatus = cudaMalloc(&dev_a, sizeof(a));
@@ -349,6 +367,10 @@ static void AddWithCUDATest(void)
 
 int main(int argc, const char* argv[])
 {
+    // Initialize functions of the low-level CUDA driver APIs.
+    // This function MUST BE called before any other driver API is called.
+    cuInit(0);
+    
     auto cudaStatus = cudaSetDevice(0);
     if (cudaStatus != cudaSuccess)
     {
