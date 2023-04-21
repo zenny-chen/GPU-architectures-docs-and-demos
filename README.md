@@ -274,7 +274,7 @@ static void AddWithCUDATest(void)
         
         CUdeviceptr baseAddr = 0;
         size_t memSize = 0;
-        CUresult cuStatus = cuMemGetAddressRange(&baseAddr, &memSize, (CUdeviceptr(dev_c)));
+        CUresult cuStatus = cuMemGetAddressRange(&baseAddr, &memSize, CUdeviceptr(dev_c));
         if (cuStatus == CUDA_SUCCESS) {
             printf("dev_c base address: 0x%.16llX, size: %zu bytes\n", (unsigned long long)baseAddr, memSize);
         }
