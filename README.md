@@ -81,6 +81,8 @@
 - [ROPs and TMUs What is it?](https://www.techpowerup.com/forums/threads/rops-and-tmus-what-is-it.227596/)
 - [Nvidia RT Cores vs. AMD Ray Accelerators – Explained](https://appuals.com/nvidia-rt-cores-vs-amd-ray-accelerators-explained/)
 - [英特尔、AMD、英伟达三大GPU架构有何不同？](https://mp.weixin.qq.com/s?__biz=MzkxMjIyNzU0MA==&mid=2247629355&idx=3&sn=5f51f9d9c7ffdd079377ef4d6617def1)
+- [The Mali GPU: An Abstract Machine, Part 3 - The Midgard Shader Core](https://community.arm.com/arm-community-blogs/b/graphics-gaming-and-vr-blog/posts/the-mali-gpu-an-abstract-machine-part-3---the-midgard-shader-core)
+- [The Mali GPU: An Abstract Machine, Part 4 - The Bifrost Shader Core](https://community.arm.com/arm-community-blogs/b/graphics-gaming-and-vr-blog/posts/the-mali-gpu-an-abstract-machine-part-4---the-bifrost-shader-core)
 
 <br/>
 
