@@ -40,6 +40,7 @@
 - [Google官方OpenCL C转SPIR-V项目](https://github.com/google/clspv)
 - [PowerVR Developer Documentation](https://docs.imgtec.com)
 - [SIGGRAPH 2018上提供的Vulkan API使用demo](http://web.engr.oregonstate.edu/~mjb/vulkan/)
+- [Direct3D 12 graphics](https://learn.microsoft.com/en-us/windows/win32/direct3d12/direct3d-12-graphics)
 - [Microsoft基于D3D12的图形编程样例](https://github.com/Microsoft/DirectX-Graphics-Samples)
 - [microsoft/Xbox-ATG-Samples](https://github.com/microsoft/Xbox-ATG-Samples)
 - [nBody DirectX 12 sample (asynchronous compute version)](https://gpuopen.com/gaming-product/nbody-directx-12-async-compute-edition/)
