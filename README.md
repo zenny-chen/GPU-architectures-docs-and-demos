@@ -17,6 +17,16 @@
 - [VkDeviceCreateInfo](https://registry.khronos.org/vulkan/specs/1.3/html/vkspec.html#VkDeviceCreateInfo)
 - [Vulkan features（涉及如何允许逻辑设备全都允许、全都禁用或部分允许特征的方法）](https://registry.khronos.org/vulkan/specs/1.3/html/vkspec.html#features)
 - [Vulkan Querying and Enabling Extensions](https://github.com/KhronosGroup/Vulkan-Guide/blob/master/chapters/enabling_extensions.adoc#enabling-extensions)
+- 对于某些Vulkan功能扩展，最好从 **Vulkan Instance** 加载Vulkan API。可使用：[vkGetInstanceProcAddr](https://registry.khronos.org/vulkan/specs/1.3-extensions/man/html/vkGetInstanceProcAddr.html)。比如：
+```c
+PFN_vkGetBufferDeviceAddressEXT custom_vkGetBufferDeviceAddressEXT = 
+    (PFN_vkGetBufferDeviceAddressEXT)vkGetInstanceProcAddr(s_instance, "vkGetBufferDeviceAddressEXT");
+```
+- 如果从 **Vulkan Instance** 无法加载，那么可以尝试从Vulkan设备加载Vulkan API，通过：[vkGetDeviceProcAddr](https://registry.khronos.org/vulkan/specs/1.3-extensions/man/html/vkGetDeviceProcAddr.html)。比如：
+```c
+PFN_vkCmdPushDescriptorSetWithTemplateKHR spec_PFN_vkCmdPushDescriptorSetWithTemplateKHR = 
+    (PFN_vkCmdPushDescriptorSetWithTemplateKHR)vkGetDeviceProcAddr(s_specDevice, "vkCmdPushDescriptorSetWithTemplateKHR");
+```
 - [Understanding Vulkan Synchronization](https://www.khronos.org/blog/understanding-vulkan-synchronization)
 - [Vulkan Timeline Semaphores](https://www.khronos.org/blog/vulkan-timeline-semaphores)
 - [Vulkan Subgroup Tutorial](https://www.khronos.org/blog/vulkan-subgroup-tutorial)
