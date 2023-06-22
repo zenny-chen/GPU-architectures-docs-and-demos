@@ -28,6 +28,7 @@ PFN_vkCmdPushDescriptorSetWithTemplateKHR spec_PFN_vkCmdPushDescriptorSetWithTem
     (PFN_vkCmdPushDescriptorSetWithTemplateKHR)vkGetDeviceProcAddr(s_specDevice, "vkCmdPushDescriptorSetWithTemplateKHR");
 ```
 - [Understanding Vulkan Synchronization](https://www.khronos.org/blog/understanding-vulkan-synchronization)
+- [Vulkan Push Constants](https://registry.khronos.org/vulkan/site/guide/latest/push_constants.html)
 - [Vulkan Timeline Semaphores](https://www.khronos.org/blog/vulkan-timeline-semaphores)
 - [Vulkan Subgroup Tutorial](https://www.khronos.org/blog/vulkan-subgroup-tutorial)
 - [VK_KHR_8bit_storage](https://registry.khronos.org/vulkan/specs/1.3-extensions/man/html/VK_KHR_8bit_storage.html)
