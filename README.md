@@ -70,6 +70,8 @@ PFN_vkCmdPushDescriptorSetWithTemplateKHR spec_PFN_vkCmdPushDescriptorSetWithTem
 - [Introduction to 3D Game Programming With DirectX 11书中代码样例](https://github.com/jjuiddong/Introduction-to-3D-Game-Programming-With-DirectX11)
 - [Introduction to 3D Game Programming with DirectX 12书中代码样例](https://github.com/d3dcoder/d3d12book/)
 - [Metal API介绍](https://developer.apple.com/metal/)
+- [Metal developer workflows](https://developer.apple.com/documentation/Xcode/Metal-developer-workflows)
+- [Mesh Shaders and Meshlet Culling in Metal 3](https://metalbyexample.com/mesh-shaders/)
 - [基于macOS的OpenGL的使用](https://developer.apple.com/opengl/)
 - [基于iOS与tvOS的OpenGL ES的使用](https://developer.apple.com/opengl-es/)
 - [Tutorial 12 : OpenGL Extensions](http://www.opengl-tutorial.org/intermediate-tutorials/tutorial-12-opengl-extensions/)
