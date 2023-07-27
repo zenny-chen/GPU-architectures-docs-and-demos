@@ -31,6 +31,7 @@ PFN_vkCmdPushDescriptorSetWithTemplateKHR spec_PFN_vkCmdPushDescriptorSetWithTem
 - [Vulkan Push Constants](https://registry.khronos.org/vulkan/site/guide/latest/push_constants.html)
 - [Vulkan Timeline Semaphores](https://www.khronos.org/blog/vulkan-timeline-semaphores)
 - [Vulkan Subgroup Tutorial](https://www.khronos.org/blog/vulkan-subgroup-tutorial)
+- [Ray Tracing In Vulkan](https://www.khronos.org/blog/ray-tracing-in-vulkan)
 - [VK_KHR_8bit_storage](https://registry.khronos.org/vulkan/specs/1.3-extensions/man/html/VK_KHR_8bit_storage.html)
 - [VK_KHR_16bit_storage](https://registry.khronos.org/vulkan/specs/1.3-extensions/man/html/VK_KHR_16bit_storage.html)
 - [VkPhysicalDeviceShaderFloat16Int8Features](https://registry.khronos.org/vulkan/specs/1.3-extensions/man/html/VkPhysicalDeviceFloat16Int8FeaturesKHR.html)
