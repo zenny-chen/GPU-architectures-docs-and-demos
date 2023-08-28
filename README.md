@@ -102,7 +102,7 @@ PFN_vkCmdPushDescriptorSetWithTemplateKHR spec_PFN_vkCmdPushDescriptorSetWithTem
 - [PowerVR Series5 TBDR架构学习笔记](https://zhuanlan.zhihu.com/p/407976368)
 - [移动端GPU架构学习笔记 + 关于移动端和MRT在消耗带宽上的设计这档子事](https://zhuanlan.zhihu.com/p/404711038)
 - [剖析虚幻渲染体系（12）- 移动端专题（02）](https://zhuanlan.zhihu.com/p/555465007)
-- [深度剖析：深度学习GPU共享技术](https://www.toutiao.com/i6906743227399881228/)
+- [针对深度学习的GPU共享](https://zhuanlan.zhihu.com/p/285994980)
 - [The magic of clGetKernelWorkGroupInfo](https://streamhpc.com/blog/2015-10-22/the-magic-of-clgetkernelworkgroupinfo/)
 - [DirectCompute Optimizations and Best Practices](https://www.nvidia.com/content/GTC-2010/pdfs/2260_GTC2010.pdf)
 - [NVIDIA TURING GPU ARCHITECTURE](https://images.nvidia.com/aem-dam/en-zz/Solutions/design-visualization/technologies/turing-architecture/NVIDIA-Turing-Architecture-Whitepaper.pdf)
