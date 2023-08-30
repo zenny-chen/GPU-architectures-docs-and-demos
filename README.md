@@ -100,6 +100,7 @@ PFN_vkCmdPushDescriptorSetWithTemplateKHR spec_PFN_vkCmdPushDescriptorSetWithTem
 - [Tile-Based Deferred Shading](https://zhuanlan.zhihu.com/p/85447953)
 - [Tile-Based Rendering学习笔记](https://zhuanlan.zhihu.com/p/393712805)
 - [PowerVR Series5 TBDR架构学习笔记](https://zhuanlan.zhihu.com/p/407976368)
+- [Tile based Rendering 二 tbr and tbdr 优化建议tiled based deferred rendering](http://runxinzhi.com/minggoddess-p-9284359.html)
 - [移动端GPU架构学习笔记 + 关于移动端和MRT在消耗带宽上的设计这档子事](https://zhuanlan.zhihu.com/p/404711038)
 - [剖析虚幻渲染体系（12）- 移动端专题（02）](https://zhuanlan.zhihu.com/p/555465007)
 - [针对深度学习的GPU共享](https://zhuanlan.zhihu.com/p/285994980)
@@ -432,4 +433,5 @@ int main(int argc, const char* argv[])
 - [ARM-software: Vulkan Best Practice for Mobile Developers](https://github.com/ARM-software/vulkan_best_practice_for_mobile_developers)
 - [ARM Bifrost Architecture](https://developer.arm.com/Architectures/Bifrost#Technical-Information)
 - [Qualcomm® Adreno™ GPU](https://developer.qualcomm.com/sites/default/files/docs/adreno-gpu/snapdragon-game-toolkit/learn_guides.html)
+- [PowerVR USC Series 6 Core Overview](https://docs.imgtec.com/reference-manuals/powervr-instruction-set-reference/topics/core-overview.html)
 
