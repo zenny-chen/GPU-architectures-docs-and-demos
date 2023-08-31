@@ -204,6 +204,10 @@ PFN_vkCmdPushDescriptorSetWithTemplateKHR spec_PFN_vkCmdPushDescriptorSetWithTem
 - [矩阵相乘在GPU上的终极优化：深度解析Maxas汇编器工作原理](https://www.toutiao.com/a6824717488391979532/)
 - [如何利用 NVIDIA 安培架构 GPU 的新一代 Tensor Core 对计算进行极致加速](https://mp.weixin.qq.com/s?srcid=0819SLpl2nBtb62AroWYJnmI&scene=23&sharer_sharetime=1597814989936&mid=2247486054&sharer_shareid=c0f8ad645f1b221a7a43ae65e09fb2ea&sn=e0507022e05c91857cce22195a504323&idx=1&__biz=MzU3MDc5MDM4MA%3D%3D&chksm=fceb52e5cb9cdbf34ab0b820f58283e4f430a140fd35d1746e1d4da25ed2205cc3f7320e909c&mpshare=1#rd)
 - [NVIDIA发布了那么多技术，哪些SDK值得开发者们关注？](https://mp.weixin.qq.com/s?__biz=MjM5NTE3Nzk4MQ==&mid=2651239720&idx=1&sn=ee3c8a6c831e9ce525994d94818d4ad4&chksm=bd0e61ba8a79e8ac42b009d693f52fe678ab34aeea4243f215c272ff32cc1b264b409180a7f3&mpshare=1&scene=23&srcid=0421vjj8MN30lK26ZUxC1zUH)
+- NVIDIA自家GPU产品的一些类型缩写：
+    - DGX — Deep Learning GPU Accelerator
+    - HGX — High Performance Computing GPU Accelerator
+    - EGX — Edge Computing GPU Accelerator
 - CUDA中用于判定当前是否为设备端代码还是主机端代码使用预定义宏 **`__CUDA_ARCH__`** 。它同时表示当前设备的compute capability，比如200表示计算能力2.0。详细参考《CUDA C Programming Guide》G.4.2.1. **`__CUDA_ARCH__`** 。
 - 由于CUDA NVCC编译器是寄生于MSVC或GCC等主机端编译工具链的。因此，如果我们在一个CUDA源文件（.cu）中要判定当前仅适用于CUDA源文件的主机端与设备端代码，那么我们要写预处理器条件判断时需要包含或排除掉CUDA环境。而 **`__CUDACC__`** 这个宏就是NVCC编译器内置的宏，用于判定当前的编译器用的是NVCC。而此时，如果我们用 **`_MSC_VER`** 或 **`__GNUC__`** 宏来判定的话，条件也成立。因此，如果我们对某些处理需要针对仅使用某种主机端的编译器（比如GCC）而不适用NVCC的话可以这么判定：
 ```c
