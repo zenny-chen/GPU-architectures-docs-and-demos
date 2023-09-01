@@ -95,6 +95,7 @@ PFN_vkCmdPushDescriptorSetWithTemplateKHR spec_PFN_vkCmdPushDescriptorSetWithTem
 - **Khronos OpenGL官方文档中关于描述的 `gbufferImage` 类型，实际所对应的类型为**：**`imageBuffer`**、**`iimageBuffer`** 和 **`uimageBuffer`**。
 - [WebGL官方样例](https://github.com/WebGLSamples)
 - [WebGL_Compute_shader](https://github.com/9ballsyndrome/WebGL_Compute_shader)
+- [OpenCL vs. Vulkan Compute](https://community.khronos.org/t/opencl-vs-vulkan-compute/7132)
 - [ROCm™ – 用于加速计算、支持高性能计算和机器学习的开放式软件生态系统](https://mp.weixin.qq.com/s?__biz=MjM5NDAyNjM0MA==&mid=2650787282&idx=8&sn=baa3373e1fa3b2564f223d5dc0dc9ca1&chksm=be856bd989f2e2cf954d48303447124992714e2b531448304d32da7b957e810203c0c46aacd9&mpshare=1&scene=23&srcid=0831IhBlly11evtjQ0cYgzs3&sharer_sharetime=1598879436131&sharer_shareid=35ac76bf9ad4a719bab0994dd606caf6#rd)
 - [关于Drawcall](https://zhuanlan.zhihu.com/p/364918045)
 - [GPU渲染架构-IMR \& TBR \& TBDR](https://zhuanlan.zhihu.com/p/531900597)（被水印遮挡的部分：第一张图是“Framebuffer Working Set”，此图出处：[GPU专栏(四) 基于块的渲染\(Tile Based Rendering\)](https://www.cnblogs.com/Arnold-Zhang/p/15514499.html)；第二张图是“Compressed Framebuffer”）
