@@ -29,6 +29,7 @@ PFN_vkCmdPushDescriptorSetWithTemplateKHR spec_PFN_vkCmdPushDescriptorSetWithTem
 ```
 - [Understanding Vulkan Synchronization](https://www.khronos.org/blog/understanding-vulkan-synchronization)
 - [Vulkan Push Constants](https://registry.khronos.org/vulkan/site/guide/latest/push_constants.html)
+- [Pipeline Dynamic State](https://registry.khronos.org/vulkan/site/guide/latest/dynamic_state.html)
 - [Vulkan Timeline Semaphores](https://www.khronos.org/blog/vulkan-timeline-semaphores)
 - [Vulkan Subgroup Tutorial](https://www.khronos.org/blog/vulkan-subgroup-tutorial)
 - [Ray Tracing In Vulkan](https://www.khronos.org/blog/ray-tracing-in-vulkan)
