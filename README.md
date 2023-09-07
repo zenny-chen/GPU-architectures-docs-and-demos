@@ -97,6 +97,7 @@ PFN_vkCmdPushDescriptorSetWithTemplateKHR spec_PFN_vkCmdPushDescriptorSetWithTem
 - Raspberry Pi comes with an OpenGL ES 2.0 example in `/opt/vc/src/hello_pi/hello_triangle2`
 - [EGL guide for beginners](https://stackoverflow.com/questions/19212145/egl-guide-for-beginners)
 - [OpenGL ES EGL eglCreateWindowSurface](https://www.jianshu.com/p/f176679548eb)
+- [How to create a native X11 window for use with EGL](https://stackoverflow.com/questions/64449068/how-to-create-a-native-x11-window-for-use-with-egl)
 - **Khronos OpenGL官方文档中关于描述的 `gbufferImage` 类型，实际所对应的类型为**：**`imageBuffer`**、**`iimageBuffer`** 和 **`uimageBuffer`**。
 - [WebGL官方样例](https://github.com/WebGLSamples)
 - [WebGL_Compute_shader](https://github.com/9ballsyndrome/WebGL_Compute_shader)
