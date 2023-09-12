@@ -104,6 +104,7 @@ PFN_vkCmdPushDescriptorSetWithTemplateKHR spec_PFN_vkCmdPushDescriptorSetWithTem
 - **Khronos OpenGL官方文档中关于描述的 `gbufferImage` 类型，实际所对应的类型为**：**`imageBuffer`**、**`iimageBuffer`** 和 **`uimageBuffer`**。
 - [WebGL官方样例](https://github.com/WebGLSamples)
 - [WebGL_Compute_shader](https://github.com/9ballsyndrome/WebGL_Compute_shader)
+- [Intel® FPGA SDK for OpenCL™ Overview](https://www.intel.com/content/www/us/en/docs/programmable/683846/21-3/overview.html)
 - [OpenCL vs. Vulkan Compute](https://community.khronos.org/t/opencl-vs-vulkan-compute/7132)
 - [OpenCL_Barrier同步](https://blog.csdn.net/weixin_42730667/article/details/96117450)
 - [The magic of clGetKernelWorkGroupInfo](https://streamhpc.com/blog/2015-10-22/the-magic-of-clgetkernelworkgroupinfo/)
