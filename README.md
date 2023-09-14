@@ -33,6 +33,7 @@ PFN_vkCmdPushDescriptorSetWithTemplateKHR spec_PFN_vkCmdPushDescriptorSetWithTem
 - [Vulkan Timeline Semaphores](https://www.khronos.org/blog/vulkan-timeline-semaphores)
 - [Vulkan Subgroup Tutorial](https://www.khronos.org/blog/vulkan-subgroup-tutorial)
 - [Ray Tracing In Vulkan](https://www.khronos.org/blog/ray-tracing-in-vulkan)
+- [You Can Use Vulkan Without Pipelines Today](https://www.khronos.org/blog/you-can-use-vulkan-without-pipelines-today)
 - [VK_KHR_8bit_storage](https://registry.khronos.org/vulkan/specs/1.3-extensions/man/html/VK_KHR_8bit_storage.html)
 - [VK_KHR_16bit_storage](https://registry.khronos.org/vulkan/specs/1.3-extensions/man/html/VK_KHR_16bit_storage.html)
 - [VK_KHR_cooperative_matrix](https://registry.khronos.org/vulkan/specs/1.3-extensions/man/html/VK_KHR_cooperative_matrix.html)
@@ -87,6 +88,7 @@ PFN_vkCmdPushDescriptorSetWithTemplateKHR spec_PFN_vkCmdPushDescriptorSetWithTem
 - [15. Tile-Based Deferred Rendering](https://www.kodeco.com/books/metal-by-tutorials/v3.0/chapters/15-tile-based-deferred-rendering)
 - [Metal 2 on A11-The Shading](https://nilotic.github.io/2018/10/02/Metal-2-on-A11-The-Shading.html)
 - [Metal2研发笔录（五）：Forward+ with Tile Shading](https://zhuanlan.zhihu.com/p/95567955)
+- [Metal2研发笔录（六）：Metal图像处理后处理基础（上）](https://zhuanlan.zhihu.com/p/98782433)（包含对 tile shader 的使用）
 - [Introduction to Turing Mesh Shaders](https://developer.nvidia.com/blog/introduction-turing-mesh-shaders/)
 - [Quick Introduction to Mesh Shaders (OpenGL and Vulkan)](https://www.geeks3d.com/20200519/introduction-to-mesh-shaders-opengl-and-vulkan/)
 - [基于macOS的OpenGL的使用](https://developer.apple.com/opengl/)
