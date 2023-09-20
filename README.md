@@ -213,6 +213,7 @@ PFN_vkCmdPushDescriptorSetWithTemplateKHR spec_PFN_vkCmdPushDescriptorSetWithTem
 - [Nsight Graphics Activities - Advanced Learning](https://docs.nvidia.com/nsight-graphics/AdvancedLearning/index.html)
 - [CUDA Installation Guide for Microsoft Windows](https://docs.nvidia.com/cuda/cuda-installation-guide-microsoft-windows/index.html)
 - [CUDA 11 Features Revealed](https://developer.nvidia.com/blog/cuda-11-features-revealed/)
+- [Programming Tensor Cores in CUDA 9](https://developer.nvidia.com/blog/programming-tensor-cores-cuda-9/)
 - [nVidia omniverse](https://www.nvidia.com/en-us/omniverse/)
 - [Compute Sanitizer](https://docs.nvidia.com/compute-sanitizer/ComputeSanitizer/index.html#abstract)
 - [NVIDIA GPUDirect Storage Overview Guide](https://docs.nvidia.com/gpudirect-storage/overview-guide/index.html)
