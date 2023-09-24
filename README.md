@@ -237,7 +237,7 @@ PFN_vkCmdPushDescriptorSetWithTemplateKHR spec_PFN_vkCmdPushDescriptorSetWithTem
 - [CUDA constant memory issue: invalid device symbol with cudaGetSymbolAddress](https://stackoverflow.com/questions/26735808/cuda-constant-memory-issue-invalid-device-symbol-with-cudagetsymboladdress)
 - [Unified Memory for CUDA Beginners](https://devblogs.nvidia.com/unified-memory-cuda-beginners/)
 - [CUDA - Unified memory (Pascal at least)](https://stackoverflow.com/questions/50679657/cuda-unified-memory-pascal-at-least)
-- [为什么不能使用`cudaHostRegister（）`来标记为WriteCombined已经存在的内存区域？](https://www.it1352.com/587955.html)
+- [Why can't we to mark as WriteCombined already existing memory region by using `cudaHostRegister()`?](https://stackoverflow.com/questions/19197671/why-cant-we-to-mark-as-writecombined-already-existing-memory-region-by-using-c)
 - [How to Optimize Data Transfers in CUDA C/C++](https://devblogs.nvidia.com/how-optimize-data-transfers-cuda-cc/)
 - [“Pitch” in cudaMallocPitch()?](https://forums.developer.nvidia.com/t/pitch-in-cudamallocpitch/8065)（**Pitch** is the padded size of each “row” in the array. If you have an array that has 12 float rows, CUDA runs faster if you pad the data to 16 floats: The data is 12 floats wide, the padding is 4 floats, and the **pitch** is 16 floats. (Or 64 bytes, as **`cudaMallocPitch`** sees it.)）
 - [CUDA学习-计算实际线程ID](https://blog.csdn.net/weixin_51229250/article/details/121712045)
