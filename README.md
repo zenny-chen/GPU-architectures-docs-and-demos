@@ -277,7 +277,7 @@ PFN_vkCmdPushDescriptorSetWithTemplateKHR spec_PFN_vkCmdPushDescriptorSetWithTem
 ```shell
 gcc  asm_test.S  -o asm_test.o  -c
 
- /usr/local/cuda/bin/nvcc -std=c++17 -m64 -maxrregcount=0 -use_fast_math  -gencode=arch=compute_61,code=sm_61  -gencode=arch=compute_75,code=sm_75  -gencode=arch=compute_86,code=sm_86  -gencode=arch=compute_89,code=sm_89 -cudart=static -cudadevrt=static -link -O2 -I/usr/local/cuda/include/ -L/usr/local/cuda/lib64/ -lOpenCL -o executable kernel.cu ocl_test.cu asm_test.o
+/usr/local/cuda/bin/nvcc -std=c++17 -m64 -maxrregcount=0 -use_fast_math  -gencode=arch=compute_61,code=sm_61  -gencode=arch=compute_75,code=sm_75  -gencode=arch=compute_86,code=sm_86  -gencode=arch=compute_89,code=sm_89 -cudart=static -cudadevrt=static -link -O2 -I/usr/local/cuda/include/ -L/usr/local/cuda/lib64/ -lOpenCL -o executable kernel.cu ocl_test.cu asm_test.o
 
 
 ```
