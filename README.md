@@ -497,6 +497,8 @@ int main(int argc, const char* argv[])
 - [ARM Bifrost Architecture](https://developer.arm.com/Architectures/Bifrost#Technical-Information)
 - [Qualcomm® Adreno™ GPU](https://developer.qualcomm.com/sites/default/files/docs/adreno-gpu/snapdragon-game-toolkit/learn_guides.html)
 - [PowerVR USC Series 6 Core Overview](https://docs.imgtec.com/reference-manuals/powervr-instruction-set-reference/html/topics/core-overview.html)
+- [Introduction to Low Level GLSL Optimisation](https://docs.imgtec.com/performance-guides/low-level-glsl/html/topics/introduction.html)
+- [Introduction to the PowerVR Compute Development Recommendations](https://docs.imgtec.com/performance-guides/compute-recommendations/html/topics/introduction/introduction.html)
 - [PowerVR Performance Recommendations](https://powervr-graphics.github.io/Documentation/Architecture%20Guides/PowerVR.Performance%20Recommendations.pdf)
 - [Vulkan synchronisation and graphics-compute-graphics hazards: Part 2](https://blog.imaginationtech.com/vulkan-synchronisation-and-graphics-compute-graphics-hazards-part-2/)
 
