@@ -3,6 +3,21 @@
 
 <br />
 
+## 目录
+
+- [图形相关文章合集](#graphics_relevant_articles_collection)
+- [GLSL源文件扩展名](#glsl_source_suffix)
+- [GLSL中的一些内建函数用法](#glsl_intrinsic_functions)
+- [CUDA相关文档](#cuda_relevant)
+- [CUDA样例程序（包含对CUDA Driver API以及 **`clock64()`** 函数的使用）](#cuda_demo)
+- [神经网络机器学习相关](#machine_learning_nn)
+- [各厂商官方GPU相关架构文档与优化指南](#vendor_gpu_arch_docs)
+
+<br />
+
+<a name="graphics_relevant_articles_collection"></a>
+## 图形相关文章合集
+
 - [官方Vulkan编程指南](http://www.vulkanprogrammingguide.com)
 - [nVidia的图形样例（含Vulkan API）](https://github.com/NVIDIAGameWorks/GraphicsSamples/tree/master/samples)
 - [Android Vulkan 图形 API](https://developer.android.google.cn/ndk/guides/graphics)
@@ -169,6 +184,7 @@ PFN_vkCmdPushDescriptorSetWithTemplateKHR spec_PFN_vkCmdPushDescriptorSetWithTem
 
 <br/>
 
+<a name="glsl_source_suffix"></a>
 ## GLSL源文件扩展名
 
 文件后缀名 | 表示的着色器种类 | 着色器种类英文名
@@ -196,6 +212,7 @@ PFN_vkCmdPushDescriptorSetWithTemplateKHR spec_PFN_vkCmdPushDescriptorSetWithTem
 
 <br />
 
+<a name="glsl_intrinsic_functions"></a>
 ## GLSL中的一些内建函数用法
 
 - 将浮点数转为IEEE整数：[floatBitsToInt](https://registry.khronos.org/OpenGL-Refpages/gl4/html/floatBitsToInt.xhtml)
@@ -206,6 +223,7 @@ PFN_vkCmdPushDescriptorSetWithTemplateKHR spec_PFN_vkCmdPushDescriptorSetWithTem
 
 <br />
 
+<a name="cuda_relevant"></a>
 ## CUDA相关文档
 
 - [CUDA Compute Capability List](https://developer.nvidia.com/cuda-gpus)
@@ -287,6 +305,7 @@ gcc  asm_test.S  -o asm_test.o  -c
 
 <br />
 
+<a name="cuda_demo"></a>
 ## CUDA样例程序（包含对CUDA Driver API以及 **`clock64()`** 函数的使用）
 
 - **`cuInit`** 函数的调用官方说明：[6.3. Initialization](https://docs.nvidia.com/cuda/cuda-driver-api/group__CUDA__INITIALIZE.html#group__CUDA__INITIALIZE_1g0a2f1517e1bd8502c7194c3a8c134bc3)
@@ -481,6 +500,14 @@ int main(int argc, const char* argv[])
 
 <br />
 
+<a name="machine_learning_nn"></a>
+## 神经网络机器学习相关
+
+
+
+<br />
+
+<a name="vendor_gpu_arch_docs"></a>
 ## 各厂商官方GPU相关架构文档与优化指南
 
 - [Vulkan at NVIDIA](https://developer.nvidia.com/vulkan)
