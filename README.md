@@ -167,6 +167,7 @@ PFN_vkCmdPushDescriptorSetWithTemplateKHR spec_PFN_vkCmdPushDescriptorSetWithTem
 - [GPU如何工作:PowerVR/高通Adreno/ARM Mali的渲染模式分析](https://www.sohu.com/a/84435483_279241)
 - [移动端GPU架构学习笔记 + 关于移动端和MRT在消耗带宽上的设计这档子事](https://zhuanlan.zhihu.com/p/404711038)
 - [当我们谈优化时，我们谈些什么](https://zhuanlan.zhihu.com/p/68158277)
+- [深入GPU硬件架构及运行机制](https://www.cnblogs.com/timlly/p/11471507.html)
 - [剖析虚幻渲染体系（12）- 移动端专题（02）](https://zhuanlan.zhihu.com/p/555465007)
 - [针对深度学习的GPU共享](https://zhuanlan.zhihu.com/p/285994980)
 - [DirectCompute Optimizations and Best Practices](https://www.nvidia.com/content/GTC-2010/pdfs/2260_GTC2010.pdf)
