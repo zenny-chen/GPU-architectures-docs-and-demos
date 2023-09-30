@@ -92,6 +92,7 @@ PFN_vkCmdPushDescriptorSetWithTemplateKHR spec_PFN_vkCmdPushDescriptorSetWithTem
 - [Google官方OpenCL C转SPIR-V项目](https://github.com/google/clspv)
 - [PowerVR Developer Documentation](https://docs.imgtec.com)
 - [SIGGRAPH 2018上提供的Vulkan API使用demo](http://web.engr.oregonstate.edu/~mjb/vulkan/)
+- [Programming guide for Direct3D 11](https://learn.microsoft.com/en-us/windows/win32/direct3d11/dx-graphics-overviews)
 - [Direct3D 12 graphics](https://learn.microsoft.com/en-us/windows/win32/direct3d12/direct3d-12-graphics)
 - [Microsoft基于D3D12的图形编程样例](https://github.com/Microsoft/DirectX-Graphics-Samples)
 - [microsoft/Xbox-ATG-Samples](https://github.com/microsoft/Xbox-ATG-Samples)
