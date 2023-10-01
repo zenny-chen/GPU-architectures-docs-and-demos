@@ -101,9 +101,11 @@ PFN_vkCmdPushDescriptorSetWithTemplateKHR spec_PFN_vkCmdPushDescriptorSetWithTem
 - [Direct3D 11.3 Functional Specification](https://microsoft.github.io/DirectX-Specs/d3d/archive/D3D11_3_FunctionalSpec.htm)
 - Shader Resource View (**SRV**): Binding an input to a shader
 - Unordered Access View (**UAV**): Binding an output to a shader
+- [Programming guide for HLSL](https://learn.microsoft.com/en-us/windows/win32/direct3dhlsl/dx-graphics-hlsl-pguide)
 - [HLSL Specifications](https://microsoft.github.io/hlsl-specs/)
 - [HLSL-specs Inline SPIR-V](https://microsoft.github.io/hlsl-specs/proposals/0011-inline-spirv.html)
 - HLSL 中，**SV_** 前缀表示 **System-Value**。详细见：[System-Value Semantics](https://learn.microsoft.com/en-us/windows/win32/direct3dhlsl/dx-graphics-hlsl-semantics#system-value-semantics)
+- HLSL 文件后缀名为：**`.hlsl`**。详细可见：[Compiling shaders](https://learn.microsoft.com/en-us/windows/win32/direct3dhlsl/dx-graphics-hlsl-part1)
 - [DirectX Intermediate Language](https://github.com/microsoft/DirectXShaderCompiler/blob/main/docs/DXIL.rst)
 - [Running Shaders in DXIL](https://stackoverflow.com/questions/55958231/running-shaders-in-dxil)
 - [nVidia关于最新D3D的样例](https://developer.nvidia.com/gameworks-directx-samples)
