@@ -99,6 +99,7 @@ PFN_vkCmdPushDescriptorSetWithTemplateKHR spec_PFN_vkCmdPushDescriptorSetWithTem
 - [nBody DirectX 12 sample (asynchronous compute version)](https://gpuopen.com/gaming-product/nbody-directx-12-async-compute-edition/)
 - [Learning DirectX 12 – Lesson 4 – Textures](https://www.3dgep.com/learning-directx-12-4)
 - [Direct3D 11.3 Functional Specification](https://microsoft.github.io/DirectX-Specs/d3d/archive/D3D11_3_FunctionalSpec.htm)
+- Shader Resource View (SRV): Binding an input to a shader; Unordered Access View (UAV): Binding an output to a shader
 - [HLSL Specifications](https://microsoft.github.io/hlsl-specs/)
 - [HLSL-specs Inline SPIR-V](https://microsoft.github.io/hlsl-specs/proposals/0011-inline-spirv.html)
 - HLSL 中，**SV_** 前缀表示 **System-Value**。详细见：[System-Value Semantics](https://learn.microsoft.com/en-us/windows/win32/direct3dhlsl/dx-graphics-hlsl-semantics#system-value-semantics)
