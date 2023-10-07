@@ -25,6 +25,7 @@
 - [Google官方推荐的用于Android NDK的Vulkan API使用样例](https://github.com/LunarG/VulkanSamples)
 - [Google官方的用于Android端的Vulkan API使用样例](https://github.com/googlesamples/android-vulkan-tutorials)
 - [Vulkan-Guide](https://github.com/KhronosGroup/Vulkan-Guide)
+- [Vulkan® and Vulkan® SC API Documentation Project](https://github.com/KhronosGroup/Vulkan-Docs)
 - [Vulkan C++ examples and demos](https://github.com/SaschaWillems/Vulkan)
 - [Intel技术大牛详解Vulkan API](https://github.com/GameTechDev/IntroductionToVulkan)
 - [API without Secrets: Introduction to Vulkan](https://github.com/GameTechDev/IntroductionToVulkan)
@@ -150,6 +151,7 @@ PFN_vkCmdPushDescriptorSetWithTemplateKHR spec_PFN_vkCmdPushDescriptorSetWithTem
 - [OpenGL ES 3.0: Programming Guide, Second Edition (2014) -- Chapter 3. An Introduction to EGL](https://apprize.best/programming/opengl/5.html)
 - [How do I get EGL and OpenGLES libraries for Ubuntu](https://askubuntu.com/questions/244133/how-do-i-get-egl-and-opengles-libraries-for-ubuntu-running-on-virtualbox)
 - Raspberry Pi comes with an OpenGL ES 2.0 example in `/opt/vc/src/hello_pi/hello_triangle2`
+- [EGL-Registry](https://github.com/KhronosGroup/EGL-Registry)
 - [EGL guide for beginners](https://stackoverflow.com/questions/19212145/egl-guide-for-beginners)
 - [OpenGL ES EGL eglCreateWindowSurface](https://www.jianshu.com/p/f176679548eb)
 - [How to create a native X11 window for use with EGL](https://stackoverflow.com/questions/64449068/how-to-create-a-native-x11-window-for-use-with-egl)
