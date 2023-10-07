@@ -149,6 +149,7 @@ PFN_vkCmdPushDescriptorSetWithTemplateKHR spec_PFN_vkCmdPushDescriptorSetWithTem
 - [Using OpenGL on Windows: A Simple Example](https://www.cs.rit.edu/~ncs/Courses/570/UserGuide/OpenGLonWin-11.html)
 - [Using OpenGL with GTK+](https://www.bassi.io/articles/2015/02/17/using-opengl-with-gtk/)
 - [OpenGL ES 3.0: Programming Guide, Second Edition (2014) -- Chapter 3. An Introduction to EGL](https://apprize.best/programming/opengl/5.html)
+- [OpenGL ES 3.0 Programming Guide](https://github.com/danginsburg/opengles3-book)
 - [How do I get EGL and OpenGLES libraries for Ubuntu](https://askubuntu.com/questions/244133/how-do-i-get-egl-and-opengles-libraries-for-ubuntu-running-on-virtualbox)
 - Raspberry Pi comes with an OpenGL ES 2.0 example in `/opt/vc/src/hello_pi/hello_triangle2`
 - [EGL-Registry](https://github.com/KhronosGroup/EGL-Registry)
