@@ -24,11 +24,14 @@
 - [Android Vulkan core topics](https://source.android.google.cn/devices/graphics/arch-vulkan?hl=en)
 - [Google官方推荐的用于Android NDK的Vulkan API使用样例](https://github.com/LunarG/VulkanSamples)
 - [Google官方的用于Android端的Vulkan API使用样例](https://github.com/googlesamples/android-vulkan-tutorials)
+- [Vulkan-Guide](https://github.com/KhronosGroup/Vulkan-Guide)
 - [Vulkan C++ examples and demos](https://github.com/SaschaWillems/Vulkan)
 - [Intel技术大牛详解Vulkan API](https://github.com/GameTechDev/IntroductionToVulkan)
 - [API without Secrets: Introduction to Vulkan](https://github.com/GameTechDev/IntroductionToVulkan)
 - [Vulkan Tutorial](https://vulkan-tutorial.com/Introduction)
+- [Vulkan-Cookbook](https://github.com/PacktPublishing/Vulkan-Cookbook)
 - [Vulkan Cookbook 第一章 3 连接Vulkan Loader库](https://blog.csdn.net/qq_19473837/article/details/83056962)
+- [SPIRV-Guide](https://github.com/KhronosGroup/SPIRV-Guide)
 - [VkDeviceCreateInfo](https://registry.khronos.org/vulkan/specs/1.3/html/vkspec.html#VkDeviceCreateInfo)
 - [Vulkan features（涉及如何允许逻辑设备全都允许、全都禁用或部分允许特征的方法）](https://registry.khronos.org/vulkan/specs/1.3/html/vkspec.html#features)
 - [Vulkan Querying and Enabling Extensions](https://github.com/KhronosGroup/Vulkan-Guide/blob/master/chapters/enabling_extensions.adoc#enabling-extensions)
@@ -48,8 +51,10 @@ PFN_vkCmdPushDescriptorSetWithTemplateKHR spec_PFN_vkCmdPushDescriptorSetWithTem
 - [Vulkan Timeline Semaphores](https://www.khronos.org/blog/vulkan-timeline-semaphores)
 - [Vulkan Subgroup Tutorial](https://www.khronos.org/blog/vulkan-subgroup-tutorial)
 - [Ray Tracing In Vulkan](https://www.khronos.org/blog/ray-tracing-in-vulkan)
+- [RayTracingInVulkan](https://github.com/GPSnoopy/RayTracingInVulkan)
 - [You Can Use Vulkan Without Pipelines Today](https://www.khronos.org/blog/you-can-use-vulkan-without-pipelines-today)
 - [Machine Learning Acceleration in Vulkan with Cooperative Matrices](https://developer.nvidia.com/blog/machine-learning-acceleration-vulkan-cooperative-matrices/)
+- [vk_cooperative_matrix_perf](https://github.com/jeffbolznv/vk_cooperative_matrix_perf)
 - [VK_KHR_shader_float16_int8](https://registry.khronos.org/vulkan/specs/1.3-extensions/man/html/VK_KHR_shader_float16_int8.html)
 - [VK_KHR_8bit_storage](https://registry.khronos.org/vulkan/specs/1.3-extensions/man/html/VK_KHR_8bit_storage.html)
 - [VK_KHR_16bit_storage](https://registry.khronos.org/vulkan/specs/1.3-extensions/man/html/VK_KHR_16bit_storage.html)
@@ -199,6 +204,7 @@ PFN_vkCmdPushDescriptorSetWithTemplateKHR spec_PFN_vkCmdPushDescriptorSetWithTem
 - [英特尔、AMD、英伟达三大GPU架构有何不同？](https://mp.weixin.qq.com/s?__biz=MzkxMjIyNzU0MA==&mid=2247629355&idx=3&sn=5f51f9d9c7ffdd079377ef4d6617def1)
 - [The Mali GPU: An Abstract Machine, Part 3 - The Midgard Shader Core](https://community.arm.com/arm-community-blogs/b/graphics-gaming-and-vr-blog/posts/the-mali-gpu-an-abstract-machine-part-3---the-midgard-shader-core)
 - [The Mali GPU: An Abstract Machine, Part 4 - The Bifrost Shader Core](https://community.arm.com/arm-community-blogs/b/graphics-gaming-and-vr-blog/posts/the-mali-gpu-an-abstract-machine-part-4---the-bifrost-shader-core)
+- [renderdoc](https://github.com/baldurk/renderdoc)
 
 <br/>
 
@@ -524,6 +530,8 @@ int main(int argc, const char* argv[])
 - [脉动阵列在二维矩阵乘法及卷积运算中的应用](https://blog.csdn.net/wordwarwordwar/article/details/103537996)
 - [深度解读达芬奇架构：华为AI芯片的「秘密武器」](https://zhuanlan.zhihu.com/p/79190804)
 - [从gpu的内存访问视角对比NHWC和NCHW](https://www.toutiao.com/article/7287019163984396852/)
+- [learnOpenCV4](https://github.com/fengzhenHIT/learnOpenCV4)
+- [OpenCV](https://github.com/opencv/opencv)
 
 <br />
 
