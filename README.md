@@ -523,6 +523,7 @@ int main(int argc, const char* argv[])
 
 - [脉动阵列在二维矩阵乘法及卷积运算中的应用](https://blog.csdn.net/wordwarwordwar/article/details/103537996)
 - [深度解读达芬奇架构：华为AI芯片的「秘密武器」](https://zhuanlan.zhihu.com/p/79190804)
+- [从gpu的内存访问视角对比NHWC和NCHW](https://www.toutiao.com/article/7287019163984396852/)
 
 <br />
 
