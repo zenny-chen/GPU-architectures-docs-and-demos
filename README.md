@@ -133,6 +133,7 @@ PFN_vkCmdPushDescriptorSetWithTemplateKHR spec_PFN_vkCmdPushDescriptorSetWithTem
 - [Metal2研发笔录（五）：Forward+ with Tile Shading](https://zhuanlan.zhihu.com/p/95567955)
 - [Metal2研发笔录（六）：Metal图像处理后处理基础（上）](https://zhuanlan.zhihu.com/p/98782433)（包含对 tile shader 的使用）
 - [Mesh Shader](https://microsoft.github.io/DirectX-Specs/d3d/MeshShader.html)
+- [Coming to DirectX 12— Mesh Shaders and Amplification Shaders: Reinventing the Geometry Pipeline](https://devblogs.microsoft.com/directx/coming-to-directx-12-mesh-shaders-and-amplification-shaders-reinventing-the-geometry-pipeline/)
 - [Introduction to Turing Mesh Shaders](https://developer.nvidia.com/blog/introduction-turing-mesh-shaders/)
 - [Using Mesh Shaders for Professional Graphics](https://developer.nvidia.com/blog/using-mesh-shaders-for-professional-graphics/)
 - [Quick Introduction to Mesh Shaders (OpenGL and Vulkan)](https://www.geeks3d.com/20200519/introduction-to-mesh-shaders-opengl-and-vulkan/)
