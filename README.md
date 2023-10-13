@@ -168,6 +168,8 @@ PFN_vkCmdPushDescriptorSetWithTemplateKHR spec_PFN_vkCmdPushDescriptorSetWithTem
 - [GL_EXT_packed_float](https://registry.khronos.org/OpenGL/extensions/EXT/EXT_packed_float.txt)
 - [GL_EXT_convolution](https://registry.khronos.org/OpenGL/extensions/EXT/EXT_convolution.txt)
 - [GL_EXT_histogram](https://registry.khronos.org/OpenGL/extensions/EXT/EXT_histogram.txt)
+- [GL_EXT_shader_framebuffer_fetch](https://registry.khronos.org/OpenGL/extensions/EXT/EXT_shader_framebuffer_fetch.txt)
+- [GL_EXT_shader_pixel_local_storage](https://registry.khronos.org/OpenGL/extensions/EXT/EXT_shader_pixel_local_storage.txt)
 - [GL_NV_compute_shader_derivatives](https://github.com/KhronosGroup/OpenGL-Registry/blob/main/extensions/NV/NV_compute_shader_derivatives.txt)
 - [Intel® FPGA SDK for OpenCL™ Overview](https://www.intel.com/content/www/us/en/docs/programmable/683846/21-3/overview.html)
 - [OpenCL pipes on intel CPU](https://stackoverflow.com/questions/54520089/opencl-pipes-on-intel-cpu)
