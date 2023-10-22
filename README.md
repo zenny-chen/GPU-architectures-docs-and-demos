@@ -110,6 +110,8 @@ PFN_vkCmdPushDescriptorSetWithTemplateKHR spec_PFN_vkCmdPushDescriptorSetWithTem
 - Shader Resource View (**SRV**): Binding an input to a shader
 - Unordered Access View (**UAV**): Binding an output to a shader
 - [Why talking about the Root Signature?](https://logins.github.io/graphics/2020/06/26/DX12RootSignatureObject.html)
+- [IDXGIDebug::ReportLiveObjects method \(dxgidebug.h\)](https://learn.microsoft.com/en-us/windows/win32/api/dxgidebug/nf-dxgidebug-idxgidebug-reportliveobjects)
+- [cannot get rid of live objects \(D3D11\)](https://www.gamedev.net/forums/topic/664906-cannot-get-rid-of-live-objects-d3d11/)
 - [Programming guide for HLSL](https://learn.microsoft.com/en-us/windows/win32/direct3dhlsl/dx-graphics-hlsl-pguide)
 - [HLSL Specifications](https://microsoft.github.io/hlsl-specs/)
 - [HLSL-specs Inline SPIR-V](https://microsoft.github.io/hlsl-specs/proposals/0011-inline-spirv.html)
