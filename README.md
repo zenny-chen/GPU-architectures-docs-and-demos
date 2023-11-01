@@ -191,6 +191,7 @@ PFN_vkCmdPushDescriptorSetWithTemplateKHR spec_PFN_vkCmdPushDescriptorSetWithTem
 - [cl_khr_integer_dot_product](https://registry.khronos.org/OpenCL/specs/3.0-unified/html/OpenCL_Ext.html#cl_khr_integer_dot_product)
 - [cl_khr_subgroups](https://registry.khronos.org/OpenCL/specs/3.0-unified/html/OpenCL_Ext.html#cl_khr_subgroups)
 - [Is There a Way to Access Global Data Share (GDS) on Ellesmere \(RX 480\)?](https://community.amd.com/t5/archives-discussions/is-there-a-way-to-access-global-data-share-gds-on-ellesmere-rx/td-p/120816)（要访问 AMD GCN 架构中的 global data share，需要在 OpenCL-C 中开启 [cl_ext_atomic_counters_32](https://registry.khronos.org/OpenCL/extensions/ext/cl_ext_atomic_counters_32.txt) 和 [cl_ext_atomic_counters_64](https://registry.khronos.org/OpenCL/extensions/ext/cl_ext_atomic_counters_64.txt) 这两个扩展）
+- [cl_intel_bfloat16_conversions](https://registry.khronos.org/OpenCL/extensions/intel/cl_intel_bfloat16_conversions.html)
 - [ROCm™ – 用于加速计算、支持高性能计算和机器学习的开放式软件生态系统](https://mp.weixin.qq.com/s?__biz=MjM5NDAyNjM0MA==&mid=2650787282&idx=8&sn=baa3373e1fa3b2564f223d5dc0dc9ca1)
 - [关于Drawcall](https://zhuanlan.zhihu.com/p/364918045)
 - [GPU渲染架构-IMR \& TBR \& TBDR](https://zhuanlan.zhihu.com/p/531900597)（被水印遮挡的部分：第一张图是“Framebuffer Working Set”，此图出处：[GPU专栏(四) 基于块的渲染\(Tile Based Rendering\)](https://www.cnblogs.com/Arnold-Zhang/p/15514499.html)；第二张图是“Compressed Framebuffer”）
@@ -337,7 +338,6 @@ PFN_vkCmdPushDescriptorSetWithTemplateKHR spec_PFN_vkCmdPushDescriptorSetWithTem
 gcc  asm_test.S  -o asm_test.o  -c
 
 /usr/local/cuda/bin/nvcc -std=c++17 -m64 -maxrregcount=0 -use_fast_math  -gencode=arch=compute_61,code=sm_61  -gencode=arch=compute_75,code=sm_75  -gencode=arch=compute_86,code=sm_86  -gencode=arch=compute_89,code=sm_89 -cudart=static -cudadevrt=static -link -O2 -I/usr/local/cuda/include/ -L/usr/local/cuda/lib64/ -lOpenCL -o executable kernel.cu ocl_test.cu asm_test.o
-
 
 ```
 - cudaMemcpy probably isn't actually taking that long--that will synchronize and wait for the kernel to complete. Launching a kernel is (almost) always asynchronous; when you call kernel<<<...>>>(...);, it's actually just queuing work for the GPU to perform at some point. It won't block the CPU and wait for that kernel to finish or anything like that. **However, since cudaMemcpy is a synchronous function, it implies that you want the results to be visible, so that will block the CPU until the GPU becomes idle** (indicating that all of your work has completed).
