@@ -203,6 +203,7 @@ PFN_vkCmdPushDescriptorSetWithTemplateKHR spec_PFN_vkCmdPushDescriptorSetWithTem
 - [PowerVR Series5 TBDR架构学习笔记](https://zhuanlan.zhihu.com/p/407976368)
 - [Tile based Rendering 二 tbr and tbdr 优化建议tiled based deferred rendering](http://runxinzhi.com/minggoddess-p-9284359.html)
 - [GPU如何工作:PowerVR/高通Adreno/ARM Mali的渲染模式分析](https://www.sohu.com/a/84435483_279241)
+- [浅谈移动端GPU架构](https://www.toutiao.com/article/7301210736984965673/)
 - [移动端GPU架构学习笔记 + 关于移动端和MRT在消耗带宽上的设计这档子事](https://zhuanlan.zhihu.com/p/404711038)
 - [当我们谈优化时，我们谈些什么](https://zhuanlan.zhihu.com/p/68158277)
 - [深入GPU硬件架构及运行机制](https://www.cnblogs.com/timlly/p/11471507.html)
