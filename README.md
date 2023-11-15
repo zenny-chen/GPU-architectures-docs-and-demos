@@ -77,6 +77,8 @@ PFN_vkCmdPushDescriptorSetWithTemplateKHR spec_PFN_vkCmdPushDescriptorSetWithTem
 - [VK_EXT_subgroup_size_control](https://registry.khronos.org/vulkan/specs/1.3-extensions/man/html/VK_EXT_subgroup_size_control.html)
 - [VK_EXT_validation_cache](https://registry.khronos.org/vulkan/specs/1.3-extensions/man/html/VK_EXT_validation_cache.html)
 - [VK_EXT_conservative_rasterization](https://registry.khronos.org/vulkan/specs/1.3-extensions/man/html/VK_EXT_conservative_rasterization.html)
+- [VK_EXT_sample_locations](https://registry.khronos.org/vulkan/specs/1.3-extensions/man/html/VK_EXT_sample_locations.html)
+- [VK_EXT_raster_multisample](https://github.com/Jonathan-Weinstein/vktest/blob/main/VK_EXT_raster_multisample.md#vk_ext_raster_multisample---device-extension)
 - [VK_EXT_mesh_shader](https://registry.khronos.org/vulkan/specs/1.3-extensions/man/html/VK_EXT_mesh_shader.html)（依赖的GLSL扩展：[GL_EXT_mesh_shader](https://github.com/KhronosGroup/GLSL/blob/master/extensions/ext/GLSL_EXT_mesh_shader.txt)）
 - [VK_EXT_shader_tile_image](https://registry.khronos.org/vulkan/specs/1.3-extensions/man/html/VK_EXT_shader_tile_image.html)（依赖的GLSL扩展：[GL_EXT_shader_tile_image](https://github.com/janharaldfredriksen-arm/GLSL/blob/GL_EXT_shader_tile_image/extensions/ext/GLSL_EXT_shader_tile_image.txt)）
 - [VK_EXT_fragment_shader_interlock](https://registry.khronos.org/vulkan/specs/1.3-extensions/man/html/VK_EXT_fragment_shader_interlock.html)（依赖的GLSL扩展：[GL_ARB_fragment_shader_interlock](https://registry.khronos.org/OpenGL/extensions/ARB/ARB_fragment_shader_interlock.txt)）
@@ -182,6 +184,7 @@ PFN_vkCmdPushDescriptorSetWithTemplateKHR spec_PFN_vkCmdPushDescriptorSetWithTem
 - [GL_EXT_histogram](https://registry.khronos.org/OpenGL/extensions/EXT/EXT_histogram.txt)
 - [GL_EXT_shader_framebuffer_fetch](https://registry.khronos.org/OpenGL/extensions/EXT/EXT_shader_framebuffer_fetch.txt)
 - [GL_EXT_shader_pixel_local_storage](https://registry.khronos.org/OpenGL/extensions/EXT/EXT_shader_pixel_local_storage.txt)
+- [GL_EXT_raster_multisample](https://registry.khronos.org/OpenGL/extensions/EXT/EXT_raster_multisample.txt)（等价于 [Target Independent Rasterization](https://microsoft.github.io/DirectX-Specs/d3d/archive/D3D11_3_FunctionalSpec.htm#TIR)）
 - [GL_NV_compute_shader_derivatives](https://github.com/KhronosGroup/OpenGL-Registry/blob/main/extensions/NV/NV_compute_shader_derivatives.txt)
 - [Intel® FPGA SDK for OpenCL™ Overview](https://www.intel.com/content/www/us/en/docs/programmable/683846/21-3/overview.html)
 - [OpenCL pipes on intel CPU](https://stackoverflow.com/questions/54520089/opencl-pipes-on-intel-cpu)
