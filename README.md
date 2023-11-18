@@ -114,6 +114,7 @@ PFN_vkCmdPushDescriptorSetWithTemplateKHR spec_PFN_vkCmdPushDescriptorSetWithTem
 - [microsoft/Xbox-ATG-Samples](https://github.com/microsoft/Xbox-ATG-Samples)
 - [nBody DirectX 12 sample (asynchronous compute version)](https://gpuopen.com/gaming-product/nbody-directx-12-async-compute-edition/)
 - [Learning DirectX 12 – Lesson 4 – Textures](https://www.3dgep.com/learning-directx-12-4)
+- [Direct3D 11.3 16.5 Pull Model Attribute Evaluation](https://microsoft.github.io/DirectX-Specs/d3d/archive/D3D11_3_FunctionalSpec.htm#16.5%20Pull%20Model%20Attribute%20Evaluation)
 - [Direct3D 11.3 Functional Specification](https://microsoft.github.io/DirectX-Specs/d3d/archive/D3D11_3_FunctionalSpec.htm)
 - Shader Resource View (**SRV**): Binding an input to a shader
 - Unordered Access View (**UAV**): Binding an output to a shader
