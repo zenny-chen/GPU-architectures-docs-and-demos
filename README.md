@@ -101,6 +101,7 @@ PFN_vkCmdPushDescriptorSetWithTemplateKHR spec_PFN_vkCmdPushDescriptorSetWithTem
 - 将SPIR-V可读性的汇编转为SPIR-V字节码文件（spv文件）：**`spirv-as`**。具体用法比如：**`%VK_SDK_PATH%/Bin/spirv-as  -o simpleKernel.spv  simpleKernel.spvasm`**。
 - 将spv字节码反汇编为可读的SPIR-V的格式，使用 **`spirv-dis`**。具体用法比如：**`%VK_SDK_PATH%/Bin/spirv-dis simpleKernel.spv  -o simpleKernel.spvasm`**。
 - 将spv字节码反编译为GLSL：使用 **`spirv-cross`**。具体用法比如：**`%VK_SDK_PATH%/Bin/spirv-cross  --vulkan-semantics  --output dst.glsl  src.spv`**
+- [SPIR-V Extended Instruction Sets](https://github.com/KhronosGroup/SPIRV-Guide/blob/master/chapters/extended_instruction_sets.md)
 - [HLSL for Vulkan: Resources](https://antiagainst.github.io/post/hlsl-for-vulkan-resources/)
 - [How to compile HLSL shaders with Vulkan?](https://stackoverflow.com/questions/61387495/how-to-compile-hlsl-shaders-with-vulkan)
 - [Google官方OpenCL C转SPIR-V项目](https://github.com/google/clspv)
