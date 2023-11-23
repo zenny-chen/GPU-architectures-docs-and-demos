@@ -133,6 +133,8 @@ PFN_vkCmdPushDescriptorSetWithTemplateKHR spec_PFN_vkCmdPushDescriptorSetWithTem
 - [Direct2D Custom effects](https://learn.microsoft.com/en-us/windows/win32/direct2d/custom-effects)
 - [nVidia关于最新D3D的样例](https://developer.nvidia.com/gameworks-directx-samples)
 - [nVidia关于D3D11的样例](https://developer.nvidia.com/dx11-samples)
+- [NVIDIA NVAPI](https://docs.nvidia.com/gameworks/content/gameworkslibrary/coresdk/nvapi/index.html)
+- [NVIDIA/nvapi](https://github.com/NVIDIA/nvapi)
 - [Introduction to 3D Game Programming With DirectX 11书中代码样例](https://github.com/jjuiddong/Introduction-to-3D-Game-Programming-With-DirectX11)
 - [Introduction to 3D Game Programming with DirectX 12书中代码样例](https://github.com/d3dcoder/d3d12book/)
 - [Metal API介绍](https://developer.apple.com/metal/)
