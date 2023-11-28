@@ -112,6 +112,7 @@ PFN_vkCmdPushDescriptorSetWithTemplateKHR spec_PFN_vkCmdPushDescriptorSetWithTem
 - [Direct3D 12 programming guide](https://github.com/MicrosoftDocs/win32/blob/docs/desktop-src/direct3d12/directx-12-programming-guide.md)
 - [Direct3D 12 graphics](https://learn.microsoft.com/en-us/windows/win32/direct3d12/direct3d-12-graphics)
 - [DirectX-Specs](https://microsoft.github.io/DirectX-Specs/)
+- [Direct3D feature levels](https://learn.microsoft.com/en-us/windows/win32/direct3d11/overviews-direct3d-11-devices-downlevel-intro)
 - [Helper structures and functions for Direct3D 12](https://learn.microsoft.com/en-us/windows/win32/direct3d12/helper-structures-and-functions-for-d3d12) -- [directx repository](https://github.com/microsoft/DirectX-Headers/tree/main/include/directx)
 - [Common root signature errors compilation](https://gist.github.com/shorttermmem/a14ab1e8980d01ac36943d0f4a8117d9)
 - [Microsoft基于D3D12的图形编程样例](https://github.com/Microsoft/DirectX-Graphics-Samples)
