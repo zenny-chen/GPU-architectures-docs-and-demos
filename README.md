@@ -117,6 +117,8 @@ PFN_vkCmdPushDescriptorSetWithTemplateKHR spec_PFN_vkCmdPushDescriptorSetWithTem
 - [Common root signature errors compilation](https://gist.github.com/shorttermmem/a14ab1e8980d01ac36943d0f4a8117d9)
 - [Microsoft基于D3D12的图形编程样例](https://github.com/Microsoft/DirectX-Graphics-Samples)
 - [microsoft/Xbox-ATG-Samples](https://github.com/microsoft/Xbox-ATG-Samples)
+- [Direct3D 12 -- Indirect drawing and GPU culling](https://github.com/MicrosoftDocs/win32/blob/docs/desktop-src/direct3d12/indirect-drawing-and-gpu-culling-.md)
+- [ID3D12GraphicsCommandList::ExecuteIndirect method](https://learn.microsoft.com/en-us/windows/win32/api/d3d12/nf-d3d12-id3d12graphicscommandlist-executeindirect)
 - [nBody DirectX 12 sample (asynchronous compute version)](https://gpuopen.com/gaming-product/nbody-directx-12-async-compute-edition/)
 - [Learning DirectX 12 – Lesson 4 – Textures](https://www.3dgep.com/learning-directx-12-4)
 - Shader Resource View (**SRV**): Binding an input to a shader
