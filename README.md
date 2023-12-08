@@ -122,7 +122,6 @@ PFN_vkCmdPushDescriptorSetWithTemplateKHR spec_PFN_vkCmdPushDescriptorSetWithTem
 - [Direct3D 12 -- Indirect drawing and GPU culling](https://github.com/MicrosoftDocs/win32/blob/docs/desktop-src/direct3d12/indirect-drawing-and-gpu-culling-.md)
 - [ID3D12GraphicsCommandList::ExecuteIndirect method](https://learn.microsoft.com/en-us/windows/win32/api/d3d12/nf-d3d12-id3d12graphicscommandlist-executeindirect)
 - [nBody DirectX 12 sample (asynchronous compute version)](https://gpuopen.com/gaming-product/nbody-directx-12-async-compute-edition/)
-- [Learning DirectX 12 – Lesson 4 – Textures](https://www.3dgep.com/learning-directx-12-4)
 - Shader Resource View (**SRV**): Binding an input to a shader
 - Unordered Access View (**UAV**): Binding an output to a shader
 - [Why talking about the Root Signature?](https://logins.github.io/graphics/2020/06/26/DX12RootSignatureObject.html)
