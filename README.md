@@ -132,6 +132,7 @@ PFN_vkCmdPushDescriptorSetWithTemplateKHR spec_PFN_vkCmdPushDescriptorSetWithTem
 - [Programming guide for HLSL](https://learn.microsoft.com/en-us/windows/win32/direct3dhlsl/dx-graphics-hlsl-pguide)
 - [HLSL Specifications](https://microsoft.github.io/hlsl-specs/)
 - [HLSL-specs Inline SPIR-V](https://microsoft.github.io/hlsl-specs/proposals/0011-inline-spirv.html)
+- [hlsl-specs Unions](https://microsoft.github.io/hlsl-specs/proposals/0004-unions.html)
 - [HLSL Keywords](https://learn.microsoft.com/en-us/windows/win32/direct3dhlsl/dx-graphics-hlsl-appendix-keywords)
 - HLSL 中，**SV_** 前缀表示 **System-Value**。详细见：[System-Value Semantics](https://learn.microsoft.com/en-us/windows/win32/direct3dhlsl/dx-graphics-hlsl-semantics#system-value-semantics)
 - HLSL 文件后缀名为：**`.hlsl`**。编译后的目标文件名为：**`.cso`**。详细可见：[Compiling shaders](https://learn.microsoft.com/en-us/windows/win32/direct3dhlsl/dx-graphics-hlsl-part1)
