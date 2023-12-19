@@ -145,6 +145,7 @@ PFN_vkCmdPushDescriptorSetWithTemplateKHR spec_PFN_vkCmdPushDescriptorSetWithTem
 - [Direct3D 12 raytracing HLSL system value intrinsics](https://github.com/MicrosoftDocs/win32/blob/docs/desktop-src/direct3d12/direct3d-12-raytracing-hlsl-system-value-intrinsics.md)
 - [DirectX Intermediate Language](https://github.com/microsoft/DirectXShaderCompiler/blob/main/docs/DXIL.rst)
 - [Running Shaders in DXIL](https://stackoverflow.com/questions/55958231/running-shaders-in-dxil)
+- [Direct2D](https://learn.microsoft.com/en-us/windows/win32/direct2d/direct2d-portal)
 - [Direct2D Custom effects](https://learn.microsoft.com/en-us/windows/win32/direct2d/custom-effects)
 - [nVidia关于最新D3D的样例](https://developer.nvidia.com/gameworks-directx-samples)
 - [nVidia关于D3D11的样例](https://developer.nvidia.com/dx11-samples)
@@ -210,6 +211,7 @@ PFN_vkCmdPushDescriptorSetWithTemplateKHR spec_PFN_vkCmdPushDescriptorSetWithTem
 - [GL_EXT_shader_pixel_local_storage](https://registry.khronos.org/OpenGL/extensions/EXT/EXT_shader_pixel_local_storage.txt)
 - [GL_EXT_raster_multisample](https://registry.khronos.org/OpenGL/extensions/EXT/EXT_raster_multisample.txt)（等价于 [Target Independent Rasterization](https://microsoft.github.io/DirectX-Specs/d3d/archive/D3D11_3_FunctionalSpec.htm#TIR)）
 - [GL_NV_compute_shader_derivatives](https://github.com/KhronosGroup/OpenGL-Registry/blob/main/extensions/NV/NV_compute_shader_derivatives.txt)
+- [OpenVG](https://www.khronos.org/openvg/)
 - [Intel® FPGA SDK for OpenCL™ Overview](https://www.intel.com/content/www/us/en/docs/programmable/683846/21-3/overview.html)
 - [OpenCL pipes on intel CPU](https://stackoverflow.com/questions/54520089/opencl-pipes-on-intel-cpu)
 - [OpenCL vs. Vulkan Compute](https://community.khronos.org/t/opencl-vs-vulkan-compute/7132)
