@@ -121,6 +121,8 @@ PFN_vkCmdPushDescriptorSetWithTemplateKHR spec_PFN_vkCmdPushDescriptorSetWithTem
 - [Common root signature errors compilation](https://gist.github.com/shorttermmem/a14ab1e8980d01ac36943d0f4a8117d9)
 - [Microsoft基于D3D12的图形编程样例](https://github.com/Microsoft/DirectX-Graphics-Samples)
 - [microsoft/Xbox-ATG-Samples](https://github.com/microsoft/Xbox-ATG-Samples)
+- [D3D12 Indirect Drawing](https://learn.microsoft.com/en-us/windows/win32/direct3d12/indirect-drawing)
+- [DirectX-Specs -- D3D12 Indirect Drawing](https://microsoft.github.io/DirectX-Specs/d3d/IndirectDrawing.html)
 - [Direct3D 12 -- Indirect drawing and GPU culling](https://github.com/MicrosoftDocs/win32/blob/docs/desktop-src/direct3d12/indirect-drawing-and-gpu-culling-.md)
 - [ID3D12GraphicsCommandList::ExecuteIndirect method](https://learn.microsoft.com/en-us/windows/win32/api/d3d12/nf-d3d12-id3d12graphicscommandlist-executeindirect)
 - [DirectX-Specs Mesh Shader ExecuteIndirect](https://microsoft.github.io/DirectX-Specs/d3d/MeshShader.html#executeindirect)
