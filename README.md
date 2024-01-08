@@ -128,7 +128,6 @@ PFN_vkCmdPushDescriptorSetWithTemplateKHR spec_PFN_vkCmdPushDescriptorSetWithTem
 - [DirectX-Specs Mesh Shader ExecuteIndirect](https://microsoft.github.io/DirectX-Specs/d3d/MeshShader.html#executeindirect)
 - [D3D12 View Instancing Functional Spec](https://microsoft.github.io/DirectX-Specs/d3d/ViewInstancing.html)
 - [DirectX Raytracing (DXR) Functional Spec ExecuteIndirect](https://microsoft.github.io/DirectX-Specs/d3d/Raytracing.html#executeindirect)
-- [DirectX-Specs D3D12 Depth Bounds Test](https://microsoft.github.io/DirectX-Specs/d3d/DepthBoundsTest.html)
 - [nBody DirectX 12 sample (asynchronous compute version)](https://gpuopen.com/gaming-product/nbody-directx-12-async-compute-edition/)
 - Shader Resource View (**SRV**): Binding an input to a shader
 - Unordered Access View (**UAV**): Binding an output to a shader
