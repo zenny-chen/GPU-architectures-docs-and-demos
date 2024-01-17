@@ -90,7 +90,7 @@ Single pixel fragments and multi-pixel fragments defined by a [fragment density 
 
 To dynamically set the rasterizationSamples, call:
 
-```csharp
+```cpp
 // Provided by VK_EXT_extended_dynamic_state3, VK_EXT_shader_object
 void vkCmdSetRasterizationSamplesEXT(
     VkCommandBuffer                             commandBuffer,
