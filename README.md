@@ -133,6 +133,8 @@ void vkCmdSetRasterizationSamplesEXT(
 - [DirectX-Specs](https://microsoft.github.io/DirectX-Specs/)
 - [Direct3D feature levels](https://learn.microsoft.com/en-us/windows/win32/direct3d11/overviews-direct3d-11-devices-downlevel-intro)
 - [Important Changes from Direct3D 11 to Direct3D 12](https://learn.microsoft.com/en-us/windows/win32/direct3d12/important-changes-from-directx-11-to-directx-12)
+- [Porting from Direct3D 11 to Direct3D 12 -- Resource state](https://learn.microsoft.com/en-us/windows/win32/direct3d12/porting-from-direct3d-11-to-direct3d-12#resource-state)
+- [Using Resource Barriers to Synchronize Resource States in Direct3D 12](https://learn.microsoft.com/en-us/windows/win32/direct3d12/using-resource-barriers-to-synchronize-resource-states-in-direct3d-12)
 - [Helper structures and functions for Direct3D 12](https://learn.microsoft.com/en-us/windows/win32/direct3d12/helper-structures-and-functions-for-d3d12) -- [directx repository](https://github.com/microsoft/DirectX-Headers/tree/main/include/directx)
 - [Direct3D 11 Graphics Using System-Generated Values](https://learn.microsoft.com/en-us/windows/win32/direct3d11/d3d10-graphics-programming-guide-input-assembler-stage-using)
 - [Common root signature errors compilation](https://gist.github.com/shorttermmem/a14ab1e8980d01ac36943d0f4a8117d9)
