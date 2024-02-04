@@ -149,8 +149,7 @@ void vkCmdSetRasterizationSamplesEXT(
 - [D3D12 View Instancing Functional Spec](https://microsoft.github.io/DirectX-Specs/d3d/ViewInstancing.html)
 - [D3D11.2 Min/Max reduction filtering](https://learn.microsoft.com/en-us/windows/win32/direct3d11/tiled-resources-texture-sampling-features#minmax-reduction-filtering)
 - [nBody DirectX 12 sample (asynchronous compute version)](https://gpuopen.com/gaming-product/nbody-directx-12-async-compute-edition/)
-- Shader Resource View (**SRV**): Binding an input to a shader
-- Unordered Access View (**UAV**): Binding an output to a shader
+- [Resource binding in HLSL](https://learn.microsoft.com/en-us/windows/win32/direct3d12/resource-binding-in-hlsl)（解释了 **SRV**、**`UAV`** 等资源的 binding）
 - [Why talking about the Root Signature?](https://logins.github.io/graphics/2020/06/26/DX12RootSignatureObject.html)
 - [IDXGIDebug::ReportLiveObjects method \(dxgidebug.h\)](https://learn.microsoft.com/en-us/windows/win32/api/dxgidebug/nf-dxgidebug-idxgidebug-reportliveobjects)
 - [cannot get rid of live objects \(D3D11\)](https://www.gamedev.net/forums/topic/664906-cannot-get-rid-of-live-objects-d3d11/)
@@ -171,6 +170,7 @@ void vkCmdSetRasterizationSamplesEXT(
 - [Direct2D](https://learn.microsoft.com/en-us/windows/win32/direct2d/direct2d-portal)
 - [Direct2D Custom effects](https://learn.microsoft.com/en-us/windows/win32/direct2d/custom-effects)
 - [GPU preemption](https://learn.microsoft.com/en-us/windows-hardware/drivers/display/gpu-preemption)
+- [WHQL Release Signature](https://learn.microsoft.com/en-us/windows-hardware/drivers/install/whql-release-signature)
 - [nVidia关于最新D3D的样例](https://developer.nvidia.com/gameworks-directx-samples)
 - [nVidia关于D3D11的样例](https://developer.nvidia.com/dx11-samples)
 - [NVIDIA NVAPI](https://docs.nvidia.com/gameworks/content/gameworkslibrary/coresdk/nvapi/index.html)
