@@ -164,6 +164,7 @@ void vkCmdSetRasterizationSamplesEXT(
 - [HLSL 16 Bit Scalar Types](https://github.com/microsoft/DirectXShaderCompiler/wiki/16-Bit-Scalar-Types)
 - [HLSL earlydepthstencil](https://learn.microsoft.com/en-us/windows/win32/direct3dhlsl/sm5-attributes-earlydepthstencil)
 - [Wave Intrinsics](https://github.com/Microsoft/DirectXShaderCompiler/wiki/Wave-Intrinsics)
+- [HLSL Shader Model 6.6 Atomic Operations](https://microsoft.github.io/DirectX-Specs/d3d/HLSL_SM_6_6_Int64_and_Float_Atomics.html)（同时可参考 GLSL 关于 [imageAtomicExchange](https://registry.khronos.org/OpenGL-Refpages/gl4/html/imageAtomicExchange.xhtml) 以及 [memoryBarrierImage](https://registry.khronos.org/OpenGL-Refpages/gl4/html/memoryBarrierImage.xhtml)）
 - [SV_ViewID](https://github.com/Microsoft/DirectXShaderCompiler/wiki/SV_ViewID)
 - [Direct3D 12 raytracing HLSL system value intrinsics](https://github.com/MicrosoftDocs/win32/blob/docs/desktop-src/direct3d12/direct3d-12-raytracing-hlsl-system-value-intrinsics.md)
 - [DirectX Intermediate Language](https://github.com/microsoft/DirectXShaderCompiler/blob/main/docs/DXIL.rst)
