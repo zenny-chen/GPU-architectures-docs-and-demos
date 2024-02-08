@@ -130,7 +130,7 @@ void vkCmdSetRasterizationSamplesEXT(
 - [Direct3D 11 Graphics pipeline](https://learn.microsoft.com/en-us/windows/win32/direct3d11/overviews-direct3d-11-graphics-pipeline)
 - [Direct3D 12 programming guide](https://github.com/MicrosoftDocs/win32/blob/docs/desktop-src/direct3d12/directx-12-programming-guide.md)
 - [Direct3D 12 graphics](https://learn.microsoft.com/en-us/windows/win32/direct3d12/direct3d-12-graphics)
-- [DirectX-Specs](https://microsoft.github.io/DirectX-Specs/)
+- [DirectX-Specs](https://microsoft.github.io/DirectX-Specs/)（其中，HLSL 部分包含了完整的各个 Shader Model 所支持的 features。）
 - [Direct3D feature levels](https://learn.microsoft.com/en-us/windows/win32/direct3d11/overviews-direct3d-11-devices-downlevel-intro)
 - [Important Changes from Direct3D 11 to Direct3D 12](https://learn.microsoft.com/en-us/windows/win32/direct3d12/important-changes-from-directx-11-to-directx-12)
 - [Porting from Direct3D 11 to Direct3D 12 -- Resource state](https://learn.microsoft.com/en-us/windows/win32/direct3d12/porting-from-direct3d-11-to-direct3d-12#resource-state)
