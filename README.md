@@ -226,6 +226,7 @@ void vkCmdSetRasterizationSamplesEXT(
 - **Khronos OpenGL官方文档中关于描述的 `gbufferImage` 类型，实际所对应的类型为**：**`imageBuffer`**、**`iimageBuffer`** 和 **`uimageBuffer`**。
 - [WebGL官方样例](https://github.com/WebGLSamples)
 - [WebGL_Compute_shader](https://github.com/9ballsyndrome/WebGL_Compute_shader)
+- [Built-in Variable \(GLSL\)](https://www.khronos.org/opengl/wiki/Built-in_Variable_\(GLSL\))
 - [GL_ARB_shader_clock](https://registry.khronos.org/OpenGL/extensions/ARB/ARB_shader_clock.txt)
 - [GL_ARB_sample_shading](https://registry.khronos.org/OpenGL/extensions/ARB/ARB_sample_shading.txt)（[NVIDIA’s OpenGL Functionality](https://www.nvidia.com/content/GTC-2010/pdfs/2127_GTC2010.pdf) 中陈述了 **`gl_SampleMask[]`** 变量 **可读**）
 - [GL_EXT_spirv_intrinsics for SPIR V code gen](https://github.com/microsoft/DirectXShaderCompiler/wiki/GL_EXT_spirv_intrinsics-for-SPIR-V-code-gen)
