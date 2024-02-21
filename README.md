@@ -273,6 +273,7 @@ void vkCmdSetRasterizationSamplesEXT(
 - [深入GPU硬件架构及运行机制](https://www.cnblogs.com/timlly/p/11471507.html)
 - [Asahi -- The Asahi driver aims to provide an OpenGL implementation for the Apple M1](https://docs.mesa3d.org/drivers/asahi.html)
 - [Dissecting the Apple M1 GPU, part I](https://rosenzweig.io/blog/asahi-gpu-part-1.html)
+- [Timing Data in PVRTune Complete](https://docs.imgtec.com/tools-manuals/pvrtune-manual/html/pvrtune-manual/topics/additional-features-of-pvrtunecomplete/timing-data.html)（包含 TA、3D SPM task）
 - [剖析虚幻渲染体系（12）- 移动端专题（02）](https://zhuanlan.zhihu.com/p/555465007)
 - [针对深度学习的GPU共享](https://zhuanlan.zhihu.com/p/285994980)
 - [DirectCompute Optimizations and Best Practices](https://www.nvidia.com/content/GTC-2010/pdfs/2260_GTC2010.pdf)
