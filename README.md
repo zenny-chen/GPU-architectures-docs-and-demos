@@ -247,6 +247,7 @@ void vkCmdSetRasterizationSamplesEXT(
 - [GL_EXT_multiview](https://github.com/KhronosGroup/GLSL/blob/main/extensions/ext/GL_EXT_multiview.txt)
 - [GL_NV_conservative_raster_underestimation](https://registry.khronos.org/OpenGL/extensions/NV/NV_conservative_raster_underestimation.txt)
 - [GL_NV_compute_shader_derivatives](https://github.com/KhronosGroup/OpenGL-Registry/blob/main/extensions/NV/NV_compute_shader_derivatives.txt)
+- [Direct3D Compatibility with OpenGL](https://www.khronos.org/opengl/wiki/Direct3D_Compatibility)
 - [OpenVG](https://www.khronos.org/openvg/)
 - [Intel® FPGA SDK for OpenCL™ Overview](https://www.intel.com/content/www/us/en/docs/programmable/683846/21-3/overview.html)
 - [OpenCL pipes on intel CPU](https://stackoverflow.com/questions/54520089/opencl-pipes-on-intel-cpu)
