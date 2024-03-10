@@ -105,6 +105,7 @@ void vkCmdSetRasterizationSamplesEXT(
 - [VK_EXT_descriptor_indexing](https://registry.khronos.org/vulkan/specs/1.3-extensions/man/html/VK_EXT_descriptor_indexing.html)
 - [VK_EXT_shader_object](https://registry.khronos.org/vulkan/specs/1.3-extensions/man/html/VK_EXT_shader_object.html)
 - [VK_EXT_debug_marker](https://registry.khronos.org/vulkan/specs/1.3-extensions/man/html/VK_EXT_debug_marker.html)
+- [FragStencilRefEXT](https://registry.khronos.org/vulkan/specs/1.3-extensions/man/html/FragStencilRefEXT.html)
 - [VK_HUAWEI_subpass_shading](https://registry.khronos.org/vulkan/specs/1.3-extensions/man/html/VK_HUAWEI_subpass_shading.html)
 - [VK_NV_device_generated_commands](https://registry.khronos.org/vulkan/specs/1.3-extensions/man/html/VK_NV_device_generated_commands.html)
 - [VK_AMD_shader_info](https://registry.khronos.org/vulkan/specs/1.3-extensions/man/html/VK_AMD_shader_info.html)
@@ -152,6 +153,7 @@ void vkCmdSetRasterizationSamplesEXT(
 - [DirectX Raytracing (DXR) Functional Spec ExecuteIndirect](https://microsoft.github.io/DirectX-Specs/d3d/Raytracing.html#executeindirect)
 - [D3D12 View Instancing Functional Spec](https://microsoft.github.io/DirectX-Specs/d3d/ViewInstancing.html)
 - [D3D11.2 Min/Max reduction filtering](https://learn.microsoft.com/en-us/windows/win32/direct3d11/tiled-resources-texture-sampling-features#minmax-reduction-filtering)
+- [Shader Specified Stencil Reference Value \(Direct3D 12 Graphics\)](https://learn.microsoft.com/en-us/windows/win32/direct3d12/shader-specified-stencil-reference-value)
 - [nBody DirectX 12 sample (asynchronous compute version)](https://gpuopen.com/gaming-product/nbody-directx-12-async-compute-edition/)
 - [Resource binding in HLSL](https://learn.microsoft.com/en-us/windows/win32/direct3d12/resource-binding-in-hlsl)（解释了 **SRV**、**`UAV`** 等资源的 binding）
 - [Why talking about the Root Signature?](https://logins.github.io/graphics/2020/06/26/DX12RootSignatureObject.html)
@@ -170,6 +172,7 @@ void vkCmdSetRasterizationSamplesEXT(
 - [Wave Intrinsics](https://github.com/Microsoft/DirectXShaderCompiler/wiki/Wave-Intrinsics)
 - [HLSL Shader Model 6.6 Atomic Operations](https://microsoft.github.io/DirectX-Specs/d3d/HLSL_SM_6_6_Int64_and_Float_Atomics.html)（同时可参考 GLSL 关于 [imageAtomicExchange](https://registry.khronos.org/OpenGL-Refpages/gl4/html/imageAtomicExchange.xhtml) 以及 [memoryBarrierImage](https://registry.khronos.org/OpenGL-Refpages/gl4/html/memoryBarrierImage.xhtml)）
 - [SV_ViewID](https://github.com/Microsoft/DirectXShaderCompiler/wiki/SV_ViewID)
+- [SV_StencilRef](https://learn.microsoft.com/en-us/windows/win32/direct3dhlsl/sv-stencilref)
 - [Direct3D 12 raytracing HLSL system value intrinsics](https://github.com/MicrosoftDocs/win32/blob/docs/desktop-src/direct3d12/direct3d-12-raytracing-hlsl-system-value-intrinsics.md)
 - [DirectX Intermediate Language](https://github.com/microsoft/DirectXShaderCompiler/blob/main/docs/DXIL.rst)
 - [Running Shaders in DXIL](https://stackoverflow.com/questions/55958231/running-shaders-in-dxil)
@@ -234,6 +237,7 @@ void vkCmdSetRasterizationSamplesEXT(
 - [GL_ARB_shader_clock](https://registry.khronos.org/OpenGL/extensions/ARB/ARB_shader_clock.txt)
 - [GL_ARB_sample_shading](https://registry.khronos.org/OpenGL/extensions/ARB/ARB_sample_shading.txt)（[NVIDIA’s OpenGL Functionality](https://www.nvidia.com/content/GTC-2010/pdfs/2127_GTC2010.pdf) 中陈述了 **`gl_SampleMask[]`** 变量 **可读**）
 - [GL_ARB_shader_viewport_layer_array](https://registry.khronos.org/OpenGL/extensions/ARB/ARB_shader_viewport_layer_array.txt)
+- [GL_ARB_shader_stencil_export](https://registry.khronos.org/OpenGL/extensions/ARB/ARB_shader_stencil_export.txt)
 - [GL_EXT_spirv_intrinsics for SPIR V code gen](https://github.com/microsoft/DirectXShaderCompiler/wiki/GL_EXT_spirv_intrinsics-for-SPIR-V-code-gen)
 - [GL_EXT_spirv_intrinsics](https://github.com/KhronosGroup/GLSL/blob/a1fcf32545f948a16068437466868db926802d9a/extensions/ext/GLSL_EXT_spirv_intrinsics.txt)（First Draft）
 - [GL_EXT_gpu_shader4](https://registry.khronos.org/OpenGL/extensions/EXT/EXT_gpu_shader4.txt)（包含了 **`gl_FragData`** 的描述）
