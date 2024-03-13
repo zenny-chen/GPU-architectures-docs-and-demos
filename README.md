@@ -57,6 +57,7 @@ PFN_vkCmdPushDescriptorSetWithTemplateKHR spec_PFN_vkCmdPushDescriptorSetWithTem
 - [You Can Use Vulkan Without Pipelines Today](https://www.khronos.org/blog/you-can-use-vulkan-without-pipelines-today)
 - [Machine Learning Acceleration in Vulkan with Cooperative Matrices](https://developer.nvidia.com/blog/machine-learning-acceleration-vulkan-cooperative-matrices/)
 - [vk_cooperative_matrix_perf](https://github.com/jeffbolznv/vk_cooperative_matrix_perf)
+- [DrawIndex](https://registry.khronos.org/vulkan/specs/1.3-extensions/man/html/DrawIndex.html)
 - [VK_KHR_display](https://registry.khronos.org/vulkan/specs/1.3-extensions/man/html/VK_KHR_display.html)
 - [VK_KHR_display_swapchain](https://registry.khronos.org/vulkan/specs/1.3-extensions/man/html/VK_KHR_display_swapchain.html)
 - [VK_KHR_shader_float16_int8](https://registry.khronos.org/vulkan/specs/1.3-extensions/man/html/VK_KHR_shader_float16_int8.html)
@@ -234,6 +235,7 @@ void vkCmdSetRasterizationSamplesEXT(
 - [WebGL官方样例](https://github.com/WebGLSamples)
 - [WebGL_Compute_shader](https://github.com/9ballsyndrome/WebGL_Compute_shader)
 - [Built-in Variable \(GLSL\)](https://www.khronos.org/opengl/wiki/Built-in_Variable_\(GLSL\))
+- [GL_ARB_shader_draw_parameters](https://registry.khronos.org/OpenGL/extensions/ARB/ARB_shader_draw_parameters.txt)（包含 **`gl_DrawIDARB`**，**`gl_BaseVertexARB`**，**`gl_BaseInstanceARB`**）
 - [GL_ARB_shader_clock](https://registry.khronos.org/OpenGL/extensions/ARB/ARB_shader_clock.txt)
 - [GL_ARB_sample_shading](https://registry.khronos.org/OpenGL/extensions/ARB/ARB_sample_shading.txt)（[NVIDIA’s OpenGL Functionality](https://www.nvidia.com/content/GTC-2010/pdfs/2127_GTC2010.pdf) 中陈述了 **`gl_SampleMask[]`** 变量 **可读**）
 - [GL_ARB_shader_viewport_layer_array](https://registry.khronos.org/OpenGL/extensions/ARB/ARB_shader_viewport_layer_array.txt)
