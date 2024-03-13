@@ -25,6 +25,8 @@
 - [Google官方推荐的用于Android NDK的Vulkan API使用样例](https://github.com/LunarG/VulkanSamples)
 - [Google官方的用于Android端的Vulkan API使用样例](https://github.com/googlesamples/android-vulkan-tutorials)
 - [Vulkan-Guide](https://github.com/KhronosGroup/Vulkan-Guide)
+- [Vulkan Guide](https://docs.vulkan.org/guide/latest/index.html)
+- [Vulkan Specification and Proposals](https://docs.vulkan.org/spec/latest/index.html)
 - [Vulkan® and Vulkan® SC API Documentation Project](https://github.com/KhronosGroup/Vulkan-Docs)
 - [Vulkan C++ examples and demos](https://github.com/SaschaWillems/Vulkan)
 - [Intel技术大牛详解Vulkan API](https://github.com/GameTechDev/IntroductionToVulkan)
