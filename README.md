@@ -12,6 +12,7 @@
 - [CUDA样例程序（包含对CUDA Driver API以及 **`clock64()`** 函数的使用）](#cuda_demo)
 - [神经网络机器学习相关](#machine_learning_nn)
 - [各厂商官方GPU相关架构文档与优化指南](#vendor_gpu_arch_docs)
+- [About ISPC_Simple Demo](#about_ispc_simple_demo)
 
 <br />
 
@@ -666,4 +667,50 @@ int main(int argc, const char* argv[])
 - [PowerVR Performance Recommendations](https://powervr-graphics.github.io/Documentation/Architecture%20Guides/PowerVR.Performance%20Recommendations.pdf)
 - [Vulkan synchronisation and graphics-compute-graphics hazards: Part 2](https://blog.imaginationtech.com/vulkan-synchronisation-and-graphics-compute-graphics-hazards-part-2/)
 
+<br />
+
+<a name="about_ispc_simple_demo" id="about_ispc_simple_demo"></a>
+# About ISPC_Simple Demo
+
+ISPC_Simple 这一 demo 综合性地展示了一个将汇编、C、CUDA 以及 ISPC 源文件进行混用的工程。
+
+此 Demo 在 Windows 端当前使用了 Visual Studio 2022。而在 Linux 端则使用了 **linux-build.sh** 编译脚本。我们在 Linux 系统下只需执行 `sh linux-build.sh` 命令即可编译。
+
+本 Demo 是在已有的C语言工程中插入了CUDA源文件 **kernel.cu**。我们在 Visual Studio 中可通过以下方式方便地添加CUDA编译环境的依赖：
+
+首先，我们鼠标右键当前项目工程：
+
+![vs-gen_dependencies](images/vs-gen_dependencies.png)
+
+然后，选中当前计算机上已安装的CUDA Toolkit版本：
+
+![cuda_dependency_setting](images/cuda_dependency_setting.png)
+
+如果我们当前机器上装有多个版本的 CUDA Toolkit，那么可以多选。但是，倘若只有一个版本，则必须要 **只选定** 当前安装的那个版本：
+
+![multi-cuda-dependencies](images/multi-cuda-dependencies.png)
+
+添加完依赖项之后，我们可以对新添加的 CUDA 源文件设置其文件类型：
+
+![cuda_src_properties](images/cuda_src_properties.png)
+
+上图是为 **kernel.cu** 源文件设置其项类型。
+
+完成之后，我们可以用 **build.bat** 这一ISPC的编译脚本构建出ISPC源文件的目标文件。随后，我们就可以直接点击绿色三角按钮进行构建全部工程并运行了。
+
+在第一次构建整个工程之后，我们可以使用 NSight 插件对CUDA程序进行调试。用该CUDA调试器进行调试时，ISPC程序依然能被调试，所以使用起来十分方便。
+
+![cuda-debug](images/cuda-debug.png)
+
+我们可以在ISPC和CUDA公共头文件 **header.cuh** 中设置断点，来观察ISPC和CUDA是否都能调试。
+
+下面是ISPC的断点结果：
+
+![ispc-breakpoint](images/ispc-breakpoint.png)
+
+下面是CUDA程序的断点结果：
+
+![cuda-breakpoint](images/cuda-breakpoint.png)
+
+我们可以看到，Nsight 插件的CUDA调试器还是挺好用的。
 
