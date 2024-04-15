@@ -216,7 +216,7 @@ extern "C" auto CPPTest() -> void
     printf("The second result is: %d, atomA = %d, Is successful ? %s\n", result, atomA.load(), result == int(value) ? "YES" : "NO");
 
     printf("signbit(-0.0) = %d\n", std::signbit(-0.0f));
-    printf("fmod(-5, -2) = %f\n", std::fmodf(-5.0f, -2.0f));
+    printf("fmod(-5, -2) = %f\n", std::fmod(-5.0f, -2.0f));
 
     printf("logb(-4.0) = %f, logb(8.0) = %f, logb(0.0) = %f, logb(-INF) = %f, logb(NaN) = %f\n", std::logb(-4.0f), std::logb(8.0f), std::logb(0.0f), std::logb(-INFINITY), std::logb(NAN));
 }
