@@ -505,5 +505,43 @@ export void vectorAddTest(uniform uint dst[], uniform uint src1[], uniform uint 
     }
 }
 
+export void allocaTest(uniform int dstShared[], uniform int64 dstPrivate[], uniform int elemCount)
+{
+    assume(elemCount % 8 == 0);
+
+    foreach(index = 0 ... elemCount)
+    {
+        int *sharedBuffer = (int*)alloca(8U * sizeof(uniform int));
+        sharedBuffer[programIndex] = index;
+
+        int sum32 = 0;
+        for(int i = 0; i < 8; ++i) {
+            sum32 += sharedBuffer[i];
+        }
+
+        dstShared[index] = sum32;
+
+        const int bufferCount = 8 + index;
+        const int offset = exclusive_scan_add(bufferCount);
+        uniform const int sumCount = reduce_add(bufferCount);
+
+        int64 *privateBuffer = (int64*)alloca(sumCount * sizeof(uniform int64));    // uniform int64 * varying
+        privateBuffer = &privateBuffer[offset];
+
+        //varying int64 *privateBuffer = (varying int64*)alloca(reduce_max(sumCount) * sizeof(uniform int64));
+
+        for(int i = 0; i < bufferCount; ++i) {
+            privateBuffer[i] = i;
+        }
+
+        int64 sum64 = 0LL;
+        for(int i = 0; i < bufferCount; ++i) {
+            sum64 += privateBuffer[i];
+        }
+
+        dstPrivate[index] = sum64;
+    }
+}
+
 #endif
 
