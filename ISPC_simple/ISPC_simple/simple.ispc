@@ -505,6 +505,24 @@ export void vectorAddTest(uniform uint dst[], uniform uint src1[], uniform uint 
     }
 }
 
+export uniform int clearStack(uniform int elemCount)
+{
+    assume(elemCount % 8 == 0);
+
+    int *pStack = (int*)alloca(elemCount * sizeof(uniform int));
+
+    uniform int sum = 0;
+
+    foreach(index = 0 ... elemCount)
+    {
+        pStack[index] = 0;
+
+        sum += reduce_add(pStack[index]);
+    }
+
+    return sum;
+}
+
 export void allocaTest(uniform int dstShared[], uniform int64 dstPrivate[], uniform int elemCount)
 {
     assume(elemCount % 8 == 0);
@@ -522,21 +540,28 @@ export void allocaTest(uniform int dstShared[], uniform int64 dstPrivate[], unif
         dstShared[index] = sum32;
 
         const int bufferCount = 8 + index;
+
+        int64 *privateUniformBuffer = (int64*)alloca(reduce_add(bufferCount) * sizeof(uniform int64));    // uniform int64 * varying
         const int offset = exclusive_scan_add(bufferCount);
-        uniform const int sumCount = reduce_add(bufferCount);
+        privateUniformBuffer = &privateUniformBuffer[offset];
+        memset(privateUniformBuffer, 0, reduce_add(bufferCount) * sizeof(uniform int64));   // memset in the uniform form
 
-        int64 *privateBuffer = (int64*)alloca(sumCount * sizeof(uniform int64));    // uniform int64 * varying
-        privateBuffer = &privateBuffer[offset];
+        varying int64 *privateVaryingBuffer = (varying int64*)alloca(reduce_max(bufferCount) * sizeof(int64));      // Here should use sizeof(int64) which indicates sizeof(varying int64), instead of sizeof(uniform int64)
+        memset(privateVaryingBuffer, 0, sizeof(uniform int64) * reduce_max(bufferCount));      // memset in the varying form
 
-        //varying int64 *privateBuffer = (varying int64*)alloca(reduce_max(sumCount) * sizeof(uniform int64));
-
-        for(int i = 0; i < bufferCount; ++i) {
-            privateBuffer[i] = i;
+        for(int i = 0; i < bufferCount; ++i)
+        {
+            privateUniformBuffer[i] = i;
+            privateVaryingBuffer[i] = i;
         }
+
+        // By viewing the memory via debugger, we can see the memory layout of privateUniformBuffer and privateVaryingBuffer separately:
+        // privateUniformBuffer: 0, 1, 2, 3, 4, 5, 6, 7,  0, 1, 2, 3, 4, 5, 6, 7, 8, ... 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14
+        // privateVaryingBuffer: (0, 0, 0, 0, 0, 0, 0, 0), (1, 1, 1, 1, 1, 1, 1, 1), ... (x, 8, 8, 8, 8, 8, 8, 8), ... (x, x, x, x, x, x, x, 14)
 
         int64 sum64 = 0LL;
         for(int i = 0; i < bufferCount; ++i) {
-            sum64 += privateBuffer[i];
+            sum64 += privateUniformBuffer[i] & privateVaryingBuffer[i];
         }
 
         dstPrivate[index] = sum64;

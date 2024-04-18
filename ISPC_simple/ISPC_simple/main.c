@@ -22,6 +22,7 @@ extern void subgroupAtomicSwapTest(int buffer[], int atomicObject[], int count);
 extern void coherentTest(int dst[], int width, int height);
 extern void vectorAddTest(unsigned dst[], unsigned src1[], unsigned src2[], int elemCount);
 extern void VectorAddASM(unsigned dst[], unsigned src1[], unsigned src2[], int elemCount);
+extern int clearStack(int elemCount);
 extern void allocaTest(int dstShared[], long long dstPrivate[], int elemCount);
 extern void dotProductWithCUDA(void);
 
@@ -348,6 +349,8 @@ int main(void)
     void* alignedBuffer = (void*)(((uintptr_t)totalBuffer + 63U) & ~63ULL);
 
     VectorAddTest(alignedBuffer);
+
+    clearStack(256);
 
     long long longBuffer[32] = { 0LL };
     memset(buffer, 0, sizeof(buffer));
