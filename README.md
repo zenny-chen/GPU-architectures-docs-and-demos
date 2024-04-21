@@ -378,6 +378,7 @@ void vkCmdSetRasterizationSamplesEXT(
 - [CUDA common **helper** functions](https://github.com/NVIDIA/cuda-samples/tree/master/Common)
 - CUDA中关于整型数据的intrinsic函数的介绍在《CUDA_Math_API》文档中。
 - [cuda 函数前缀 __host__ __device__ __global__ ____noinline__ 和 __forceinline__ 简介](https://blog.csdn.net/zdlnlhmj/article/details/104896470)
+- 直接通过 **`<<<  >>>`** 操作符启动 CUDA kernel：**`<<< blocksPerGrid, threadsPerBlock, sharedMemorySize, streamObject >>>`**。也可以通过 [**`cudaLaunchKernel`**](https://docs.nvidia.com/cuda/cuda-runtime-api/group__CUDART__EXECUTION.html#group__CUDART__EXECUTION_1g5064cdf5d8e6741ace56fd8be951783c) 来显式启动 CUDA kernel。
 - [The Aggregate Magic Algorithms](http://aggregate.org/MAGIC/)
 - [How to set cache configuration in CUDA](https://codeyarns.com/2011/06/27/how-to-set-cache-configuration-in-cuda/)
 - [Preview support for alloca](https://developer.nvidia.com/blog/programming-efficiently-with-the-cuda-11-3-compiler-toolchain/)
