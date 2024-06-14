@@ -437,6 +437,8 @@ gcc  asm_test.S  -o asm_test.o  -c
 
 - **How to make it explicit that I am not using shared memory?** -- In Volta the L1 cache, texture cache, and shared memory are backed by a combined 128 KB data cache. As in previous architectures, such as Kepler, the portion of the cache dedicated to shared memory (known as the carveout) can be selected at runtime using cudaFuncSetAttribute() with the attribute cudaFuncAttributePreferredSharedMemoryCarveout. Volta supports shared memory capacities of 0, 8, 16, 32, 64, or 96 KB per SM. **You need to explicitly set shared memory capacity to 0.**
 
+- [Problems with latest vs2022 update](https://forums.developer.nvidia.com/t/problems-with-latest-vs2022-update/294150)
+
 <br />
 
 <a name="cuda_demo"></a>
