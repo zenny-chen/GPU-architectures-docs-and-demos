@@ -313,6 +313,7 @@ void vkCmdSetRasterizationSamplesEXT(
 - [The Mali GPU: An Abstract Machine, Part 3 - The Midgard Shader Core](https://community.arm.com/arm-community-blogs/b/graphics-gaming-and-vr-blog/posts/the-mali-gpu-an-abstract-machine-part-3---the-midgard-shader-core)
 - [The Mali GPU: An Abstract Machine, Part 4 - The Bifrost Shader Core](https://community.arm.com/arm-community-blogs/b/graphics-gaming-and-vr-blog/posts/the-mali-gpu-an-abstract-machine-part-4---the-bifrost-shader-core)
 - [open-gpu-kernel-modules](https://github.com/NVIDIA/open-gpu-kernel-modules)
+- [AMD新专利：重新定义GPU架构！](https://www.toutiao.com/article/7381068013337969191/)
 - [renderdoc](https://github.com/baldurk/renderdoc)
 
 <br/>
