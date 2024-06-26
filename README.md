@@ -643,9 +643,17 @@ int main(int argc, const char* argv[])
 
 - [脉动阵列在二维矩阵乘法及卷积运算中的应用](https://blog.csdn.net/wordwarwordwar/article/details/103537996)
 - [深度解读达芬奇架构：华为AI芯片的「秘密武器」](https://zhuanlan.zhihu.com/p/79190804)
+- [探索高通骁龙处理器中的Hexagon NPU架构](https://www.toutiao.com/article/7293000269498434089/)
+- [NPU开发指南-加速器架构的设计空间探索](https://www.cnblogs.com/wujianming-110117/p/17698409.html)
 - [从gpu的内存访问视角对比NHWC和NCHW](https://www.toutiao.com/article/7287019163984396852/)
 - [learnOpenCV4](https://github.com/fengzhenHIT/learnOpenCV4)
 - [OpenCV](https://github.com/opencv/opencv)
+- [CUDNN 9 （1）核心概念介绍](https://juejin.cn/post/7353447472557555775)
+- [CUDNN 9 （2） Graph API](https://juejin.cn/post/7353483477553037353)
+- [CUDNN 9 （3） Frontend API example](https://juejin.cn/post/7354755674722041868)
+- [CUDNN 9 （4） Graph API Engines](https://juejin.cn/post/7355302255408447527)
+- [CUDNN 9 （5） Backend Descriptor Types & Frontend v1.0 API Examples](https://juejin.cn/post/7355378220055904275)
+- [算子融合](https://juejin.cn/post/7355482120708833343)
 
 <br />
 
