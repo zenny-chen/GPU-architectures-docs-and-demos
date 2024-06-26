@@ -375,6 +375,7 @@ void vkCmdSetRasterizationSamplesEXT(
 - [NVIDIA CUDA Math API](https://docs.nvidia.com/cuda/cuda-math-api/index.html)
 - [CUDA 11 Features Revealed](https://developer.nvidia.com/blog/cuda-11-features-revealed/)（包含对 **Bfloat16** 与 **TF32** 浮点类型的介绍）
 - [A HISTORY OF NVIDIA STREAM MULTIPROCESSOR](https://fabiensanglard.net/cuda/index.html)
+- [Getting Started with CUDA Graphs](https://developer.nvidia.com/blog/cuda-graphs/)
 - Windows上查看CUDA程序崩溃信息使用Nsight，具体可见：[8. GPU Core Dump Files](https://docs.nvidia.com/nsight-visual-studio-edition/cuda-inspect-state/index.html#gpu-core-dump)。Linux上则使用 **cuda-gdb** 来查看core dump文件信息。要使CUDA程序崩溃时导出core dump文件，需要先开启CUDA程序调试信息（`-g`），然后设置环境变量：`CUDA_ENABLE_COREDUMP_ON_EXCEPTION=1`。
 - [CUDA: Common Function for both Host and Device Code](https://codeyarns.com/2011/03/14/cuda-common-function-for-both-host-and-device-code/)
 - [CUDA common **helper** functions](https://github.com/NVIDIA/cuda-samples/tree/master/Common)
