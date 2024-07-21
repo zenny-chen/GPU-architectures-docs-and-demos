@@ -219,6 +219,8 @@ void vkCmdSetRasterizationSamplesEXT(
 - [Direct3D 12 raytracing samples](https://learn.microsoft.com/en-us/samples/microsoft/directx-graphics-samples/d3d12-raytracing-samples-win32/)
 - [OpenGL wiki](https://en.wikipedia.org/wiki/OpenGL)
 - [History of OpenGL](https://www.khronos.org/opengl/wiki/History%20of%20OpenGL)
+- [Win32 OpenGL](https://learn.microsoft.com/en-us/windows/win32/opengl/opengl)
+- [OpenGL Win32 Tutorial Sample Code](https://www.opengl.org/archives/resources/code/samples/win32_tutorial/)
 - [基于macOS的OpenGL的使用](https://developer.apple.com/opengl/)
 - [基于iOS与tvOS的OpenGL ES的使用](https://developer.apple.com/opengl-es/)
 - [Tutorial 12 : OpenGL Extensions](http://www.opengl-tutorial.org/intermediate-tutorials/tutorial-12-opengl-extensions/)
