@@ -130,6 +130,7 @@ void vkCmdSetRasterizationSamplesEXT(
 - [How to compile HLSL shaders with Vulkan?](https://stackoverflow.com/questions/61387495/how-to-compile-hlsl-shaders-with-vulkan)
 - [Google官方OpenCL C转SPIR-V项目](https://github.com/google/clspv)
 - [SIGGRAPH 2018上提供的Vulkan API使用demo](http://web.engr.oregonstate.edu/~mjb/vulkan/)
+- [Direct3D graphics glossary](https://learn.microsoft.com/en-us/windows/uwp/graphics-concepts/)
 - [Direct3D 9 Graphics](https://learn.microsoft.com/en-us/windows/win32/direct3d9/dx9-graphics)
 - [Programming guide for Direct3D 11](https://github.com/MicrosoftDocs/win32/blob/docs/desktop-src/direct3d11/dx-graphics-overviews.md)
 - [Direct3D 11 Graphics](https://learn.microsoft.com/en-us/windows/win32/direct3d11/atoc-dx-graphics-direct3d-11)
