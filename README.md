@@ -231,6 +231,7 @@ void vkCmdSetRasterizationSamplesEXT(
 - [OpenGL Win32 Tutorial Sample Code](https://www.opengl.org/archives/resources/code/samples/win32_tutorial/)
 - [Using OpenGL on Windows: A Simple Example](https://www.cs.rit.edu/~ncs/Courses/570/UserGuide/OpenGLonWin-11.html)
 - [Using OpenGL with GTK+](https://www.bassi.io/articles/2015/02/17/using-opengl-with-gtk/)
+- [How to choose specific GPU when create OpenGL context](https://stackoverflow.com/questions/68469954/how-to-choose-specific-gpu-when-create-opengl-context)
 - [OpenGL® ES 1.1 Reference Pages](https://registry.khronos.org/OpenGL-Refpages/es1.1/xhtml/)
 - [OpenGL ES 3.0: Programming Guide, Second Edition (2014) -- Chapter 3. An Introduction to EGL](https://apprize.best/programming/opengl/5.html)
 - [OpenGL ES 3.0 Programming Guide](https://github.com/danginsburg/opengles3-book)
