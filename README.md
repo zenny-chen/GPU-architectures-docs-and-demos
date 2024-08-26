@@ -649,6 +649,9 @@ int main(int argc, const char* argv[])
 ## 神经网络机器学习相关
 
 - [超万卡GPU集群关键技术深度分析 2024](https://www.toutiao.com/article/7398841862817120794/)
+- [Meta RoCE论文](https://mp.weixin.qq.com/s?__biz=Mzg5MzkxMDA5Ng==&mid=2247491610&idx=2&sn=ef40e187799d9165853edab7b97396d7)
+- [英伟达GB200架构解析4: BlackWell多die和Cache一致性相关的分析](https://mp.weixin.qq.com/s?__biz=MzUxNzQ5MTExNw==&mid=2247489759&idx=1&sn=2c55ec63d6deaeb39ff7f767896ba853)
+- [利用集成CPU-GPU系统内存进行高性能计算: 以Grace Hopper为例](https://mp.weixin.qq.com/s?__biz=MzI3ODI5OTcwOQ==&mid=2247483873&idx=1&sn=c87f2c8266d71857e7d57dfd2da45ef8)
 - [脉动阵列在二维矩阵乘法及卷积运算中的应用](https://blog.csdn.net/wordwarwordwar/article/details/103537996)
 - [深度解读达芬奇架构：华为AI芯片的「秘密武器」](https://zhuanlan.zhihu.com/p/79190804)
 - [探索高通骁龙处理器中的Hexagon NPU架构](https://www.toutiao.com/article/7293000269498434089/)
