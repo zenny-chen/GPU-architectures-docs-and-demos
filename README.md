@@ -329,6 +329,7 @@ void vkCmdSetRasterizationSamplesEXT(
 - [The Qualcomm Snapdragon X Architecture Deep Dive: Getting To Know Oryon and Adreno X1 (Performance Promises and First Thoughts)](https://www.anandtech.com/show/21445/qualcomm-snapdragon-x-architecture-deep-dive/4)
 - [open-gpu-kernel-modules](https://github.com/NVIDIA/open-gpu-kernel-modules)
 - [AMD新专利：重新定义GPU架构！](https://www.toutiao.com/article/7381068013337969191/)
+- [AMD Infinity Cache Explained : L3 Cache Comes To The GPU!](https://www.techarp.com/computer/amd-infinity-cache-explained/)
 - [renderdoc](https://github.com/baldurk/renderdoc)
 
 <br/>
