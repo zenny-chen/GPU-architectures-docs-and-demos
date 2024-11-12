@@ -389,6 +389,7 @@ void vkCmdSetRasterizationSamplesEXT(
 - [NVIDIA Omniverse™ Platform](https://developer.nvidia.com/nvidia-omniverse-platform)
 - [NVIDIA System Management Interface](https://developer.nvidia.com/nvidia-system-management-interface)（nvidia-smi）
 - [NVIDIA CUDA Math API](https://docs.nvidia.com/cuda/cuda-math-api/index.html)
+- [CUDA虚拟地址管理-解决显存碎片的屠龙宝刀](https://zhuanlan.zhihu.com/p/680287588)
 - [CUDA 11 Features Revealed](https://developer.nvidia.com/blog/cuda-11-features-revealed/)（包含对 **Bfloat16** 与 **TF32** 浮点类型的介绍）
 - [A HISTORY OF NVIDIA STREAM MULTIPROCESSOR](https://fabiensanglard.net/cuda/index.html)
 - [Getting Started with CUDA Graphs](https://developer.nvidia.com/blog/cuda-graphs/)
