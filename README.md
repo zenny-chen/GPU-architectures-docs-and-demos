@@ -379,6 +379,7 @@ void vkCmdSetRasterizationSamplesEXT(
 - [CUDA Compute Capability List](https://developer.nvidia.com/cuda-gpus)
 - [CUDA Toolkit Documentation](https://docs.nvidia.com/cuda/)
 - [CUDA Driver API](https://docs.nvidia.com/cuda/cuda-driver-api/index.html)
+- [NVIDIA CUDA Math API](https://docs.nvidia.com/cuda/cuda-math-api/index.html)
 - [Nsight Graphics Activities - Advanced Learning](https://docs.nvidia.com/nsight-graphics/AdvancedLearning/index.html)
 - [CUDA Installation Guide for Microsoft Windows](https://docs.nvidia.com/cuda/cuda-installation-guide-microsoft-windows/index.html)
 - [CUDA 11 Features Revealed](https://developer.nvidia.com/blog/cuda-11-features-revealed/)
@@ -389,7 +390,6 @@ void vkCmdSetRasterizationSamplesEXT(
 - [How to Get Started with OptiX 7](https://developer.nvidia.com/blog/how-to-get-started-with-optix-7/)
 - [NVIDIA Omniverse™ Platform](https://developer.nvidia.com/nvidia-omniverse-platform)
 - [NVIDIA System Management Interface](https://developer.nvidia.com/nvidia-system-management-interface)（nvidia-smi）
-- [NVIDIA CUDA Math API](https://docs.nvidia.com/cuda/cuda-math-api/index.html)
 - [CUDA虚拟地址管理-解决显存碎片的屠龙宝刀](https://zhuanlan.zhihu.com/p/680287588)
 - [CUDA 11 Features Revealed](https://developer.nvidia.com/blog/cuda-11-features-revealed/)（包含对 **Bfloat16** 与 **TF32** 浮点类型的介绍）
 - [A HISTORY OF NVIDIA STREAM MULTIPROCESSOR](https://fabiensanglard.net/cuda/index.html)
