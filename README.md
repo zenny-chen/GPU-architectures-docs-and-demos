@@ -390,6 +390,7 @@ void vkCmdSetRasterizationSamplesEXT(
 - [How to Get Started with OptiX 7](https://developer.nvidia.com/blog/how-to-get-started-with-optix-7/)
 - [NVIDIA Omniverse™ Platform](https://developer.nvidia.com/nvidia-omniverse-platform)
 - [NVIDIA System Management Interface](https://developer.nvidia.com/nvidia-system-management-interface)（nvidia-smi）
+- [Nvidia GPU Virtual Memory Management](https://bruce-lee-ly.medium.com/nvidia-gpu-virtual-memory-management-7fdc4122226b)
 - [CUDA虚拟地址管理-解决显存碎片的屠龙宝刀](https://zhuanlan.zhihu.com/p/680287588)
 - [CUDA 11 Features Revealed](https://developer.nvidia.com/blog/cuda-11-features-revealed/)（包含对 **Bfloat16** 与 **TF32** 浮点类型的介绍）
 - [A HISTORY OF NVIDIA STREAM MULTIPROCESSOR](https://fabiensanglard.net/cuda/index.html)
@@ -466,6 +467,7 @@ gcc  asm_test.S  -o asm_test.o  -c
 
 - **`cuInit`** 函数的调用官方说明：[6.3. Initialization](https://docs.nvidia.com/cuda/cuda-driver-api/group__CUDA__INITIALIZE.html#group__CUDA__INITIALIZE_1g0a2f1517e1bd8502c7194c3a8c134bc3)
 - [cuInit \(3\)](https://helpmanual.io/man3/cuInit/)
+- [cuCtxCreate_v4](https://docs.nvidia.com/cuda/cuda-driver-api/group__CUDA__CTX.html#group__CUDA__CTX_1gd84cbb0ad9470d66dc55e0830d56ef4d)
 - 在使用CUDA Driver API时，需要连接 **`cuda.lib`** 静态库文件。可参考：[CUDA Driver API Example](https://github.com/ponsheng/CUDA_driver_api_example)
 
 ```cuda
