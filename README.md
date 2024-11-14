@@ -679,6 +679,7 @@ int main(int argc, const char* argv[])
 - [CUDNN 9 （4） Graph API Engines](https://juejin.cn/post/7355302255408447527)
 - [CUDNN 9 （5） Backend Descriptor Types & Frontend v1.0 API Examples](https://juejin.cn/post/7355378220055904275)
 - [算子融合](https://juejin.cn/post/7355482120708833343)
+- [从速度和精度角度的 FP8 vs INT8 的全面解析](https://www.toutiao.com/article/7437070462351344163/)
 
 <br />
 
