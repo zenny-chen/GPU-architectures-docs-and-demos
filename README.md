@@ -182,6 +182,7 @@ void vkCmdSetRasterizationSamplesEXT(
 - [SV_ViewID](https://github.com/Microsoft/DirectXShaderCompiler/wiki/SV_ViewID)
 - [SV_StencilRef](https://learn.microsoft.com/en-us/windows/win32/direct3dhlsl/sv-stencilref)
 - [Direct3D 12 raytracing HLSL system value intrinsics](https://github.com/MicrosoftDocs/win32/blob/docs/desktop-src/direct3d12/direct3d-12-raytracing-hlsl-system-value-intrinsics.md)
+- [dcl_immediateConstantBuffer (sm4 - asm)](https://learn.microsoft.com/en-us/windows/win32/direct3dhlsl/dcl-immediateconstantbuffer)
 - [What is DXBC?](https://devcodef1.com/news/1014573/converting-dxbc-back-to-hlsl)
  
 > DXBC is a binary format used by DirectX to store compiled shader code. This format is used to improve performance by allowing the graphics card to quickly load and execute the shader code. However, DXBC is not human-readable, which makes it difficult to modify or debug the shader code.
