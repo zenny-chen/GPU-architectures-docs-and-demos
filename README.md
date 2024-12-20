@@ -332,6 +332,7 @@ void vkCmdSetRasterizationSamplesEXT(
 - [open-gpu-kernel-modules](https://github.com/NVIDIA/open-gpu-kernel-modules)
 - [AMD新专利：重新定义GPU架构！](https://www.toutiao.com/article/7381068013337969191/)
 - [AMD Infinity Cache Explained : L3 Cache Comes To The GPU!](https://www.techarp.com/computer/amd-infinity-cache-explained/)
+- [PS5 Pro Technical Seminar at SIE HQ](https://www.youtube.com/watch?v=lXMwXJsMfIQ)
 - [renderdoc](https://github.com/baldurk/renderdoc)
 
 <br/>
