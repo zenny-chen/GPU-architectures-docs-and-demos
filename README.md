@@ -706,6 +706,7 @@ int main(int argc, const char* argv[])
 - [Killing Pixels - A New Optimization for Shading on ARM Mali GPUs](https://community.arm.com/arm-community-blogs/b/graphics-gaming-and-vr-blog/posts/killing-pixels---a-new-optimization-for-shading-on-arm-mali-gpus)
 - [Arm® GPU Best Practices Developer Guide](https://developer.arm.com/documentation/101897/0302)
 - [ARM Bifrost Architecture](https://developer.arm.com/Architectures/Bifrost#Technical-Information)
+- [Arm GPUs built on new 5th Generation GPU architecture to redefine visual computing](https://community.arm.com/arm-community-blogs/b/announcements/posts/arm-gpus-built-on-new-fifth-gen-architecture)（Introduce deferred vertex shading (DVS) pipeline.）
 - [Qualcomm® Adreno™ GPU](https://developer.qualcomm.com/sites/default/files/docs/adreno-gpu/snapdragon-game-toolkit/learn_guides.html)
 - [PowerVR General Architecture Information](https://docs.imgtec.com/reference-manuals/powervr-instruction-set-reference/html/topics/general-architecture-information.html)
 - [PowerVR USC Series 6 Core Overview](https://docs.imgtec.com/reference-manuals/powervr-instruction-set-reference/html/topics/core-overview.html)
@@ -716,6 +717,7 @@ int main(int argc, const char* argv[])
 - [Introduction to the PowerVR Compute Development Recommendations](https://docs.imgtec.com/performance-guides/compute-recommendations/html/topics/introduction/introduction.html)
 - [PowerVR Performance Recommendations](https://powervr-graphics.github.io/Documentation/Architecture%20Guides/PowerVR.Performance%20Recommendations.pdf)
 - [Vulkan synchronisation and graphics-compute-graphics hazards: Part 2](https://blog.imaginationtech.com/vulkan-synchronisation-and-graphics-compute-graphics-hazards-part-2/)
+- [Untransformed Display List In A Tile Based Rendering System](https://www.freepatentsonline.com/20220392154.pdf)
 
 <br />
 
