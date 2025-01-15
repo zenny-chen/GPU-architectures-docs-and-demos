@@ -310,6 +310,7 @@ void vkCmdSetRasterizationSamplesEXT(
 - [NVIDIA GPU 架构梳理](https://zhuanlan.zhihu.com/p/394352476)
 - [The NVIDIA GeForce GTX 1080 & GTX 1070 Founders Editions Review: Kicking Off the FinFET Generation -- PREEMPTION IMPROVED: FINE-GRAINED PREEMPTION FOR TIME-CRITICAL TASKS](https://www.anandtech.com/show/10325/the-nvidia-geforce-gtx-1080-and-1070-founders-edition-review/10)
 - [GeForce RTX 4090天梯榜首发评测“践踏”摩尔定律，开启未来游戏画卷](https://mp.weixin.qq.com/s?__biz=MjM5NDMxNjkyNA==&mid=2651537889&idx=1&sn=92c94d45f93dae6f49bf5f0d82da6217&chksm=bd7676f28a01ffe46456f0fa7490b24083a63a8621b75d9c7bfc3c304a311ec7ecca457a9d5f&mpshare=1&scene=23&srcid=1011y2IeQqo4hL49pBpni0DM)
+- [NVIDIA RTX Neural Rendering Introduces Next Era of AI-Powered Graphics Innovation](https://developer.nvidia.com/blog/nvidia-rtx-neural-rendering-introduces-next-era-of-ai-powered-graphics-innovation/)
 - [Intel新上市Arc显卡要求的Resizable BAR是什么？](https://zhuanlan.zhihu.com/p/531315203)
 - [一文读懂 GPU 通信互联技术](https://mp.weixin.qq.com/s?__biz=MzAxMDA1NjMwMQ==&mid=2651801465&idx=1&sn=aa14929ba4335cff8fec3f261ed65d51&chksm=80adc07bb7da496d2aa1f8f31aa8812e3e7bf37a8212173c0ef1664781484b8b0e96f3ead5f4)
 - [ROPs and TMUs What is it?](https://www.techpowerup.com/forums/threads/rops-and-tmus-what-is-it.227596/)
