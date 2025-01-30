@@ -725,7 +725,7 @@ int main(int argc, const char* argv[])
 - [Killing Pixels - A New Optimization for Shading on ARM Mali GPUs](https://community.arm.com/arm-community-blogs/b/graphics-gaming-and-vr-blog/posts/killing-pixels---a-new-optimization-for-shading-on-arm-mali-gpus)
 - [Arm® GPU Best Practices Developer Guide](https://developer.arm.com/documentation/101897/0302)
 - [ARM Bifrost Architecture](https://developer.arm.com/Architectures/Bifrost#Technical-Information)
-- [Arm GPUs built on new 5th Generation GPU architecture to redefine visual computing](https://community.arm.com/arm-community-blogs/b/announcements/posts/arm-gpus-built-on-new-fifth-gen-architecture)（Introduce deferred vertex shading (DVS) pipeline.）
+- [Arm GPUs built on new 5th Generation GPU architecture to redefine visual computing](https://community.arm.com/arm-community-blogs/b/announcements/posts/arm-gpus-built-on-new-fifth-gen-architecture)（Introduce deferred vertex shading (DVS) pipeline. Refer to [**A close look at the Arm Immortalis-G720 and its 5th Gen graphic**](https://www.androidauthority.com/arm-immortalis-g720-gpu-deep-dive-3328658/) for detail）
 - [Qualcomm® Adreno™ GPU](https://developer.qualcomm.com/sites/default/files/docs/adreno-gpu/snapdragon-game-toolkit/learn_guides.html)
 - [PowerVR General Architecture Information](https://docs.imgtec.com/reference-manuals/powervr-instruction-set-reference/html/topics/general-architecture-information.html)
 - [PowerVR USC Series 6 Core Overview](https://docs.imgtec.com/reference-manuals/powervr-instruction-set-reference/html/topics/core-overview.html)
