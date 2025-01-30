@@ -737,6 +737,7 @@ int main(int argc, const char* argv[])
 - [PowerVR Performance Recommendations](https://powervr-graphics.github.io/Documentation/Architecture%20Guides/PowerVR.Performance%20Recommendations.pdf)
 - [Vulkan synchronisation and graphics-compute-graphics hazards: Part 2](https://blog.imaginationtech.com/vulkan-synchronisation-and-graphics-compute-graphics-hazards-part-2/)
 - [Untransformed Display List In A Tile Based Rendering System](https://www.freepatentsonline.com/20220392154.pdf)
+- [Punch-through techniques for graphics processing](https://patentscope2.wipo.int/search/en/detail.jsf?docId=US225521662)
 
 <br />
 
