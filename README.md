@@ -324,6 +324,7 @@ void vkCmdSetRasterizationSamplesEXT(
 - [英特尔、AMD、英伟达三大GPU架构有何不同？](https://mp.weixin.qq.com/s?__biz=MzkxMjIyNzU0MA==&mid=2247629355&idx=3&sn=5f51f9d9c7ffdd079377ef4d6617def1)
 - [The Mali GPU: An Abstract Machine, Part 3 - The Midgard Shader Core](https://community.arm.com/arm-community-blogs/b/graphics-gaming-and-vr-blog/posts/the-mali-gpu-an-abstract-machine-part-3---the-midgard-shader-core)
 - [The Mali GPU: An Abstract Machine, Part 4 - The Bifrost Shader Core](https://community.arm.com/arm-community-blogs/b/graphics-gaming-and-vr-blog/posts/the-mali-gpu-an-abstract-machine-part-4---the-bifrost-shader-core)
+- [Mali-G710开发者概览(二、着色器核心改进)](https://zhuanlan.zhihu.com/p/502916856)
 - [游戏开发者指南- Qualcomm® Adreno ™ GPU（1）](https://blog.csdn.net/weixin_38498942/article/details/132171821)
 - [游戏开发者指南- Qualcomm® Adreno ™ GPU（2）](https://blog.csdn.net/weixin_38498942/article/details/132187988)
 - [游戏开发者指南- Qualcomm® Adreno ™ GPU（3）](https://blog.csdn.net/weixin_38498942/article/details/132188023)
@@ -335,6 +336,7 @@ void vkCmdSetRasterizationSamplesEXT(
 - [open-gpu-kernel-modules](https://github.com/NVIDIA/open-gpu-kernel-modules)
 - [AMD新专利：重新定义GPU架构！](https://www.toutiao.com/article/7381068013337969191/)
 - [AMD Infinity Cache Explained : L3 Cache Comes To The GPU!](https://www.techarp.com/computer/amd-infinity-cache-explained/)
+- [AMD RDNA™ 显卡上的Mesh Shaders（一）： 从 vertex shader 到 mesh shader](https://zhuanlan.zhihu.com/p/691467498)（主要介绍 **AMD NGG** 技术）
 - [PS5 Pro Technical Seminar at SIE HQ](https://www.youtube.com/watch?v=lXMwXJsMfIQ)
 - [renderdoc](https://github.com/baldurk/renderdoc)
 - [tiny-gpu](https://github.com/adam-maj/tiny-gpu)
