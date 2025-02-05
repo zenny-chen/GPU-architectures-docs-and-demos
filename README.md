@@ -334,7 +334,7 @@ void vkCmdSetRasterizationSamplesEXT(
 - [The Qualcomm Snapdragon X Architecture Deep Dive: Getting To Know Oryon and Adreno X1 (Adreno X1 GPU Architecture: A More Familiar Face)](https://www.anandtech.com/show/21445/qualcomm-snapdragon-x-architecture-deep-dive/3)
 - [The Qualcomm Snapdragon X Architecture Deep Dive: Getting To Know Oryon and Adreno X1 (Performance Promises and First Thoughts)](https://www.anandtech.com/show/21445/qualcomm-snapdragon-x-architecture-deep-dive/4)
 - [open-gpu-kernel-modules](https://github.com/NVIDIA/open-gpu-kernel-modules)
-- [AMD新专利：重新定义GPU架构！](https://www.toutiao.com/article/7381068013337969191/)
+- [AMD GPU新专利曝光：靠这个技术又赢一局](https://www.163.com/dy/article/GR494HEI051189P5.html)
 - [AMD Infinity Cache Explained : L3 Cache Comes To The GPU!](https://www.techarp.com/computer/amd-infinity-cache-explained/)
 - [AMD RDNA™ 显卡上的Mesh Shaders（一）： 从 vertex shader 到 mesh shader](https://zhuanlan.zhihu.com/p/691467498)（主要介绍 **AMD NGG** 技术）
 - [PS5 Pro Technical Seminar at SIE HQ](https://www.youtube.com/watch?v=lXMwXJsMfIQ)
