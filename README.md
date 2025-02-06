@@ -337,6 +337,7 @@ void vkCmdSetRasterizationSamplesEXT(
 - [AMD GPU新专利曝光：靠这个技术又赢一局](https://www.163.com/dy/article/GR494HEI051189P5.html)
 - [AMD Infinity Cache Explained : L3 Cache Comes To The GPU!](https://www.techarp.com/computer/amd-infinity-cache-explained/)
 - [AMD RDNA™ 显卡上的Mesh Shaders（一）： 从 vertex shader 到 mesh shader](https://zhuanlan.zhihu.com/p/691467498)（主要介绍 **AMD NGG** 技术）
+- [GPUOpen -- From vertex shader to mesh shader](https://gpuopen.com/learn/mesh_shaders/mesh_shaders-from_vertex_shader_to_mesh_shader/)
 - [PS5 Pro Technical Seminar at SIE HQ](https://www.youtube.com/watch?v=lXMwXJsMfIQ)
 - [renderdoc](https://github.com/baldurk/renderdoc)
 - [tiny-gpu](https://github.com/adam-maj/tiny-gpu)
