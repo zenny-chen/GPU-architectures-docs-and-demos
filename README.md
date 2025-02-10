@@ -299,7 +299,7 @@ void vkCmdSetRasterizationSamplesEXT(
 - [移动端GPU架构学习笔记 + 关于移动端和MRT在消耗带宽上的设计这档子事](https://zhuanlan.zhihu.com/p/404711038)
 - [当我们谈优化时，我们谈些什么](https://zhuanlan.zhihu.com/p/68158277)
 - [深入GPU硬件架构及运行机制](https://www.cnblogs.com/timlly/p/11471507.html)
-- [GPU 性能原理拆解](https://mp.weixin.qq.com/s?__biz=MjM5ODYwMjI2MA==&mid=2649784665&idx=1&sn=2f928c1484e7858772feec33180fa9c2)
+- [GPU 性能原理拆解](https://mp.weixin.qq.com/s?__biz=MjM5ODYwMjI2MA==&mid=2649784665&idx=1&sn=2f928c1484e7858772feec33180fa9c2)（在目前的 TBDR 架构中，在 binning 阶段之后，由于通过 vs 有了深度信息，可以利用这个深度信息来剔除远处的三角形（或像素）的绘制，减少后面 ps 的 overdraw。这个机制，Adreno GPU 称为 **LRZ** (**Low Resolution Depth**)，PowerVR GPU 称为 **HSR** (**Hidden Surface Removal**)，Mali 称为 **FPK** (**Forward Pixel Killing**)。）
 - [Asahi -- The Asahi driver aims to provide an OpenGL implementation for the Apple M1](https://docs.mesa3d.org/drivers/asahi.html)
 - [Dissecting the Apple M1 GPU, part I](https://rosenzweig.io/blog/asahi-gpu-part-1.html)
 - [Timing Data in PVRTune Complete](https://docs.imgtec.com/tools-manuals/pvrtune-manual/html/pvrtune-manual/topics/additional-features-of-pvrtunecomplete/timing-data.html)（包含 TA、3D SPM task）
