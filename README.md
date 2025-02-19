@@ -135,7 +135,7 @@ void vkCmdSetRasterizationSamplesEXT(
 - [Direct3D 9 Graphics](https://learn.microsoft.com/en-us/windows/win32/direct3d9/dx9-graphics)
 - [Programming guide for Direct3D 11](https://github.com/MicrosoftDocs/win32/blob/docs/desktop-src/direct3d11/dx-graphics-overviews.md)
 - [Direct3D 11 Graphics](https://learn.microsoft.com/en-us/windows/win32/direct3d11/atoc-dx-graphics-direct3d-11)
-- [Direct3D 11.3 Functional Specification](https://microsoft.github.io/DirectX-Specs/d3d/archive/D3D11_3_FunctionalSpec.htm)
+- [Direct3D 11.3 Functional Specification](https://microsoft.github.io/DirectX-Specs/d3d/archive/D3D11_3_FunctionalSpec.htm)（包含所有 shader stages，以及 stream output、output merger 等阶段，以及 [**Target Independent Rasterization**](https://microsoft.github.io/DirectX-Specs/d3d/archive/D3D11_3_FunctionalSpec.htm#TIR) 等 features）
 - [Direct3D 11 Graphics pipeline](https://learn.microsoft.com/en-us/windows/win32/direct3d11/overviews-direct3d-11-graphics-pipeline)
 - [Direct3D 12 programming guide](https://github.com/MicrosoftDocs/win32/blob/docs/desktop-src/direct3d12/directx-12-programming-guide.md)
 - [Direct3D 12 graphics](https://learn.microsoft.com/en-us/windows/win32/direct3d12/direct3d-12-graphics)
@@ -213,7 +213,7 @@ void vkCmdSetRasterizationSamplesEXT(
 - [Metal 2 on A11-The Shading](https://nilotic.github.io/2018/10/02/Metal-2-on-A11-The-Shading.html)
 - [Metal2研发笔录（五）：Forward+ with Tile Shading](https://zhuanlan.zhihu.com/p/95567955)
 - [Metal2研发笔录（六）：Metal图像处理后处理基础（上）](https://zhuanlan.zhihu.com/p/98782433)（包含对 tile shader 的使用）
-- [Mesh Shader](https://microsoft.github.io/DirectX-Specs/d3d/MeshShader.html)
+- [DirectX-Specs -- **Mesh Shader**](https://microsoft.github.io/DirectX-Specs/d3d/MeshShader.html)
 - [Coming to DirectX 12— Mesh Shaders and Amplification Shaders: Reinventing the Geometry Pipeline](https://devblogs.microsoft.com/directx/coming-to-directx-12-mesh-shaders-and-amplification-shaders-reinventing-the-geometry-pipeline/)
 - [Mesh Shading for Vulkan](https://www.khronos.org/blog/mesh-shading-for-vulkan)
 - [Introduction to Turing Mesh Shaders](https://developer.nvidia.com/blog/introduction-turing-mesh-shaders/)
