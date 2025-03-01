@@ -714,6 +714,7 @@ int main(int argc, const char* argv[])
 - [算子融合](https://juejin.cn/post/7355482120708833343)
 - [从速度和精度角度的 FP8 vs INT8 的全面解析](https://www.toutiao.com/article/7437070462351344163/)
 - [FP8 数据格式在大型模型训练中的应用、挑战及最佳实践](https://zhuanlan.zhihu.com/p/2676856801)
+- [FP8：前沿精度与性能的新篇章](https://mp.weixin.qq.com/s?__biz=MzI3NzAyOTk1Nw==&mid=2247486492&idx=1&sn=b3c8831e61738a1664536da8be98d972)
 
 <br />
 
