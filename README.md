@@ -337,6 +337,7 @@ void vkCmdSetRasterizationSamplesEXT(
 - [英特尔是怎么做GPU的？](https://www.toutiao.com/article/7470470447348417034/)
 - [AMD GPU新专利曝光：靠这个技术又赢一局](https://www.163.com/dy/article/GR494HEI051189P5.html)
 - [AMD Infinity Cache Explained : L3 Cache Comes To The GPU!](https://www.techarp.com/computer/amd-infinity-cache-explained/)
+- [AMD Vega GPU Architecture Preview: Redesigned Memory Architecture](https://pcper.com/2017/01/amd-vega-gpu-architecture-preview-redesigned-memory-architecture/2/#ftoc-heading-3)（介绍了 AMD DSBR 引擎——**Draw Space Binning Rasterizer**）
 - [AMD RDNA™ 显卡上的Mesh Shaders（一）： 从 vertex shader 到 mesh shader](https://zhuanlan.zhihu.com/p/691467498)（主要介绍 **AMD NGG** 技术）
 - [GPUOpen -- Mesh shaders on AMD RDNA™ graphics cards](https://gpuopen.com/learn/mesh_shaders/mesh_shaders-index/)
 - [Primitive Shader: AMD's Patent Deep Dive](https://www.resetera.com/threads/primitive-shader-amds-patent-deep-dive.186831/)
