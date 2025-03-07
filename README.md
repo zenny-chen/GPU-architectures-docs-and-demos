@@ -447,6 +447,7 @@ void vkCmdSetRasterizationSamplesEXT(
 - [CUDA fails to recognize nvcuda namespace during compilation](https://stackoverflow.com/questions/53634287/cuda-fails-to-recognize-nvcuda-namespace-during-compilation)
 - [如何利用 NVIDIA 安培架构 GPU 的新一代 Tensor Core 对计算进行极致加速](https://mp.weixin.qq.com/s?srcid=0819SLpl2nBtb62AroWYJnmI&scene=23&mid=2247486054&sn=e0507022e05c91857cce22195a504323&idx=1&__biz=MzU3MDc5MDM4MA%3D%3D)
 - [矩阵相乘在GPU上的终极优化：深度解析Maxas汇编器工作原理](https://www.toutiao.com/a6824717488391979532/)
+- [Inline PTX Assembly in CUDA](https://docs.nvidia.com/cuda/inline-ptx-assembly/index.html)
 - [NVIDIA发布了那么多技术，哪些SDK值得开发者们关注？](https://mp.weixin.qq.com/s?__biz=MjM5NTE3Nzk4MQ==&mid=2651239720&idx=1&sn=ee3c8a6c831e9ce525994d94818d4ad4&chksm=bd0e61ba8a79e8ac42b009d693f52fe678ab34aeea4243f215c272ff32cc1b264b409180a7f3&mpshare=1&scene=23&srcid=0421vjj8MN30lK26ZUxC1zUH)
 - NVIDIA自家GPU产品的一些类型缩写：
     - DGX — Deep Learning GPU Accelerator
