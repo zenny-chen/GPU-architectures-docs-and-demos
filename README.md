@@ -707,6 +707,7 @@ int main(int argc, const char* argv[])
 - [探索高通骁龙处理器中的Hexagon NPU架构](https://www.toutiao.com/article/7293000269498434089/)
 - [NPU开发指南-加速器架构的设计空间探索](https://www.cnblogs.com/wujianming-110117/p/17698409.html)
 - [首秀180nm制程碳纳米管TPU芯片，能效惊人，每瓦功耗下实现万亿次运算里程碑！](https://mp.weixin.qq.com/s?__biz=Mzk0MzYxMjgwNw==&mid=2247486935&idx=1&sn=df87cd9f5c10485b6d661a9e105582d5)
+- [DianNao:一种普适机器学习算法的小规模高吞吐率的加速器设计](https://zhuanlan.zhihu.com/p/109465959)（其中介绍了 **Neural Functional Unit (NFU)**）
 - [从gpu的内存访问视角对比NHWC和NCHW](https://www.toutiao.com/article/7287019163984396852/)
 - [learnOpenCV4](https://github.com/fengzhenHIT/learnOpenCV4)
 - [OpenCV](https://github.com/opencv/opencv)
