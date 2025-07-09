@@ -309,6 +309,7 @@ void vkCmdSetRasterizationSamplesEXT(
 - [剖析虚幻渲染体系（12）- 移动端专题（02）](https://zhuanlan.zhihu.com/p/555465007)
 - [针对深度学习的GPU共享](https://zhuanlan.zhihu.com/p/285994980)
 - [DirectCompute Optimizations and Best Practices](https://www.nvidia.com/content/GTC-2010/pdfs/2260_GTC2010.pdf)
+- [Optimizing Compute Shaders for L2 Locality using Thread-Group ID Swizzling](https://developer.nvidia.com/blog/optimizing-compute-shaders-for-l2-locality-using-thread-group-id-swizzling/)
 - [NVIDIA TURING GPU ARCHITECTURE](https://images.nvidia.com/aem-dam/en-zz/Solutions/design-visualization/technologies/turing-architecture/NVIDIA-Turing-Architecture-Whitepaper.pdf)
 - [NVIDIA Hopper Architecture In-Depth](https://developer.nvidia.com/blog/nvidia-hopper-architecture-in-depth/)
 - [NVIDIA GPU 架构梳理](https://zhuanlan.zhihu.com/p/394352476)
@@ -730,6 +731,7 @@ int main(int argc, const char* argv[])
 - [FP8：前沿精度与性能的新篇章](https://mp.weixin.qq.com/s?__biz=MzI3NzAyOTk1Nw==&mid=2247486492&idx=1&sn=b3c8831e61738a1664536da8be98d972)
 - [DeepSeek-R1模型架构深度解读（七）弄懂FP8-Training](https://mp.weixin.qq.com/s?__biz=MzkzODI1NzQyNA==&mid=2247493281&idx=1&sn=759bada5b5b143af63cf6c36353bce53)
 - [简单聊聊Deepseek V3的FP8训练](https://blog.csdn.net/zengxiaojian2/article/details/145330985)
+- [GPU Kernel Scientist：LLM 驱动下的 GPGPU Kernel 迭代框架](https://mp.weixin.qq.com/s?__biz=MjM5NDczOTA4NQ==&mid=2447889551&idx=1&sn=606751b8d2b4190238f0fb800f1d5751)
 
 <br />
 
