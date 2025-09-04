@@ -733,6 +733,8 @@ int main(int argc, const char* argv[])
 - [DeepSeek-R1模型架构深度解读（七）弄懂FP8-Training](https://mp.weixin.qq.com/s?__biz=MzkzODI1NzQyNA==&mid=2247493281&idx=1&sn=759bada5b5b143af63cf6c36353bce53)
 - [简单聊聊Deepseek V3的FP8训练](https://blog.csdn.net/zengxiaojian2/article/details/145330985)
 - [GPU Kernel Scientist：LLM 驱动下的 GPGPU Kernel 迭代框架](https://mp.weixin.qq.com/s?__biz=MjM5NDczOTA4NQ==&mid=2447889551&idx=1&sn=606751b8d2b4190238f0fb800f1d5751)
+- [The CUDA Parallel Programming Model - 7.Tiling](https://nichijou.co/cuda7-tiling/)
+- [CUDA编程革命：cuTile分块计算赋能高效GPU开发](https://cloud.tencent.com/developer/article/2512674)
 
 <br />
 
