@@ -146,6 +146,7 @@ void vkCmdSetRasterizationSamplesEXT(
 - [D3D12DDICAPS_TYPE enumeration (d3d12umddi.h)](https://learn.microsoft.com/en-us/windows-hardware/drivers/ddi/d3d12umddi/ne-d3d12umddi-d3d12ddicaps_type)
 - [Format support for Direct3D Feature Level 12.1 hardware](https://learn.microsoft.com/en-us/windows/win32/direct3ddxgi/hardware-support-for-direct3d-12-1-formats)
 - [D3D12_FEATURE_DATA_FORMAT_SUPPORT structure (d3d12.h)](https://learn.microsoft.com/en-us/windows/win32/api/d3d12/ns-d3d12-d3d12_feature_data_format_support)
+- [Direct3D 11 Features](https://learn.microsoft.com/en-us/windows/win32/direct3d11/direct3d-11-features)
 - [D3D11_FEATURE enumeration (d3d11.h)](https://learn.microsoft.com/en-us/windows/win32/api/d3d11/ne-d3d11-d3d11_feature)
 - [D3D10_2DDICAPS_TYPE enumeration (d3d10umddi.h)](https://learn.microsoft.com/en-us/windows-hardware/drivers/ddi/d3d10umddi/ne-d3d10umddi-d3d10_2ddicaps_type)
 - [Format support for Direct3D Feature Level 11.0 hardware](https://learn.microsoft.com/en-us/windows/win32/direct3ddxgi/format-support-for-direct3d-11-0-feature-level-hardware)
