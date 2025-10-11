@@ -358,6 +358,8 @@ void vkCmdSetRasterizationSamplesEXT(
 - [GPUOpen -- Mesh shaders on AMD RDNA™ graphics cards](https://gpuopen.com/learn/mesh_shaders/mesh_shaders-index/)
 - [Primitive Shader: AMD's Patent Deep Dive](https://www.resetera.com/threads/primitive-shader-amds-patent-deep-dive.186831/)
 - [AMD RDNA 4 and Radeon RX 9000-series GPUs start at $549: Specifications, release date, pricing, and more revealed](https://www.tomshardware.com/pc-components/gpus/amd-rdna4-rx-9000-series-gpus-specifications-pricing-release-date)
+- [Occupancy explained](https://gpuopen.com/learn/occupancy-explained/)
+- [HAWS: Accelerating GPU Wavefront Execution through Selective Out-of-order Execution](https://dl.acm.org/doi/fullHtml/10.1145/3291050)
 - [PS5 Pro Technical Seminar at SIE HQ](https://www.youtube.com/watch?v=lXMwXJsMfIQ)
 - [RISC-V Day Tokyo｜RISC-V平台集成Imagination GPU解决方案的探索分析](https://mp.weixin.qq.com/s?__biz=MzA4NjMxNTMyNA==&mid=2650028195&idx=1&sn=66886f6745b760c15fe4e742260d542f)（[**GitHub 仓库**](https://github.com/NoitaniGami-idol-Group)）
 - [renderdoc](https://github.com/baldurk/renderdoc)
