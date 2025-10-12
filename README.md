@@ -357,6 +357,7 @@ void vkCmdSetRasterizationSamplesEXT(
 - [AMD RDNA™ 显卡上的Mesh Shaders（一）： 从 vertex shader 到 mesh shader](https://zhuanlan.zhihu.com/p/691467498)（主要介绍 **AMD NGG** 技术）
 - [GPUOpen -- Mesh shaders on AMD RDNA™ graphics cards](https://gpuopen.com/learn/mesh_shaders/mesh_shaders-index/)
 - [Primitive Shader: AMD's Patent Deep Dive](https://www.resetera.com/threads/primitive-shader-amds-patent-deep-dive.186831/)
+- [What is NGG and shader culling on AMD RDNA GPUs?](https://timur.hu/blog/2022/what-is-ngg)
 - [AMD RDNA 4 and Radeon RX 9000-series GPUs start at $549: Specifications, release date, pricing, and more revealed](https://www.tomshardware.com/pc-components/gpus/amd-rdna4-rx-9000-series-gpus-specifications-pricing-release-date)
 - [Occupancy explained](https://gpuopen.com/learn/occupancy-explained/)
 - [HAWS: Accelerating GPU Wavefront Execution through Selective Out-of-order Execution](https://dl.acm.org/doi/fullHtml/10.1145/3291050)
