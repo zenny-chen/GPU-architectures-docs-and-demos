@@ -435,7 +435,7 @@ void vkCmdSetRasterizationSamplesEXT(
 - [Tuning CUDA Applications for Turing](https://docs.nvidia.com/cuda/turing-tuning-guide/index.html)
 - [Tuning CUDA Applications for NVIDIA Ada GPU Architecture](https://docs.nvidia.com/cuda/ada-tuning-guide/index.html)
 - [Getting Started with CUDA Graphs](https://developer.nvidia.com/blog/cuda-graphs/)
-- Windows上查看CUDA程序崩溃信息使用Nsight，具体可见：[8. GPU Core Dump Files](https://docs.nvidia.com/nsight-visual-studio-edition/cuda-inspect-state/index.html#gpu-core-dump)。在打开 NV core dump 文件时，必须先打开 Visual Studio 2022，然后再用它来打开 core dump 文件，而不能直接用 Visual Studio Selector 程序打开，否则操作无效。Linux上则使用 **cuda-gdb** 来查看core dump文件信息。要使CUDA程序崩溃时导出core dump文件，需要先开启CUDA程序调试信息（`-g`），然后设置环境变量：`CUDA_ENABLE_COREDUMP_ON_EXCEPTION=1`。
+- Windows上查看CUDA程序崩溃信息使用Nsight，具体可见：[8. GPU Core Dump Files](https://docs.nvidia.com/nsight-visual-studio-edition/cuda-inspect-state/index.html#gpu-core-dump)。NV core dump 文件的后缀名 **必须是** **`.nvcudmp`**，否则 VS 打开无效。在打开 NV core dump 文件时，必须先打开 Visual Studio 2022，然后再用它来打开 core dump 文件，而不能直接用 Visual Studio Selector 程序打开，否则操作无效。Linux上则使用 **cuda-gdb** 来查看core dump文件信息。要使CUDA程序崩溃时导出core dump文件，需要先开启CUDA程序调试信息（`-g`），然后设置环境变量：`CUDA_ENABLE_COREDUMP_ON_EXCEPTION=1`。
 - [CUDA: Common Function for both Host and Device Code](https://codeyarns.com/2011/03/14/cuda-common-function-for-both-host-and-device-code/)
 - [CUDA common **helper** functions](https://github.com/NVIDIA/cuda-samples/tree/master/Common)
 - CUDA中关于整型数据的intrinsic函数的介绍在《CUDA_Math_API》文档中。
