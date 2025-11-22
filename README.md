@@ -172,7 +172,7 @@ void vkCmdSetRasterizationSamplesEXT(
 - [D3D12 View Instancing Functional Spec](https://microsoft.github.io/DirectX-Specs/d3d/ViewInstancing.html)
 - [D3D11.2 Min/Max reduction filtering](https://learn.microsoft.com/en-us/windows/win32/direct3d11/tiled-resources-texture-sampling-features#minmax-reduction-filtering)
 - [Direct3D 11 MinMaxFiltering](https://learn.microsoft.com/en-us/windows/win32/api/d3d11/ns-d3d11-d3d11_feature_data_d3d11_options1)
-- [D3D12_FILTER enumeration](https://learn.microsoft.com/en-us/windows/win32/api/d3d12/ne-d3d12-d3d12_filter)（Direct3D 12 的 **`MinMaxFiltering`** 也是通过 D3D11 的方式去查询是否支持）
+- [D3D12_FILTER enumeration](https://learn.microsoft.com/en-us/windows/win32/api/d3d12/ne-d3d12-d3d12_filter)（这里，Direct3D 12 的 **`MinMaxFiltering`** 也指出了可通过 D3D11 的 [D3D11_FEATURE_DATA_D3D11_OPTIONS1 structure](https://learn.microsoft.com/en-us/windows/win32/api/d3d11/ns-d3d11-d3d11_feature_data_d3d11_options1) 方式去查询是否支持，这是由于 Direct3D 12.0 必须要求支持 Min/Max Filter，因此只有采用 Direct3D 11 Level 的设备才需要查询。）
 - [Bilinear Texture Filtering (Direct3D 9)](https://learn.microsoft.com/en-us/windows/win32/direct3d9/bilinear-texture-filtering)（这里介绍了 Direct3D 的纹理坐标系统以及线性采样模式相关细节）
 - [Configuring Blending Functionality](https://learn.microsoft.com/en-us/windows/win32/direct3d11/d3d10-graphics-programming-guide-blend-state) (包含 **Alpha-To-Coverage**)
 - [Shader Specified Stencil Reference Value \(Direct3D 12 Graphics\)](https://learn.microsoft.com/en-us/windows/win32/direct3d12/shader-specified-stencil-reference-value)
