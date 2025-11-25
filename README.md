@@ -169,6 +169,8 @@ void vkCmdSetRasterizationSamplesEXT(
 - [ID3D12GraphicsCommandList::ExecuteIndirect method](https://learn.microsoft.com/en-us/windows/win32/api/d3d12/nf-d3d12-id3d12graphicscommandlist-executeindirect)
 - [DirectX-Specs -- Mesh Shader ExecuteIndirect](https://microsoft.github.io/DirectX-Specs/d3d/MeshShader.html#executeindirect)
 - [DirectX Raytracing (DXR) Functional Spec ExecuteIndirect](https://microsoft.github.io/DirectX-Specs/d3d/Raytracing.html#executeindirect)
+- [ID3D12Device::CreateHeap method (d3d12.h)](https://learn.microsoft.com/en-us/windows/win32/api/d3d12/nf-d3d12-id3d12device-createheap)
+- [Direct3D 12 Tight Placed Resource Alignment](https://microsoft.github.io/DirectX-Specs/d3d/D3D12TightPlacedResourceAlignment.html)
 - [D3D12 View Instancing Functional Spec](https://microsoft.github.io/DirectX-Specs/d3d/ViewInstancing.html)
 - [D3D11.2 Min/Max reduction filtering](https://learn.microsoft.com/en-us/windows/win32/direct3d11/tiled-resources-texture-sampling-features#minmax-reduction-filtering)
 - [Direct3D 11 MinMaxFiltering](https://learn.microsoft.com/en-us/windows/win32/api/d3d11/ns-d3d11-d3d11_feature_data_d3d11_options1)
