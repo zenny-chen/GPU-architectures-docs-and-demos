@@ -355,6 +355,7 @@ void vkCmdSetRasterizationSamplesEXT(
 - [The Qualcomm Snapdragon X Architecture Deep Dive: Getting To Know Oryon and Adreno X1 (Adreno X1 GPU Architecture: A More Familiar Face)](https://www.anandtech.com/show/21445/qualcomm-snapdragon-x-architecture-deep-dive/3)
 - [The Qualcomm Snapdragon X Architecture Deep Dive: Getting To Know Oryon and Adreno X1 (Performance Promises and First Thoughts)](https://www.anandtech.com/show/21445/qualcomm-snapdragon-x-architecture-deep-dive/4)
 - [英特尔是怎么做GPU的？](https://www.toutiao.com/article/7470470447348417034/)
+- [AMDGPU backend架构及ISA指令使用](https://mp.weixin.qq.com/s?__biz=Mzg2MDE3Nzg0OQ==&mid=2247484067&idx=1&sn=71856e31037106a4c41155c35227dfc9)
 - [AMD GPU新专利曝光：靠这个技术又赢一局](https://www.163.com/dy/article/GR494HEI051189P5.html)
 - [AMD Infinity Cache Explained : L3 Cache Comes To The GPU!](https://www.techarp.com/computer/amd-infinity-cache-explained/)
 - [AMD Vega GPU Architecture Preview: Redesigned Memory Architecture](https://pcper.com/2017/01/amd-vega-gpu-architecture-preview-redesigned-memory-architecture/2/#ftoc-heading-3)（介绍了 AMD DSBR 引擎——**Draw Space Binning Rasterizer**）
