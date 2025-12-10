@@ -178,6 +178,9 @@ void vkCmdSetRasterizationSamplesEXT(
 - [Bilinear Texture Filtering (Direct3D 9)](https://learn.microsoft.com/en-us/windows/win32/direct3d9/bilinear-texture-filtering)（这里介绍了 Direct3D 的纹理坐标系统以及线性采样模式相关细节）
 - [Configuring Blending Functionality](https://learn.microsoft.com/en-us/windows/win32/direct3d11/d3d10-graphics-programming-guide-blend-state) (包含 **Alpha-To-Coverage**)
 - [Shader Specified Stencil Reference Value \(Direct3D 12 Graphics\)](https://learn.microsoft.com/en-us/windows/win32/direct3d12/shader-specified-stencil-reference-value)
+- [Direct3D 11.3 Functional Specification -- 16.5 Pull Model Attribute Evaluation](https://microsoft.github.io/DirectX-Specs/d3d/archive/D3D11_3_FunctionalSpec.htm#16.5%20Pull%20Model%20Attribute%20Evaluation)
+- [EvaluateAttributeSnapped function](https://learn.microsoft.com/en-us/windows/win32/direct3dhlsl/evaluateattributesnapped)
+- [EvaluateAttributeSnapped function](https://github.com/MicrosoftDocs/win32/blob/docs/desktop-src/direct3dhlsl/evaluateattributesnapped.md)
 - [DirectX-Specs -- Enhanced Barriers](https://microsoft.github.io/DirectX-Specs/d3d/D3D12EnhancedBarriers.html)
 - [DirectX-Specs -- D3D12 Shader Cache APIs](https://microsoft.github.io/DirectX-Specs/d3d/ShaderCache.html)
 - [DirectX-Specs -- Planar Depth Stencil](https://github.com/microsoft/DirectX-Specs/blob/master/d3d/PlanarDepthStencilDDISpec.md)（对 **Planar Resources** 各个 **Plane** 的引用，可参考 [**Subresource**](https://learn.microsoft.com/en-us/windows/win32/direct3d12/subresources) index。）
