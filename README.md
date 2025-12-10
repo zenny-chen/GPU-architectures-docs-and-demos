@@ -216,6 +216,7 @@ void vkCmdSetRasterizationSamplesEXT(
 - [Running Shaders in DXIL](https://stackoverflow.com/questions/55958231/running-shaders-in-dxil)
 - [Direct2D](https://learn.microsoft.com/en-us/windows/win32/direct2d/direct2d-portal)
 - [Direct2D Custom effects](https://learn.microsoft.com/en-us/windows/win32/direct2d/custom-effects)
+- [Direct2D custom image effects sample](https://github.com/Microsoft/Windows-universal-samples/blob/main/Samples/D2DCustomEffects/README.md)
 - [GPU preemption](https://learn.microsoft.com/en-us/windows-hardware/drivers/display/gpu-preemption)
 - [WHQL Release Signature](https://learn.microsoft.com/en-us/windows-hardware/drivers/install/whql-release-signature)
 - [nVidia关于最新D3D的样例](https://developer.nvidia.com/gameworks-directx-samples)
@@ -374,7 +375,6 @@ void vkCmdSetRasterizationSamplesEXT(
 - [renderdoc](https://github.com/baldurk/renderdoc)
 - [tiny-gpu](https://github.com/adam-maj/tiny-gpu)
 - > In GCN, LS is the Local Shader, which is part of the tessellation pipeline. It's responsible for processing control points in the tessellation stage. The Hull Shader (HS) calculates tessellation factors and patch constants, while the Local Shader (LS) handles the per-control-point transformations. So LS works closely with HS during tessellation.
-
 
 <br/>
 
