@@ -760,6 +760,7 @@ int main(int argc, const char* argv[])
 - [GPU Kernel Scientist：LLM 驱动下的 GPGPU Kernel 迭代框架](https://mp.weixin.qq.com/s?__biz=MjM5NDczOTA4NQ==&mid=2447889551&idx=1&sn=606751b8d2b4190238f0fb800f1d5751)
 - [The CUDA Parallel Programming Model - 7.Tiling](https://nichijou.co/cuda7-tiling/)
 - [CUDA编程革命：cuTile分块计算赋能高效GPU开发](https://cloud.tencent.com/developer/article/2512674)
+- [手撕深度学习之CUDA矩阵乘法（下篇）：从Block Tiling到Warp Tiling，四步优化实现性能近90%的飞跃](https://mp.weixin.qq.com/s?__biz=Mzg2ODg5MDIzNg==&mid=2247484178&idx=1&sn=84caf2a79930b692c38c9f5914ed252c)
 
 <br />
 
