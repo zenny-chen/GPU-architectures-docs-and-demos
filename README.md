@@ -184,6 +184,7 @@ void vkCmdSetRasterizationSamplesEXT(
 - [DirectX-Specs -- Enhanced Barriers](https://microsoft.github.io/DirectX-Specs/d3d/D3D12EnhancedBarriers.html)
 - [DirectX-Specs -- D3D12 Shader Cache APIs](https://microsoft.github.io/DirectX-Specs/d3d/ShaderCache.html)
 - [DirectX-Specs -- Planar Depth Stencil](https://github.com/microsoft/DirectX-Specs/blob/master/d3d/PlanarDepthStencilDDISpec.md)（对 **Planar Resources** 各个 **Plane** 的引用，可参考 [**Subresource**](https://learn.microsoft.com/en-us/windows/win32/direct3d12/subresources) index。）
+- [DirectX-Specs -- D3D12 Programmable Sample Positions](https://microsoft.github.io/DirectX-Specs/d3d/ProgrammableSamplePositions.html)
 - [nBody DirectX 12 sample (asynchronous compute version)](https://gpuopen.com/gaming-product/nbody-directx-12-async-compute-edition/)
 - [D3D12 Resource Binding Functional Spec](https://microsoft.github.io/DirectX-Specs/d3d/ResourceBinding.html)
 - [Resource binding in HLSL](https://learn.microsoft.com/en-us/windows/win32/direct3d12/resource-binding-in-hlsl)（解释了 **SRV**、**`UAV`** 等资源的 binding）
