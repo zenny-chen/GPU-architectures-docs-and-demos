@@ -134,6 +134,7 @@ void vkCmdSetRasterizationSamplesEXT(
 - [SIGGRAPH 2018上提供的Vulkan API使用demo](http://web.engr.oregonstate.edu/~mjb/vulkan/)
 - [Direct3D graphics glossary](https://learn.microsoft.com/en-us/windows/uwp/graphics-concepts/)
 - [Direct3D 9 Graphics](https://learn.microsoft.com/en-us/windows/win32/direct3d9/dx9-graphics)
+- [Anisotropic Texture Filtering (Direct3D 9)](https://learn.microsoft.com/en-us/windows/win32/direct3d9/anisotropic-texture-filtering)
 - [Programming guide for Direct3D 11](https://github.com/MicrosoftDocs/win32/blob/docs/desktop-src/direct3d11/dx-graphics-overviews.md)
 - [Direct3D 11 Graphics](https://learn.microsoft.com/en-us/windows/win32/direct3d11/atoc-dx-graphics-direct3d-11)
 - [Direct3D 11.3 Functional Specification](https://microsoft.github.io/DirectX-Specs/d3d/archive/D3D11_3_FunctionalSpec.htm)（包含所有 shader stages，以及 stream output、output merger 等阶段，以及 [**Target Independent Rasterization**](https://microsoft.github.io/DirectX-Specs/d3d/archive/D3D11_3_FunctionalSpec.htm#TIR) 等 features）
