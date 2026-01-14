@@ -155,6 +155,8 @@ void vkCmdSetRasterizationSamplesEXT(
 - [D3D10_2DDICAPS_TYPE enumeration (d3d10umddi.h)](https://learn.microsoft.com/en-us/windows-hardware/drivers/ddi/d3d10umddi/ne-d3d10umddi-d3d10_2ddicaps_type)
 - [Format support for Direct3D Feature Level 11.0 hardware](https://learn.microsoft.com/en-us/windows/win32/direct3ddxgi/format-support-for-direct3d-11-0-feature-level-hardware)
 - [D3D11_FEATURE_DATA_FORMAT_SUPPORT structure (d3d11.h)](https://learn.microsoft.com/en-us/windows/win32/api/d3d11/ns-d3d11-d3d11_feature_data_format_support)
+- [D3D11_FILTER enumeration (d3d11.h)](https://learn.microsoft.com/en-us/windows/win32/api/d3d11/ne-d3d11-d3d11_filter)
+- [D3D12_FILTER enumeration (d3d12.h)](https://learn.microsoft.com/en-us/windows/win32/api/d3d12/ne-d3d12-d3d12_filter)
 - [Important Changes from Direct3D 11 to Direct3D 12](https://learn.microsoft.com/en-us/windows/win32/direct3d12/important-changes-from-directx-11-to-directx-12)
 - [Porting from Direct3D 11 to Direct3D 12 -- Resource state](https://learn.microsoft.com/en-us/windows/win32/direct3d12/porting-from-direct3d-11-to-direct3d-12#resource-state)
 - [DirectX-Graphics-Samples](https://github.com/microsoft/DirectX-Graphics-Samples)
