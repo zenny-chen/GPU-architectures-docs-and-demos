@@ -277,11 +277,10 @@ void vkCmdSetRasterizationSamplesEXT(
 - [OpenGL ES EGL eglCreateWindowSurface](https://www.jianshu.com/p/f176679548eb)
 - [How to create a native X11 window for use with EGL](https://stackoverflow.com/questions/64449068/how-to-create-a-native-x11-window-for-use-with-egl)
 - [Unable to use EGL without X Server on Ubuntu](https://stackoverflow.com/questions/49849033/unable-to-use-egl-without-x-server-on-ubuntu)
-- **Khronos OpenGL官方文档中关于描述的 `gbufferImage` 类型，实际所对应的类型为**：**`imageBuffer`**、**`iimageBuffer`** 和 **`uimageBuffer`**。
+- **Khronos OpenGL官方文档中关于描述的 `gbufferImage` 类型，实际所对应的类型为**：**`imageBuffer`**、**`iimageBuffer`** 和 **`uimageBuffer`**。详细可参考：[Sampler (GLSL)](https://wikis.khronos.org/opengl/Sampler_(GLSL))
 - [WebGL官方样例](https://github.com/WebGLSamples)
 - [WebGL_Compute_shader](https://github.com/9ballsyndrome/WebGL_Compute_shader)
 - [Built-in Variable \(GLSL\)](https://www.khronos.org/opengl/wiki/Built-in_Variable_\(GLSL\))
-- [Sampler (GLSL)](https://wikis.khronos.org/opengl/Sampler_(GLSL))
 - [GL_KHR_vulkan_glsl](https://github.com/KhronosGroup/GLSL/blob/main/extensions/khr/GL_KHR_vulkan_glsl.txt)
 - [GL_ARB_shader_draw_parameters](https://registry.khronos.org/OpenGL/extensions/ARB/ARB_shader_draw_parameters.txt)（包含 **`gl_DrawIDARB`**，**`gl_BaseVertexARB`**，**`gl_BaseInstanceARB`**）
 - [GL_ARB_shader_clock](https://registry.khronos.org/OpenGL/extensions/ARB/ARB_shader_clock.txt)
