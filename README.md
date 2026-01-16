@@ -799,6 +799,7 @@ int main(int argc, const char* argv[])
 - [Untransformed Display List In A Tile Based Rendering System](https://www.freepatentsonline.com/20220392154.pdf)
 - [Punch-through techniques for graphics processing](https://patentscope2.wipo.int/search/en/detail.jsf?docId=US225521662)
 - [Burst processing](https://patents.google.com/patent/GB2640250A/en)
+- [INTRODUCING THE RAC: THE RAY ACCELERATION CLUSTER](https://www.imaginationtech.com/products/gpu/graphics-architecture/powervr-photon/)
 
 <br />
 
