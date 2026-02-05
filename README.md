@@ -432,6 +432,7 @@ void vkCmdSetRasterizationSamplesEXT(
 - [CUDA Driver API](https://docs.nvidia.com/cuda/cuda-driver-api/index.html)
 - [NVIDIA CUDA Math API](https://docs.nvidia.com/cuda/cuda-math-api/index.html)
 - [Nsight Graphics Activities - Advanced Learning](https://docs.nvidia.com/nsight-graphics/AdvancedLearning/index.html)
+- [NVIDIA Nsight Visual Studio Code Edition](https://docs.nvidia.com/nsight-visual-studio-code-edition/latest/index.html)
 - [CUDA Installation Guide for Microsoft Windows](https://docs.nvidia.com/cuda/cuda-installation-guide-microsoft-windows/index.html)
 - [CUDA 11 Features Revealed](https://developer.nvidia.com/blog/cuda-11-features-revealed/)
 - [nVidia omniverse](https://www.nvidia.com/en-us/omniverse/)
