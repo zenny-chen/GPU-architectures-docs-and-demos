@@ -429,6 +429,10 @@ void vkCmdSetRasterizationSamplesEXT(
 
 - [CUDA Compute Capability List](https://developer.nvidia.com/cuda-gpus)
 - [CUDA Toolkit Documentation](https://docs.nvidia.com/cuda/)
+- [CUDA Compiler Driver -- NVCC](https://docs.nvidia.com/cuda/cuda-compiler-driver-nvcc/index.html) 主要值得注意的编译选项：
+  - **`--debug`**（或 **`-g`**）：为主机端代码生成调试信息
+  - **`--device-debug`**（或 **`-G`**）：为设备端代码生成调试信息
+  - **`-Xcompiler`**：直接对编译器/预处理器设置编译选项。比如在 Windows 系统上，NVCC 与 MSVC 编译器协同使用时可以使用：**`nvcc  --no-exceptions  -Xcompiler /EHa  cuda_src.cu`**
 - [CUDA Driver API](https://docs.nvidia.com/cuda/cuda-driver-api/index.html)
 - [NVIDIA CUDA Math API](https://docs.nvidia.com/cuda/cuda-math-api/index.html)
 - [Nsight Graphics Activities - Advanced Learning](https://docs.nvidia.com/nsight-graphics/AdvancedLearning/index.html)
