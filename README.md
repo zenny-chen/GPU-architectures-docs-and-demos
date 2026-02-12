@@ -192,6 +192,10 @@ void vkCmdSetRasterizationSamplesEXT(
 - [nBody DirectX 12 sample (asynchronous compute version)](https://gpuopen.com/gaming-product/nbody-directx-12-async-compute-edition/)
 - [D3D12 Resource Binding Functional Spec](https://microsoft.github.io/DirectX-Specs/d3d/ResourceBinding.html)
 - [Resource binding in HLSL](https://learn.microsoft.com/en-us/windows/win32/direct3d12/resource-binding-in-hlsl)（解释了 **SRV**、**`UAV`** 等资源的 binding）
+- **`D3D11_BUFFER_SRV`** 关于各联合体成员的使用说明：
+
+![D3D11_BUFFER_SRV](images/D3D11_BUFFER_SRV.png)
+
 - [Why talking about the Root Signature?](https://logins.github.io/graphics/2020/06/26/DX12RootSignatureObject.html)
 - [IDXGIDebug::ReportLiveObjects method \(dxgidebug.h\)](https://learn.microsoft.com/en-us/windows/win32/api/dxgidebug/nf-dxgidebug-idxgidebug-reportliveobjects)
 - [cannot get rid of live objects \(D3D11\)](https://www.gamedev.net/forums/topic/664906-cannot-get-rid-of-live-objects-d3d11/)
