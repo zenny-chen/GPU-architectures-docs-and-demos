@@ -189,7 +189,6 @@ void vkCmdSetRasterizationSamplesEXT(
 - [DirectX-Specs -- D3D12 Shader Cache APIs](https://microsoft.github.io/DirectX-Specs/d3d/ShaderCache.html)
 - [DirectX-Specs -- Planar Depth Stencil](https://github.com/microsoft/DirectX-Specs/blob/master/d3d/PlanarDepthStencilDDISpec.md)（对 **Planar Resources** 各个 **Plane** 的引用，可参考 [**Subresource**](https://learn.microsoft.com/en-us/windows/win32/direct3d12/subresources) index。）
 - [DirectX-Specs -- D3D12 Programmable Sample Positions](https://microsoft.github.io/DirectX-Specs/d3d/ProgrammableSamplePositions.html)
-- [nBody DirectX 12 sample (asynchronous compute version)](https://gpuopen.com/gaming-product/nbody-directx-12-async-compute-edition/)
 - [D3D12 Resource Binding Functional Spec](https://microsoft.github.io/DirectX-Specs/d3d/ResourceBinding.html)
 - [Resource binding in HLSL](https://learn.microsoft.com/en-us/windows/win32/direct3d12/resource-binding-in-hlsl)（解释了 **SRV**、**`UAV`** 等资源的 binding）
 - **`D3D11_BUFFER_SRV`** 关于各联合体成员的使用说明：
@@ -228,6 +227,7 @@ void vkCmdSetRasterizationSamplesEXT(
 - [Direct2D custom image effects sample](https://github.com/Microsoft/Windows-universal-samples/blob/main/Samples/D2DCustomEffects/README.md)
 - [GPU preemption](https://learn.microsoft.com/en-us/windows-hardware/drivers/display/gpu-preemption)
 - [WHQL Release Signature](https://learn.microsoft.com/en-us/windows-hardware/drivers/install/whql-release-signature)
+- [nBody DirectX 12 sample (asynchronous compute version)](https://gpuopen.com/gaming-product/nbody-directx-12-async-compute-edition/)
 - [nVidia关于最新D3D的样例](https://developer.nvidia.com/gameworks-directx-samples)
 - [nVidia关于D3D11的样例](https://developer.nvidia.com/dx11-samples)
 - [NVIDIA NVAPI](https://docs.nvidia.com/gameworks/content/gameworkslibrary/coresdk/nvapi/index.html)
@@ -254,6 +254,7 @@ void vkCmdSetRasterizationSamplesEXT(
 - [DirectX Raytracing \(DXR\) Functional Spec](https://microsoft.github.io/DirectX-Specs/d3d/Raytracing.html)
 - [Direct3D 12 Raytracing](https://learn.microsoft.com/en-us/windows/win32/direct3d12/direct3d-12-raytracing)
 - [Direct3D 12 raytracing samples](https://learn.microsoft.com/en-us/samples/microsoft/directx-graphics-samples/d3d12-raytracing-samples-win32/)
+- [D3D12 Raytracing Fallback Layer](https://github.com/microsoft/DirectX-Graphics-Samples/tree/master/Libraries/D3D12RaytracingFallback)
 - [OpenGL wiki](https://en.wikipedia.org/wiki/OpenGL)
 - [History of OpenGL](https://www.khronos.org/opengl/wiki/History%20of%20OpenGL)
 - [基于macOS的OpenGL的使用](https://developer.apple.com/opengl/)
