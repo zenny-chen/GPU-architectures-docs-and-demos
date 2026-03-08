@@ -150,6 +150,7 @@ void vkCmdSetRasterizationSamplesEXT(
 - [Format support for Direct3D Feature Level 12.1 hardware](https://learn.microsoft.com/en-us/windows/win32/direct3ddxgi/hardware-support-for-direct3d-12-1-formats)
 - [D3D12_FEATURE_DATA_FORMAT_SUPPORT structure (d3d12.h)](https://learn.microsoft.com/en-us/windows/win32/api/d3d12/ns-d3d12-d3d12_feature_data_format_support)
 - [UMA Optimizations: CPU Accessible Textures and Standard Swizzle](https://learn.microsoft.com/en-us/windows/win32/direct3d12/default-texture-mapping)
+- [Subresources (Direct3D 11 Graphics)](https://learn.microsoft.com/en-us/windows/win32/direct3d11/overviews-direct3d-11-resources-subresources)（关于初始化纹理数据可参考：[D3D11_SUBRESOURCE_DATA structure (d3d11.h)](https://learn.microsoft.com/en-us/windows/win32/api/d3d11/ns-d3d11-d3d11_subresource_data)）
 - [Subresources (Direct3D 12 Graphics)](https://learn.microsoft.com/en-us/windows/win32/direct3d12/subresources)（包含各种纹理格式的布局及访问）
 - [Direct3D 11 Features](https://learn.microsoft.com/en-us/windows/win32/direct3d11/direct3d-11-features)
 - [D3D11_FEATURE enumeration (d3d11.h)](https://learn.microsoft.com/en-us/windows/win32/api/d3d11/ne-d3d11-d3d11_feature)
