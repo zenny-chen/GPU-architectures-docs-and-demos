@@ -496,6 +496,7 @@ void vkCmdSetRasterizationSamplesEXT(
 - [Warpgroup](https://docs.nvidia.com/cuda/parallel-thread-execution/index.html#asynchronous-warpgroup-level-matrix-instructions-warpgroup)
 - [10.29.2. Using TMA to transfer multi-dimensional arrays](https://docs.nvidia.com/cuda/cuda-c-programming-guide/#using-tma-to-transfer-multi-dimensional-arrays)
 - [NVIDIA TMA 全面分析](https://zhuanlan.zhihu.com/p/1945136522455122713)
+- [一文彻底理解NCCL传输层的各种通信方式](https://mp.weixin.qq.com/s?__biz=MzkzODIxNjk5Mg==&mid=2247484316&idx=1&sn=bfdcd52e4517741fb5277be1ff7a26d7)
 - [Programming Tensor Cores in CUDA 9](https://developer.nvidia.com/blog/programming-tensor-cores-cuda-9/)
 - [CUDA fails to recognize nvcuda namespace during compilation](https://stackoverflow.com/questions/53634287/cuda-fails-to-recognize-nvcuda-namespace-during-compilation)
 - [如何利用 NVIDIA 安培架构 GPU 的新一代 Tensor Core 对计算进行极致加速](https://mp.weixin.qq.com/s?srcid=0819SLpl2nBtb62AroWYJnmI&scene=23&mid=2247486054&sn=e0507022e05c91857cce22195a504323&idx=1&__biz=MzU3MDc5MDM4MA%3D%3D)
