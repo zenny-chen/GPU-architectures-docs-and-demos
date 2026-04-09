@@ -327,7 +327,7 @@ void vkCmdSetRasterizationSamplesEXT(
 - [cl_khr_subgroups](https://registry.khronos.org/OpenCL/specs/3.0-unified/html/OpenCL_Ext.html#cl_khr_subgroups)
 - [Is There a Way to Access Global Data Share (GDS) on Ellesmere \(RX 480\)?](https://community.amd.com/t5/archives-discussions/is-there-a-way-to-access-global-data-share-gds-on-ellesmere-rx/td-p/120816)（要访问 AMD GCN 架构中的 global data share，需要在 OpenCL-C 中开启 [cl_ext_atomic_counters_32](https://registry.khronos.org/OpenCL/extensions/ext/cl_ext_atomic_counters_32.txt) 和 [cl_ext_atomic_counters_64](https://registry.khronos.org/OpenCL/extensions/ext/cl_ext_atomic_counters_64.txt) 这两个扩展）
 - [cl_intel_bfloat16_conversions](https://registry.khronos.org/OpenCL/extensions/intel/cl_intel_bfloat16_conversions.html)（伴随的SPIR-V 扩展：[SPV_INTEL_bfloat16_conversion](https://github.com/KhronosGroup/SPIRV-Registry/blob/main/extensions/INTEL/SPV_INTEL_bfloat16_conversion.asciidoc)）
-- In Vulkan via GLSL, how to use separate texture and sampler objects to sample a texture?
+- [How are separated sampled images and samplers used in Vulkan with GLSL?](https://stackoverflow.com/questions/77070602/how-are-separated-sampled-images-and-samplers-used-in-vulkan-with-glsl)
 
 ![vulkan_combine_texture_sampler](images/vulkan_combine_texture_sampler.png)
 
