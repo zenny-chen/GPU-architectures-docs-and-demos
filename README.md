@@ -64,6 +64,7 @@ PFN_vkCmdPushDescriptorSetWithTemplateKHR spec_PFN_vkCmdPushDescriptorSetWithTem
 - [vk_cooperative_matrix_perf](https://github.com/jeffbolznv/vk_cooperative_matrix_perf)
 - [DrawIndex](https://registry.khronos.org/vulkan/specs/1.3-extensions/man/html/DrawIndex.html)
 - [34.5.6. Interlocked Operations](https://registry.khronos.org/vulkan/specs/latest/html/vkspec.html#fragops-shader-interlock)（等价于 Direct3D 12 中的 [Rasterizer Ordered Views](https://microsoft.github.io/DirectX-Specs/d3d/RasterOrderViews.html)）
+- [26.5. Conditional Rendering](https://registry.khronos.org/vulkan/specs/latest/html/vkspec.html#drawing-conditional-rendering)（等价于 Direct3D 11 中的 [ID3D11DeviceContext::SetPredication method](https://learn.microsoft.com/en-us/windows/win32/api/d3d11/nf-d3d11-id3d11devicecontext-setpredication) 以及 Direct3D 12 中的 [ID3D12GraphicsCommandList::SetPredication method](https://learn.microsoft.com/en-us/windows/win32/api/d3d12/nf-d3d12-id3d12graphicscommandlist-setpredication)）
 - Vulkan 通过 **`VkPhysicalDeviceFeatures::shaderFloat64`** 来查询当前设备是否支持64位双精度浮点，详细参考：[VkPhysicalDeviceFeatures(3)](https://docs.vulkan.org/refpages/latest/refpages/source/VkPhysicalDeviceFeatures.html)
 - [VK_KHR_display](https://registry.khronos.org/vulkan/specs/1.3-extensions/man/html/VK_KHR_display.html)
 - [VK_KHR_display_swapchain](https://registry.khronos.org/vulkan/specs/1.3-extensions/man/html/VK_KHR_display_swapchain.html)
