@@ -63,6 +63,7 @@ PFN_vkCmdPushDescriptorSetWithTemplateKHR spec_PFN_vkCmdPushDescriptorSetWithTem
 - [Machine Learning Acceleration in Vulkan with Cooperative Matrices](https://developer.nvidia.com/blog/machine-learning-acceleration-vulkan-cooperative-matrices/)
 - [vk_cooperative_matrix_perf](https://github.com/jeffbolznv/vk_cooperative_matrix_perf)
 - [DrawIndex](https://registry.khronos.org/vulkan/specs/1.3-extensions/man/html/DrawIndex.html)
+- [34.5.6. Interlocked Operations](https://registry.khronos.org/vulkan/specs/latest/html/vkspec.html#fragops-shader-interlock)（等价于 Direct3D 12 中的 [Rasterizer Ordered Views](https://microsoft.github.io/DirectX-Specs/d3d/RasterOrderViews.html)）
 - Vulkan 通过 **`VkPhysicalDeviceFeatures::shaderFloat64`** 来查询当前设备是否支持64位双精度浮点，详细参考：[VkPhysicalDeviceFeatures(3)](https://docs.vulkan.org/refpages/latest/refpages/source/VkPhysicalDeviceFeatures.html)
 - [VK_KHR_display](https://registry.khronos.org/vulkan/specs/1.3-extensions/man/html/VK_KHR_display.html)
 - [VK_KHR_display_swapchain](https://registry.khronos.org/vulkan/specs/1.3-extensions/man/html/VK_KHR_display_swapchain.html)
@@ -179,6 +180,7 @@ void vkCmdSetRasterizationSamplesEXT(
 - [ID3D12Device::CreateHeap method (d3d12.h)](https://learn.microsoft.com/en-us/windows/win32/api/d3d12/nf-d3d12-id3d12device-createheap)
 - [Direct3D 12 Tight Placed Resource Alignment](https://microsoft.github.io/DirectX-Specs/d3d/D3D12TightPlacedResourceAlignment.html)
 - [D3D12 View Instancing Functional Spec](https://microsoft.github.io/DirectX-Specs/d3d/ViewInstancing.html)
+- [Rasterizer Ordered Views](https://microsoft.github.io/DirectX-Specs/d3d/RasterOrderViews.html)（等价于 Vulkan 的 [34.5.6. Interlocked Operations](https://registry.khronos.org/vulkan/specs/latest/html/vkspec.html#fragops-shader-interlock)）
 - [D3D11.2 Min/Max reduction filtering](https://learn.microsoft.com/en-us/windows/win32/direct3d11/tiled-resources-texture-sampling-features#minmax-reduction-filtering)
 - [Direct3D 11 MinMaxFiltering](https://learn.microsoft.com/en-us/windows/win32/api/d3d11/ns-d3d11-d3d11_feature_data_d3d11_options1)
 - [D3D12_FILTER enumeration](https://learn.microsoft.com/en-us/windows/win32/api/d3d12/ne-d3d12-d3d12_filter)（这里，Direct3D 12 的 **`MinMaxFiltering`** 也指出了可通过 D3D11 的 [D3D11_FEATURE_DATA_D3D11_OPTIONS1 structure](https://learn.microsoft.com/en-us/windows/win32/api/d3d11/ns-d3d11-d3d11_feature_data_d3d11_options1) 方式去查询是否支持，这是由于 Direct3D 12.0 必须要求支持 Min/Max Filter，因此只有采用 Direct3D 11 Level 的设备才需要查询。）
