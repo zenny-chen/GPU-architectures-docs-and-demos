@@ -299,6 +299,13 @@ void vkCmdSetRasterizationSamplesEXT(
 - [WebGL官方样例](https://github.com/WebGLSamples)
 - [WebGL_Compute_shader](https://github.com/9ballsyndrome/WebGL_Compute_shader)
 - [Built-in Variable \(GLSL\)](https://www.khronos.org/opengl/wiki/Built-in_Variable_\(GLSL\))
+- GLSL 中要实现 OpenCL C 1.2 中的 **`barrier(CLK_LOCAL_MEM_FENCE)`**，则需要使用两条命令（Built-in Functions）：
+
+```glsl
+barrier();
+groupMemoryBarrier();
+```
+
 - [GL_KHR_vulkan_glsl](https://github.com/KhronosGroup/GLSL/blob/main/extensions/khr/GL_KHR_vulkan_glsl.txt)
 - [GL_ARB_gpu_shader_fp64](https://registry.khronos.org/OpenGL/extensions/ARB/ARB_gpu_shader_fp64.txt)
 - [GL_ARB_shader_draw_parameters](https://registry.khronos.org/OpenGL/extensions/ARB/ARB_shader_draw_parameters.txt)（包含 **`gl_DrawIDARB`**，**`gl_BaseVertexARB`**，**`gl_BaseInstanceARB`**）
@@ -411,6 +418,11 @@ void vkCmdSetRasterizationSamplesEXT(
 ## OpenGL Sync
 
 ![opengl_sync](images/opengl_sync.png)
+
+- [glFenceSync](https://registry.khronos.org/OpenGL-Refpages/gl4/html/glFenceSync.xhtml)
+- [glWaitSync](https://registry.khronos.org/OpenGL-Refpages/gl4/html/glWaitSync.xhtml)
+- [glClientWaitSync](https://registry.khronos.org/OpenGL-Refpages/gl4/html/glClientWaitSync.xhtml)
+- [glIsSync](https://registry.khronos.org/OpenGL-Refpages/gl4/html/glIsSync.xhtml)
 
 <br />
 
