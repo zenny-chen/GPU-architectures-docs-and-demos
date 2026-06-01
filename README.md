@@ -6,6 +6,7 @@
 ## 目录
 
 - [图形相关文章合集](#graphics_relevant_articles_collection)
+- [OpenGL Sync](#opengl_sync)
 - [GLSL源文件扩展名](#glsl_source_suffix)
 - [GLSL中的一些内建函数用法](#glsl_intrinsic_functions)
 - [CUDA相关文档](#cuda_relevant)
@@ -405,6 +406,13 @@ void vkCmdSetRasterizationSamplesEXT(
 - > In GCN, LS is the Local Shader, which is part of the tessellation pipeline. It's responsible for processing control points in the tessellation stage. The Hull Shader (HS) calculates tessellation factors and patch constants, while the Local Shader (LS) handles the per-control-point transformations. So LS works closely with HS during tessellation.
 
 <br/>
+
+<a name="opengl_sync" id="opengl_sync"></a>
+## OpenGL Sync
+
+![opengl_sync](images/opengl_sync.png)
+
+<br />
 
 <a name="glsl_source_suffix"></a>
 ## GLSL源文件扩展名
