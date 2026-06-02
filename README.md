@@ -308,6 +308,7 @@ groupMemoryBarrier();
 
 - [GL_KHR_vulkan_glsl](https://github.com/KhronosGroup/GLSL/blob/main/extensions/khr/GL_KHR_vulkan_glsl.txt)
 - [GL_ARB_gpu_shader_fp64](https://registry.khronos.org/OpenGL/extensions/ARB/ARB_gpu_shader_fp64.txt)
+- [GL_ARB_gpu_shader_int64](https://github.com/KhronosGroup/OpenGL-Registry/blob/main/extensions/ARB/ARB_gpu_shader_int64.txt)
 - [GL_ARB_shader_draw_parameters](https://registry.khronos.org/OpenGL/extensions/ARB/ARB_shader_draw_parameters.txt)（包含 **`gl_DrawIDARB`**，**`gl_BaseVertexARB`**，**`gl_BaseInstanceARB`**）
 - [GL_ARB_shader_clock](https://registry.khronos.org/OpenGL/extensions/ARB/ARB_shader_clock.txt)
 - [GL_ARB_sample_shading](https://registry.khronos.org/OpenGL/extensions/ARB/ARB_sample_shading.txt)（[NVIDIA’s OpenGL Functionality](https://www.nvidia.com/content/GTC-2010/pdfs/2127_GTC2010.pdf) 中陈述了 **`gl_SampleMask[]`** 变量 **可读**）
@@ -315,6 +316,7 @@ groupMemoryBarrier();
 - [GL_ARB_shader_stencil_export](https://registry.khronos.org/OpenGL/extensions/ARB/ARB_shader_stencil_export.txt)
 - [GL_EXT_spirv_intrinsics for SPIR V code gen](https://github.com/microsoft/DirectXShaderCompiler/wiki/GL_EXT_spirv_intrinsics-for-SPIR-V-code-gen)
 - [GL_EXT_spirv_intrinsics](https://github.com/KhronosGroup/GLSL/blob/a1fcf32545f948a16068437466868db926802d9a/extensions/ext/GLSL_EXT_spirv_intrinsics.txt)（First Draft）
+- [GL_EXT_shader_explicit_arithmetic_types](https://github.com/KhronosGroup/GLSL/blob/main/extensions/ext/GL_EXT_shader_explicit_arithmetic_types.txt)
 - [GL_EXT_gpu_shader4](https://registry.khronos.org/OpenGL/extensions/EXT/EXT_gpu_shader4.txt)（包含了 **`gl_FragData`** 的描述）
 - [GL_EXT_vertex_attrib_64bit](https://registry.khronos.org/OpenGL/extensions/ARB/ARB_gpu_shader_fp64.txt)
 - [GL_EXT_packed_float](https://registry.khronos.org/OpenGL/extensions/EXT/EXT_packed_float.txt)
