@@ -534,6 +534,8 @@ groupMemoryBarrier();
 - [Warp Matrix Functions](https://docs.nvidia.com/cuda/cuda-c-programming-guide/index.html#warp-matrix-functions)
 - [Asynchronous Warpgroup Level Matrix Multiply-Accumulate Instructions](https://docs.nvidia.com/cuda/parallel-thread-execution/index.html#asynchronous-warpgroup-level-matrix-multiply-accumulate-instructions)
 - [Warpgroup](https://docs.nvidia.com/cuda/parallel-thread-execution/index.html#asynchronous-warpgroup-level-matrix-instructions-warpgroup)
+- [Tensor Memory Accelerator](https://docs.nvidia.com/cuda/hopper-tuning-guide/index.html#tensor-memory-accelerator)
+- [CuTe TMA Tensors](https://docs.nvidia.com/cutlass/latest/media/docs/cpp/cute/0z_tma_tensors.html)
 - [10.29.2. Using TMA to transfer multi-dimensional arrays](https://docs.nvidia.com/cuda/cuda-c-programming-guide/#using-tma-to-transfer-multi-dimensional-arrays)
 - [NVIDIA TMA 全面分析](https://zhuanlan.zhihu.com/p/1945136522455122713)
 - [一文彻底理解NCCL传输层的各种通信方式](https://mp.weixin.qq.com/s?__biz=MzkzODIxNjk5Mg==&mid=2247484316&idx=1&sn=bfdcd52e4517741fb5277be1ff7a26d7)
