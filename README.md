@@ -7,6 +7,7 @@
 
 - [图形相关文章合集](#graphics_relevant_articles_collection)
 - [OpenGL Sync](#opengl_sync)
+- [各大图形 API 以及基于 GPU 设备的通用计算 API 的基本术语](#graphics_api_terminology)
 - [GLSL源文件扩展名](#glsl_source_suffix)
 - [GLSL中的一些内建函数用法](#glsl_intrinsic_functions)
 - [CUDA相关文档](#cuda_relevant)
@@ -429,6 +430,24 @@ groupMemoryBarrier();
 - [glWaitSync](https://registry.khronos.org/OpenGL-Refpages/gl4/html/glWaitSync.xhtml)
 - [glClientWaitSync](https://registry.khronos.org/OpenGL-Refpages/gl4/html/glClientWaitSync.xhtml)
 - [glIsSync](https://registry.khronos.org/OpenGL-Refpages/gl4/html/glIsSync.xhtml)
+
+<br />
+
+<a name="graphics_api_terminology" id="graphics_api_terminology"></a>
+## 各大图形 API 以及基于 GPU 设备的通用计算 API 的基本术语
+
+OpenGL(ES)/Vulkan (GLSL) | Direct3D (HLSL) | OpenCL | Metal (Metal Shading Language) | CUDA
+---- | ---- | ---- | ---- | ----
+invocation | thread | work item | thread | thread
+work group | thread group | work group | thread group | thread block
+subgroup | wave | subgroup | SIMD-group | warp
+
+硬件层抽象
+
+OpenCL | CUDA
+---- | ----
+Processing Element (PE) | Thread
+Compute Unit (CU) | Cooperative Thread Array (CTA)
 
 <br />
 
