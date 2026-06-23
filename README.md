@@ -307,8 +307,12 @@ void vkCmdSetRasterizationSamplesEXT(
 
 ```glsl
 barrier();
-groupMemoryBarrier();
+memoryBarrierShared();
 ```
+
+摘自：[Shared memory coherency](https://wikis.khronos.org/opengl/Compute_Shader#Shared_memory_coherency)
+
+> The [usual set of memory barriers](https://wikis.khronos.org/opengl/Incoherent_Memory_Visibility) is available to compute shaders, but they also have access to `memoryBarrierShared();` this barrier is specifically for shared variable ordering. `groupMemoryBarrier()` acts like `memoryBarrier()`, ordering memory writes for all kinds of variables, but it only orders read/writes for the current work group.
 
 - [GL_KHR_vulkan_glsl](https://github.com/KhronosGroup/GLSL/blob/main/extensions/khr/GL_KHR_vulkan_glsl.txt)
 - [GL_ARB_gpu_shader_fp64](https://registry.khronos.org/OpenGL/extensions/ARB/ARB_gpu_shader_fp64.txt)
