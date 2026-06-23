@@ -441,6 +441,7 @@ OpenGL(ES)/Vulkan (GLSL) | Direct3D (HLSL) | OpenCL | Metal (Metal Shading Langu
 invocation | thread | work item | thread | thread
 work group | thread group | work group | thread group | thread block
 subgroup | wave | subgroup | SIMD-group | warp
+shared memory | thread-group-shared memory | local memory | threadgroup memory | shared memory
 
 硬件层抽象
 
