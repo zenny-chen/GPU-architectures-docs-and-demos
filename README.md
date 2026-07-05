@@ -860,6 +860,7 @@ int main(int argc, const char* argv[])
 - [The CUDA Parallel Programming Model - 7.Tiling](https://nichijou.co/cuda7-tiling/)
 - [CUDA编程革命：cuTile分块计算赋能高效GPU开发](https://cloud.tencent.com/developer/article/2512674)
 - [手撕深度学习之CUDA矩阵乘法（下篇）：从Block Tiling到Warp Tiling，四步优化实现性能近90%的飞跃](https://mp.weixin.qq.com/s?__biz=Mzg2ODg5MDIzNg==&mid=2247484178&idx=1&sn=84caf2a79930b692c38c9f5914ed252c)
+- [Triton Layout 革命：GPU 编译器为什么不会分数据，以及怎么修好它（完整版）](https://mp.weixin.qq.com/s?__biz=MzYzOTAyMzU3OA==&mid=2247488148&idx=1&sn=1a0e775c5c86be7db9e3f09c8aa4df09)
 
 <br />
 
