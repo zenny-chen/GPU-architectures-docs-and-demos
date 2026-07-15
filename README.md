@@ -76,7 +76,7 @@ PFN_vkCmdPushDescriptorSetWithTemplateKHR spec_PFN_vkCmdPushDescriptorSetWithTem
 - [VK_KHR_shader_integer_dot_product](https://registry.khronos.org/vulkan/specs/1.3-extensions/man/html/VK_KHR_shader_integer_dot_product.html)
 - [VK_KHR_cooperative_matrix](https://registry.khronos.org/vulkan/specs/1.3-extensions/man/html/VK_KHR_cooperative_matrix.html)
 - [VK_KHR_shader_float_controls](https://registry.khronos.org/vulkan/specs/1.3-extensions/man/html/VK_KHR_shader_float_controls.html)
-- [VK_KHR_shader_clock](https://registry.khronos.org/vulkan/specs/1.3-extensions/man/html/VK_KHR_shader_clock.html)
+- [VK_KHR_shader_clock](https://registry.khronos.org/vulkan/specs/1.3-extensions/man/html/VK_KHR_shader_clock.html)（对应 [SPV_KHR_shader_clock](https://github.khronos.org/SPIRV-Registry/extensions/KHR/SPV_KHR_shader_clock.html)）
 - [VK_KHR_variable_pointers](https://registry.khronos.org/vulkan/specs/1.3-extensions/man/html/VK_KHR_variable_pointers.html)（留意看里面的链接：[SPV_KHR_variable_pointers](https://htmlpreview.github.io/?https://github.com/KhronosGroup/SPIRV-Registry/blob/master/extensions/KHR/SPV_KHR_variable_pointers.html)）
 - [VK_KHR_storage_buffer_storage_class](https://registry.khronos.org/vulkan/specs/1.3-extensions/man/html/VK_KHR_storage_buffer_storage_class.html)
 - [VK_KHR_buffer_device_address](https://registry.khronos.org/vulkan/specs/1.3-extensions/man/html/VK_KHR_buffer_device_address.html)
@@ -325,6 +325,7 @@ memoryBarrierShared();
 - [GL_EXT_spirv_intrinsics for SPIR V code gen](https://github.com/microsoft/DirectXShaderCompiler/wiki/GL_EXT_spirv_intrinsics-for-SPIR-V-code-gen)
 - [GL_EXT_spirv_intrinsics](https://github.com/KhronosGroup/GLSL/blob/a1fcf32545f948a16068437466868db926802d9a/extensions/ext/GLSL_EXT_spirv_intrinsics.txt)（First Draft）
 - [GL_EXT_shader_explicit_arithmetic_types](https://github.com/KhronosGroup/GLSL/blob/main/extensions/ext/GL_EXT_shader_explicit_arithmetic_types.txt)
+- [GL_EXT_shader_realtime_clock](https://github.com/KhronosGroup/GLSL/blob/main/extensions/ext/GL_EXT_shader_realtime_clock.txt)
 - [GL_EXT_gpu_shader4](https://registry.khronos.org/OpenGL/extensions/EXT/EXT_gpu_shader4.txt)（包含了 **`gl_FragData`** 的描述）
 - [GL_EXT_gpu_shader5](https://github.com/KhronosGroup/OpenGL-Registry/blob/main/extensions/EXT/EXT_gpu_shader5.txt)（引入 **`precise`** 限定符）
 - [GL_EXT_vertex_attrib_64bit](https://registry.khronos.org/OpenGL/extensions/ARB/ARB_gpu_shader_fp64.txt)
