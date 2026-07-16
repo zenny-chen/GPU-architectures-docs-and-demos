@@ -420,6 +420,7 @@ memoryBarrierShared();
 - [HAWS: Accelerating GPU Wavefront Execution through Selective Out-of-order Execution](https://dl.acm.org/doi/fullHtml/10.1145/3291050)
 - [PS5 Pro Technical Seminar at SIE HQ](https://www.youtube.com/watch?v=lXMwXJsMfIQ)
 - [RISC-V Day Tokyo｜RISC-V平台集成Imagination GPU解决方案的探索分析](https://mp.weixin.qq.com/s?__biz=MzA4NjMxNTMyNA==&mid=2650028195&idx=1&sn=66886f6745b760c15fe4e742260d542f)（[**GitHub 仓库**](https://github.com/NoitaniGami-idol-Group)）
+- [首个跨 NVIDIA, AMD, Intel, Apple 的 16 代微架构 GPU ISA 研究，硬件不变原语系统性分析与通用 ISA 构想](https://mp.weixin.qq.com/s?__biz=MjM5NDczOTA4NQ==&mid=2447902613&idx=1&sn=e73f53c29947b54a31b61c7f6f84660d)
 - [renderdoc](https://github.com/baldurk/renderdoc)
 - [tiny-gpu](https://github.com/adam-maj/tiny-gpu)
 - > In GCN, LS is the Local Shader, which is part of the tessellation pipeline. It's responsible for processing control points in the tessellation stage. The Hull Shader (HS) calculates tessellation factors and patch constants, while the Local Shader (LS) handles the per-control-point transformations. So LS works closely with HS during tessellation.
