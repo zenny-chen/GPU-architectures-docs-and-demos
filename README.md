@@ -833,6 +833,7 @@ int main(int argc, const char* argv[])
 - [SFU：GPU 里那个 把数学烧进硅片的特殊计算单元](https://mp.weixin.qq.com/s?__biz=MzYzOTAyMzU3OA==&mid=2247488786&idx=1&sn=f9b2941430752fa6d71c6a0543558ef4)
 - [内积法硬件计算汇总](https://mp.weixin.qq.com/s?__biz=MzkwOTIzMDE0OQ==&mid=2247484161&idx=1&sn=2efcddb2d90734cc8b53b846a158f1a3)（参考论文：《[S2TA: Exploiting Structured Sparsity for Energy-Efficient Mobile CNN Acceleration](https://arxiv.org/pdf/2107.07983)》）
 - [外积法硬件原理（一）](https://mp.weixin.qq.com/s?__biz=MzkwOTIzMDE0OQ==&mid=2247484168&idx=1&sn=dcedafa087763b568cd4617987e466f8)（参考论文：《[DSTC: Dual-Side Sparse Tensor Core for DNNs Acceleration on Modern GPU Architectures](https://arxiv.org/pdf/2105.09564)》）
+- [数学博士眼中的NVIDIA GEMM 中的 ping-pong 流水](https://mp.weixin.qq.com/s?__biz=MzI1NDcwOTA3MQ==&mid=2247483833&idx=1&sn=177353f1afffd37111123960ac98781b)
 - [深度解读达芬奇架构：华为AI芯片的「秘密武器」](https://zhuanlan.zhihu.com/p/79190804)
 - [探索高通骁龙处理器中的Hexagon NPU架构](https://www.toutiao.com/article/7293000269498434089/)
 - [NPU开发指南-加速器架构的设计空间探索](https://www.cnblogs.com/wujianming-110117/p/17698409.html)
