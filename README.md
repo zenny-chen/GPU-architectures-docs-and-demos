@@ -386,6 +386,7 @@ memoryBarrierShared();
 - [The NVIDIA GeForce GTX 1080 & GTX 1070 Founders Editions Review: Kicking Off the FinFET Generation -- PREEMPTION IMPROVED: FINE-GRAINED PREEMPTION FOR TIME-CRITICAL TASKS](https://www.anandtech.com/show/10325/the-nvidia-geforce-gtx-1080-and-1070-founders-edition-review/10)
 - [GeForce RTX 4090天梯榜首发评测“践踏”摩尔定律，开启未来游戏画卷](https://mp.weixin.qq.com/s?__biz=MjM5NDMxNjkyNA==&mid=2651537889&idx=1&sn=92c94d45f93dae6f49bf5f0d82da6217&chksm=bd7676f28a01ffe46456f0fa7490b24083a63a8621b75d9c7bfc3c304a311ec7ecca457a9d5f&mpshare=1&scene=23&srcid=1011y2IeQqo4hL49pBpni0DM)
 - [NVIDIA RTX Neural Rendering Introduces Next Era of AI-Powered Graphics Innovation](https://developer.nvidia.com/blog/nvidia-rtx-neural-rendering-introduces-next-era-of-ai-powered-graphics-innovation/)
+- [Nvidia Rubin架构分析预览](https://mp.weixin.qq.com/s?__biz=MzUxNzQ5MTExNw==&mid=2247499289&idx=1&sn=5282e645a76567ef1b5ba420c2400de0)
 - [Intel新上市Arc显卡要求的Resizable BAR是什么？](https://zhuanlan.zhihu.com/p/531315203)
 - [一文读懂 GPU 通信互联技术](https://mp.weixin.qq.com/s?__biz=MzAxMDA1NjMwMQ==&mid=2651801465&idx=1&sn=aa14929ba4335cff8fec3f261ed65d51&chksm=80adc07bb7da496d2aa1f8f31aa8812e3e7bf37a8212173c0ef1664781484b8b0e96f3ead5f4)
 - [ROPs and TMUs What is it?](https://www.techpowerup.com/forums/threads/rops-and-tmus-what-is-it.227596/)
@@ -869,6 +870,7 @@ int main(int argc, const char* argv[])
 - [CUDA编程革命：cuTile分块计算赋能高效GPU开发](https://cloud.tencent.com/developer/article/2512674)
 - [手撕深度学习之CUDA矩阵乘法（下篇）：从Block Tiling到Warp Tiling，四步优化实现性能近90%的飞跃](https://mp.weixin.qq.com/s?__biz=Mzg2ODg5MDIzNg==&mid=2247484178&idx=1&sn=84caf2a79930b692c38c9f5914ed252c)
 - [Triton Layout 革命：GPU 编译器为什么不会分数据，以及怎么修好它（完整版）](https://mp.weixin.qq.com/s?__biz=MzYzOTAyMzU3OA==&mid=2247488148&idx=1&sn=1a0e775c5c86be7db9e3f09c8aa4df09)
+- [NCCL 通信原语全解析：AllReduce、AllGather、ReduceScatter 到底在传什么](https://mp.weixin.qq.com/s?__biz=MzY5NDMyMzU2MA==&mid=2247484115&idx=1&sn=7558c32ee9dcdba7516740653020fd48)
 
 <br />
 
