@@ -864,7 +864,7 @@ int main(int argc, const char* argv[])
 - [DeepSeek-R1模型架构深度解读（七）弄懂FP8-Training](https://mp.weixin.qq.com/s?__biz=MzkzODI1NzQyNA==&mid=2247493281&idx=1&sn=759bada5b5b143af63cf6c36353bce53)
 - [简单聊聊Deepseek V3的FP8训练](https://blog.csdn.net/zengxiaojian2/article/details/145330985)
 - [迈向 Blackwell 原生的 8-bit 与 4-bit RL：在 Miles 中实现端到端 MXFP8 与 NVFP4 RL](https://mp.weixin.qq.com/s?__biz=MjM5NDczOTA4NQ==&mid=2447904338&idx=1&sn=35ed3704ded2850c9a7295a7db5f1618)
-- [103μs 降到 18μs 背后，Cursor 为何剑指英伟达，重写 GPU？](https://www.toutiao.com/article/7671239238746145331/)
+- [103μs 降到 18μs 背后，Cursor 为何剑指英伟达，重写 GPU？](https://www.toutiao.com/article/7671239238746145331/)（**FFN** 最常指 **前馈神经网络** (**Feedforward Neural Network**)）
 - [从 GPU 到 Spine：一次完整 AllReduce 的物理路径追踪](https://mp.weixin.qq.com/s?__biz=Mzk0MzY3NTQzOQ==&mid=2247483856&idx=1&sn=7c0618119816fa8d632d1648775847a2)
 - [GPU Kernel Scientist：LLM 驱动下的 GPGPU Kernel 迭代框架](https://mp.weixin.qq.com/s?__biz=MjM5NDczOTA4NQ==&mid=2447889551&idx=1&sn=606751b8d2b4190238f0fb800f1d5751)
 - [别被PCIe带宽骗了！你的GPU慢，根本不是带宽不够，是这个“隐形坑”在拖后腿](https://mp.weixin.qq.com/s?__biz=MjM5NTE3Nzk4MQ==&mid=2651249341&idx=1&sn=64c6133d61de9d90b936eea5dd085521)
