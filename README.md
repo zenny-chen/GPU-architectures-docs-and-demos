@@ -12,6 +12,7 @@
   - [AMD: RDNA 2 → RDNA 4 MRT acceleration](#amd_rdna2_to_4)
   - [Side‑by‑side comparison (MRT‑specific)](#side-by_side_comparison)
   - [Non‑obvious insight](#non-obvious_insight)
+  - [ROP Microarchitecture (Vendor‑neutral conceptual model)](#rop_microarchitecture)
 - [OpenGL Sync](#opengl_sync)
 - [各大图形 API 以及基于 GPU 设备的通用计算 API 的基本术语](#graphics_api_terminology)
 - [GLSL源文件扩展名](#glsl_source_suffix)
@@ -572,6 +573,73 @@ In practice:
 
 - NVIDIA wins in **pure pixel‑bound MRT passes** (G‑buffer generation).
 - AMD wins when MRT is mixed with **compute-heavy lighting** (async compute + Wave32).
+
+<br />
+
+<a name="rop_microarchitecture" id="rop_microarchitecture"></a>
+## ROP Microarchitecture (Vendor‑neutral conceptual model)
+
+**1. ROP Partitioning**
+
+Each ROP block is typically a **4‑pixel or 8‑pixel pipeline**, containing:
+
+- **Color‑write units** (one per MRT)
+- **Blend units**
+- **Compression units**
+- **Write‑combining buffers**
+- **Tile‑local caches**
+
+A single ROP partition handles a tile region (e.g., 16×16 or 32×32 pixels).
+
+**2. Export Coalescer**
+
+Before MRT data enters the ROP, a **pixel export coalescer** groups:
+
+- Multiple MRT outputs from the same pixel
+- Adjacent pixels in the same tile
+
+This reduces the number of write transactions.
+
+**3. Write‑Combining Buffers**
+
+Each ROP has **per‑RT write buffers**:
+
+- Accumulate multiple MRT writes
+- Merge writes into aligned memory bursts
+- Delay flushes until tile completion
+
+This is the most important MRT optimization.
+
+**4. Tile‑Local Cache**
+
+A small SRAM (8–32 KB per ROP partition) stores:
+
+- Color data for the current tile
+- Depth/stencil
+- Compression metadata
+
+Tile‑local caching avoids L2 traffic until the tile is finished.
+
+**5. Compression Engines**
+
+ROP includes:
+
+- **Delta Color Compression (DCC)** on AMD
+- **Color Compression (CC)** on NVIDIA
+
+Compression reduces memory bandwidth by 30–60% in MRT passes.
+
+**6. ROP → L2 Arbiter**
+
+ROP partitions send bursts to the L2 through:
+
+- A **write‑combining arbiter**
+- A **QoS scheduler** (NVIDIA)
+- A **bandwidth allocator** (AMD RDNA)
+
+This prevents MRT bursts from starving other GPU clients.
+
+> **Note:** A **QoS scheduler** (Quality‑of‑Service scheduler) in a GPU is the hardware block that **prioritizes and arbitrates memory traffic** so that critical clients (ROPs, compute units, texture units, copy engines, video engines) get the bandwidth they need without being starved by others. It’s essentially the GPU’s “traffic cop” for memory and cache access.
 
 <br />
 
