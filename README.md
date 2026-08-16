@@ -460,8 +460,8 @@ Both vendors solve these bottlenecks differently.
 
 <br />
 
-<a name="what_mrt_stresses_in_gpu" id="what_mrt_stresses_in_gpu"></a>
-## NVIDIA: Ada → Blackwell MRT acceleration](#nvidia_ada_to_blackwell
+<a name="nvidia_ada_to_blackwell" id="nvidia_ada_to_blackwell"></a>
+## NVIDIA: Ada → Blackwell MRT acceleration
 
 **1. ROP clustering + wider pixel pipelines**
 
