@@ -1046,6 +1046,7 @@ int main(int argc, const char* argv[])
 - [Tensor Core 微架构与编程模型深度解析](https://mp.weixin.qq.com/s?__biz=MzcwNTMyMzcwNg==&mid=2247485151&idx=1&sn=91ce40df8e181a5cccdfb7af2a35edb9)
 - [脉动阵列在二维矩阵乘法及卷积运算中的应用](https://blog.csdn.net/wordwarwordwar/article/details/103537996)
 - [Verilog FPGA硬件电路设计之六——脉动矩阵计算矩阵乘法](https://mbb.eet-china.com/blog/442508-359170.html)
+- [一颗 MAC 怎样长成计算阵列](https://mp.weixin.qq.com/s?__biz=Mzg3MjcwNjExOA==&mid=2247486323&idx=1&sn=1802758f8e72481e677dc792fb659a81)
 - [Day16：tiny-NPU 内部揭秘（续）：五大计算引擎，从 Softmax 到 DMA 的 RTL 级解剖](https://mp.weixin.qq.com/s?__biz=MzcwNjI4Njg2MQ==&mid=2247484472&idx=1&sn=8d60ac709d8a9e92527cf83198c984dd)
 - [SFU：GPU 里那个 把数学烧进硅片的特殊计算单元](https://mp.weixin.qq.com/s?__biz=MzYzOTAyMzU3OA==&mid=2247488786&idx=1&sn=f9b2941430752fa6d71c6a0543558ef4)
 - [内积法硬件计算汇总](https://mp.weixin.qq.com/s?__biz=MzkwOTIzMDE0OQ==&mid=2247484161&idx=1&sn=2efcddb2d90734cc8b53b846a158f1a3)（参考论文：《[S2TA: Exploiting Structured Sparsity for Energy-Efficient Mobile CNN Acceleration](https://arxiv.org/pdf/2107.07983)》）
