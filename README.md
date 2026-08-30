@@ -1083,6 +1083,8 @@ int main(int argc, const char* argv[])
 - [迈向 Blackwell 原生的 8-bit 与 4-bit RL：在 Miles 中实现端到端 MXFP8 与 NVFP4 RL](https://mp.weixin.qq.com/s?__biz=MjM5NDczOTA4NQ==&mid=2447904338&idx=1&sn=35ed3704ded2850c9a7295a7db5f1618)
 - [103μs 降到 18μs 背后，Cursor 为何剑指英伟达，重写 GPU？](https://www.toutiao.com/article/7671239238746145331/)（**FFN** 最常指 **前馈神经网络** (**Feedforward Neural Network**)）
 - [从 GPU 到 Spine：一次完整 AllReduce 的物理路径追踪](https://mp.weixin.qq.com/s?__biz=Mzk0MzY3NTQzOQ==&mid=2247483856&idx=1&sn=7c0618119816fa8d632d1648775847a2)
+- [NCCL 通信原语全解析：AllReduce、AllGather、ReduceScatter 到底在传什么](https://mp.weixin.qq.com/s?__biz=MzY5NDMyMzU2MA==&mid=2247484115&idx=1&sn=7558c32ee9dcdba7516740653020fd48)
+- [GPU分布式训练：数据并行、模型并行与ZeRO策略](https://mp.weixin.qq.com/s?__biz=MzY4MzA5NTYyMg==&mid=2247483940&idx=1&sn=2c3d4b9858be958d5b37204ad173c909)
 - [GPU Kernel Scientist：LLM 驱动下的 GPGPU Kernel 迭代框架](https://mp.weixin.qq.com/s?__biz=MjM5NDczOTA4NQ==&mid=2447889551&idx=1&sn=606751b8d2b4190238f0fb800f1d5751)
 - [别被PCIe带宽骗了！你的GPU慢，根本不是带宽不够，是这个“隐形坑”在拖后腿](https://mp.weixin.qq.com/s?__biz=MjM5NTE3Nzk4MQ==&mid=2651249341&idx=1&sn=64c6133d61de9d90b936eea5dd085521)
 - [主流大模型推理框架离不开CUDA Graphs，为何MoE模型却让它彻底失灵？](https://mp.weixin.qq.com/s?__biz=MzIwMjc1NDc1Nw==&mid=2247484269&idx=1&sn=6fa805cb362478991ff9ecd53cf37671)
@@ -1091,7 +1093,6 @@ int main(int argc, const char* argv[])
 - [CUDA编程革命：cuTile分块计算赋能高效GPU开发](https://cloud.tencent.com/developer/article/2512674)
 - [手撕深度学习之CUDA矩阵乘法（下篇）：从Block Tiling到Warp Tiling，四步优化实现性能近90%的飞跃](https://mp.weixin.qq.com/s?__biz=Mzg2ODg5MDIzNg==&mid=2247484178&idx=1&sn=84caf2a79930b692c38c9f5914ed252c)
 - [Triton Layout 革命：GPU 编译器为什么不会分数据，以及怎么修好它（完整版）](https://mp.weixin.qq.com/s?__biz=MzYzOTAyMzU3OA==&mid=2247488148&idx=1&sn=1a0e775c5c86be7db9e3f09c8aa4df09)
-- [NCCL 通信原语全解析：AllReduce、AllGather、ReduceScatter 到底在传什么](https://mp.weixin.qq.com/s?__biz=MzY5NDMyMzU2MA==&mid=2247484115&idx=1&sn=7558c32ee9dcdba7516740653020fd48)
 - [当我们说 CUDA 兼容时：算子库适配-为什么 matmul、attention、RMSNorm 才是性能分水岭（第4期）](https://mp.weixin.qq.com/s?__biz=MzkzNjk0ODA4Ng==&mid=2247484875&idx=1&sn=124773c3886c6da72f8b78ddc4c51418)
 
 <br />
