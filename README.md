@@ -310,6 +310,7 @@ void vkCmdSetRasterizationSamplesEXT(
 - **Khronos OpenGL官方文档中关于描述的 `gbufferImage` 类型，实际所对应的类型为**：**`imageBuffer`**、**`iimageBuffer`** 和 **`uimageBuffer`**。详细可参考：[Sampler (GLSL)](https://wikis.khronos.org/opengl/Sampler_(GLSL))
 - [WebGL官方样例](https://github.com/WebGLSamples)
 - [WebGL_Compute_shader](https://github.com/9ballsyndrome/WebGL_Compute_shader)
+- [glMultiDrawElementsIndirect](https://registry.khronos.org/OpenGL-Refpages/gl4/html/glMultiDrawElementsIndirect.xhtml) （与 [`gl_DrawID`](https://docs.vulkan.org/glsl/latest/chapters/builtins.html) 相关联）
 - [Built-in Variable \(GLSL\)](https://www.khronos.org/opengl/wiki/Built-in_Variable_\(GLSL\))
 - GLSL 中要实现 OpenCL C 1.2 中的 **`barrier(CLK_LOCAL_MEM_FENCE)`**，则需要使用两条命令（Built-in Functions）：
 
