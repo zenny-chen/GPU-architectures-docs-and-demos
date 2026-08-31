@@ -357,11 +357,14 @@ memoryBarrierShared();
 - [OpenCL vs. Vulkan Compute](https://community.khronos.org/t/opencl-vs-vulkan-compute/7132)
 - [OpenCL_Barrier同步](https://blog.csdn.net/weixin_42730667/article/details/96117450)
 - [The magic of clGetKernelWorkGroupInfo](https://streamhpc.com/blog/2015-10-22/the-magic-of-clgetkernelworkgroupinfo/)
+- [non-uniform work-groups for `clEnqueueNDRangeKernel`](https://registry.khronos.org/OpenCL/specs/unified/refpages/man/html/clEnqueueNDRangeKernel.html)
 - [cl_khr_command_buffer](https://registry.khronos.org/OpenCL/specs/3.0-unified/html/OpenCL_Ext.html#cl_khr_command_buffer)
 - [cl_khr_command_buffer_mutable_dispatch](https://registry.khronos.org/OpenCL/specs/3.0-unified/html/OpenCL_Ext.html#cl_khr_command_buffer_mutable_dispatch)
 - [cl_khr_extended_bit_ops](https://registry.khronos.org/OpenCL/specs/3.0-unified/html/OpenCL_Ext.html#cl_khr_extended_bit_ops)
 - [cl_khr_integer_dot_product](https://registry.khronos.org/OpenCL/specs/3.0-unified/html/OpenCL_Ext.html#cl_khr_integer_dot_product)
 - [cl_khr_subgroups](https://registry.khronos.org/OpenCL/specs/3.0-unified/html/OpenCL_Ext.html#cl_khr_subgroups)
+- [cl_khr_subgroup_non_uniform_arithmetic](https://registry.khronos.org/OpenCL/specs/unified/refpages/man/html/cl_khr_subgroup_non_uniform_arithmetic.html)
+- [cl_khr_subgroup_non_uniform_vote](https://registry.khronos.org/OpenCL/specs/unified/refpages/man/html/cl_khr_subgroup_non_uniform_vote.html)
 - [Is There a Way to Access Global Data Share (GDS) on Ellesmere \(RX 480\)?](https://community.amd.com/t5/archives-discussions/is-there-a-way-to-access-global-data-share-gds-on-ellesmere-rx/td-p/120816)（要访问 AMD GCN 架构中的 global data share，需要在 OpenCL-C 中开启 [cl_ext_atomic_counters_32](https://registry.khronos.org/OpenCL/extensions/ext/cl_ext_atomic_counters_32.txt) 和 [cl_ext_atomic_counters_64](https://registry.khronos.org/OpenCL/extensions/ext/cl_ext_atomic_counters_64.txt) 这两个扩展）
 - [cl_intel_bfloat16_conversions](https://registry.khronos.org/OpenCL/extensions/intel/cl_intel_bfloat16_conversions.html)（伴随的SPIR-V 扩展：[SPV_INTEL_bfloat16_conversion](https://github.com/KhronosGroup/SPIRV-Registry/blob/main/extensions/INTEL/SPV_INTEL_bfloat16_conversion.asciidoc)）
 - [How are separated sampled images and samplers used in Vulkan with GLSL?](https://stackoverflow.com/questions/77070602/how-are-separated-sampled-images-and-samplers-used-in-vulkan-with-glsl)
