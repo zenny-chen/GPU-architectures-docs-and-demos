@@ -436,6 +436,8 @@ memoryBarrierShared();
 - [首个跨 NVIDIA, AMD, Intel, Apple 的 16 代微架构 GPU ISA 研究，硬件不变原语系统性分析与通用 ISA 构想](https://mp.weixin.qq.com/s?__biz=MjM5NDczOTA4NQ==&mid=2447902613&idx=1&sn=e73f53c29947b54a31b61c7f6f84660d)
 - [renderdoc](https://github.com/baldurk/renderdoc)
 - [tiny-gpu](https://github.com/adam-maj/tiny-gpu)
+- [OUT OF ORDER PIXEL SHADER EXPORTS](https://patents.justia.com/patent/20180218532#1)
+- [Scoreboard cache coherence in a graphics pipeline](https://patents.justia.com/patent/9183607#2)
 - > In GCN, LS is the Local Shader, which is part of the tessellation pipeline. It's responsible for processing control points in the tessellation stage. The Hull Shader (HS) calculates tessellation factors and patch constants, while the Local Shader (LS) handles the per-control-point transformations. So LS works closely with HS during tessellation.
 
 <br/>
@@ -1044,6 +1046,7 @@ int main(int argc, const char* argv[])
 - [【AI系统】GPU 架构回顾（从2010年-2017年）](https://www.toutiao.com/article/7443762416485204515/)
 - [【AI系统】Tensor Core 深度剖析](https://www.toutiao.com/article/7444392439508484635/)
 - [【GPU架构与计算】从SM到Tensor Core，一文读懂AI算力核心引擎](https://mp.weixin.qq.com/s?__biz=MzU4NTM2Mzg0MQ==&mid=2247484806&idx=1&sn=fc4a158b7144cf9dcca5bf7e1cf75ddd)
+- [一颗完全由AI设计的芯片，全球首款！](https://www.toutiao.com/article/7680760106090381824/)
 - [AI芯片基础：计算架构的黄金十年](https://mp.weixin.qq.com/s?__biz=MzUzMzY1NTkwOQ==&mid=2247529243&idx=1&sn=9f644ac57ece7ab911dfbf2dca4950a5)
 - [英伟达GB200架构解析4: BlackWell多die和Cache一致性相关的分析](https://mp.weixin.qq.com/s?__biz=MzUxNzQ5MTExNw==&mid=2247489759&idx=1&sn=2c55ec63d6deaeb39ff7f767896ba853)
 - [利用集成CPU-GPU系统内存进行高性能计算: 以Grace Hopper为例](https://mp.weixin.qq.com/s?__biz=MzI3ODI5OTcwOQ==&mid=2247483873&idx=1&sn=c87f2c8266d71857e7d57dfd2da45ef8)
@@ -1097,6 +1100,7 @@ int main(int argc, const char* argv[])
 - [手撕深度学习之CUDA矩阵乘法（下篇）：从Block Tiling到Warp Tiling，四步优化实现性能近90%的飞跃](https://mp.weixin.qq.com/s?__biz=Mzg2ODg5MDIzNg==&mid=2247484178&idx=1&sn=84caf2a79930b692c38c9f5914ed252c)
 - [Triton Layout 革命：GPU 编译器为什么不会分数据，以及怎么修好它（完整版）](https://mp.weixin.qq.com/s?__biz=MzYzOTAyMzU3OA==&mid=2247488148&idx=1&sn=1a0e775c5c86be7db9e3f09c8aa4df09)
 - [当我们说 CUDA 兼容时：算子库适配-为什么 matmul、attention、RMSNorm 才是性能分水岭（第4期）](https://mp.weixin.qq.com/s?__biz=MzkzNjk0ODA4Ng==&mid=2247484875&idx=1&sn=124773c3886c6da72f8b78ddc4c51418)
+- [cuBLAS、cuDNN、CUTLASS分不清？一篇讲透 GPU 软件栈的每一层](https://mp.weixin.qq.com/s?__biz=MzAwMDc2NjQ4Nw==&mid=2663563644&idx=1&sn=e341439f47d0b5482298077fca7d5695)
 
 <br />
 
