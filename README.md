@@ -661,6 +661,7 @@ This prevents MRT bursts from starving other GPU clients.
 
 <br />
 
+```mermaid
 flowchart TD
   %% Shared resources
   subgraph SharedResources[Shared Scene Resources]
@@ -748,6 +749,7 @@ flowchart TD
     direction LR
     L1[Raster pass] --- L2[Ray tracing pass]
   end
+```
 
 <br />
 
