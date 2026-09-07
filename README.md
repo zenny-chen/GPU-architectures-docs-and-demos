@@ -661,6 +661,96 @@ This prevents MRT bursts from starving other GPU clients.
 
 <br />
 
+flowchart TD
+  %% Shared resources
+  subgraph SharedResources[Shared Scene Resources]
+    direction TB
+    TLAS["TLAS / BLAS"]
+    GBUFFER["G-Buffer (Depth, Normal, Albedo, Material, Motion)"]
+    MATBUF["Material & Texture Tables"]
+    SBT["Shader Binding Table (SBT)"]
+    DESCS["Descriptor Sets / Heaps"]
+  end
+
+  %% Frame sequence
+  subgraph Frame[Frame Graph (Raster-first Hybrid)]
+    direction TB
+    A[1. Update Scene Data\n(transforms, skinning, animations)]
+    A --> B{Geometry changed?}
+    B -->|Yes| C1[2a. Refit or Rebuild BLAS]
+    B -->|No| C2[2b. Skip BLAS rebuild]
+    C1 --> C3[Update TLAS instances]
+    C2 --> C3
+    C3 --> D[3. Raster G-Buffer Pass\n(render opaque geometry)]
+    D --> E[Barrier / Resource Transition\n(make G-buffer shader-readable)]
+    E --> F[4. Ray Tracing Pass\n(DispatchRays / TraceRays)\nUses: TLAS, G-Buffer, SBT, Descriptors]
+    F --> G[5. Denoise / Temporal Accumulation\n(accumulate history, apply denoiser)]
+    G --> H[6. Composite Pass\n(combine raster lighting + ray outputs)]
+    H --> I[7. Postprocess & Present\n(TAA, tone map, UI)]
+  end
+
+  %% Optional async and helpers
+  subgraph AsyncOps[Async / Optimization Paths]
+    direction TB
+    ASYNC_BUILD["Async AS Build / Upload\n(on separate queue)"]
+    TILE_MASK["Tile / Material Mask\n(trace only needed pixels)"]
+    RAY_BUDGET["Variable Ray Budget\n(per-pixel/per-material)"]
+    DENOISER["AI / Spatial Denoiser (NRD, OIDN)"]
+  end
+
+  %% Connections between shared resources and frame
+  TLAS --- C1
+  TLAS --- C3
+  GBUFFER --- D
+  GBUFFER --- F
+  MATBUF --- F
+  SBT --- F
+  DESCS --- D
+  DESCS --- F
+  DESCS --- H
+
+  %% Async connections
+  C1 --> ASYNC_BUILD
+  ASYNC_BUILD --> C3
+  TILE_MASK --> F
+  RAY_BUDGET --> F
+  DENOISER --> G
+
+  %% Visual annotations
+  classDef step fill:#f8f9fa,stroke:#333,stroke-width:1px;
+  class A,B,C1,C2,C3,D,E,F,G,H,I step;
+  style SharedResources fill:#eef6ff,stroke:#2b6cb0,stroke-width:1px
+  style AsyncOps fill:#fff7ed,stroke:#d97706,stroke-width:1px
+
+  %% Notes
+  note right of D
+    G-Buffer outputs:
+    - Depth, Normal, Albedo
+    - Material ID, Roughness
+    - Motion Vectors
+  endnote
+
+  note right of F
+    Ray Pass responsibilities:
+    - Trace reflections, shadows, AO, GI
+    - Small payloads; read G-Buffer & material tables
+    - Write to intermediate UAVs (reflectionRT, giRT)
+  endnote
+
+  note right of G
+    Denoising / accumulation:
+    - Temporal reuse with motion vectors
+    - Spatial or AI denoiser to reduce rays/pixel
+  endnote
+
+  %% Legend
+  subgraph Legend[Legend]
+    direction LR
+    L1[Raster pass] --- L2[Ray tracing pass]
+  end
+
+<br />
+
 <a name="graphics_api_terminology" id="graphics_api_terminology"></a>
 # 各大图形 API 以及基于 GPU 设备的通用计算 API 的基本术语
 
