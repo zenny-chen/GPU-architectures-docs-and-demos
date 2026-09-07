@@ -661,38 +661,6 @@ This prevents MRT bursts from starving other GPU clients.
 
 <br />
 
-```mermaid
-flowchart TD
-    A[Update Scene Data] --> B{Geometry Changed?}
-    B -->|Yes| C[Refit/Rebuild BLAS]
-    B -->|No| D[Skip BLAS Rebuild]
-    C --> E[Update TLAS Instances]
-    D --> E
-    E --> F[Raster G-Buffer Pass]
-    F --> G[Barrier: Make G-Buffer Readable]
-    G --> H[Ray Tracing Pass\n(Dispatch Rays)]
-    H --> I[Denoise / Temporal Accumulation]
-    I --> J[Composite Pass\nCombine Raster + Ray Outputs]
-    J --> K[Postprocess & Present]
-
-    %% Shared resources
-    subgraph SharedResources
-      TLAS[TLAS / BLAS]
-      GBUF[G-Buffer]
-      MAT[Material Tables]
-      SBT[Shader Binding Table]
-    end
-
-    TLAS --- E
-    GBUF --- F
-    GBUF --- H
-    MAT --- H
-    SBT --- H
-
-```
-
-<br />
-
 <a name="graphics_api_terminology" id="graphics_api_terminology"></a>
 # 各大图形 API 以及基于 GPU 设备的通用计算 API 的基本术语
 
