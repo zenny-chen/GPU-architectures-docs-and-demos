@@ -1,4 +1,5 @@
 # About GPU architectures docs and demos
+
 各大GPU厂商以及平台商关于3D图形渲染的demo
 
 <br />
@@ -14,6 +15,9 @@
   - [Non‑obvious insight](#non-obvious_insight)
   - [ROP Microarchitecture (Vendor‑neutral conceptual model)](#rop_microarchitecture)
 - [OpenGL Sync](#opengl_sync)
+- [About Ray Tracing](#about_ray_tracing)
+  - [How to utilize hardware accelerated Ray tracing feature via a Graphics API](#how_to_utilize_hardware_ray_tracing)
+  - [Combining hardware‑accelerated ray tracing with traditional rasterization](#combine_raytracing_with_rasterization)
 - [各大图形 API 以及基于 GPU 设备的通用计算 API 的基本术语](#graphics_api_terminology)
 - [GLSL源文件扩展名](#glsl_source_suffix)
 - [GLSL中的一些内建函数用法](#glsl_intrinsic_functions)
@@ -658,6 +662,285 @@ This prevents MRT bursts from starving other GPU clients.
 - [glWaitSync](https://registry.khronos.org/OpenGL-Refpages/gl4/html/glWaitSync.xhtml)
 - [glClientWaitSync](https://registry.khronos.org/OpenGL-Refpages/gl4/html/glClientWaitSync.xhtml)
 - [glIsSync](https://registry.khronos.org/OpenGL-Refpages/gl4/html/glIsSync.xhtml)
+
+<br />
+
+<a name="about_ray_tracing" id="about_ray_tracing"></a>
+# About Ray Tracing
+
+<br />
+
+<a name="how_to_utilize_hardware_ray_tracing" id="how_to_utilize_hardware_ray_tracing"></a>
+## How to utilize hardware accelerated Ray tracing feature via a Graphics API
+
+### Overview
+
+Hardware‑accelerated ray tracing in modern GPUs exposes fixed‑function and API support that lets real‑time renderers trace rays efficiently for effects such as reflections, shadows, global illumination, and more. The two mainstream graphics APIs that provide access to GPU ray tracing are **Direct3D 12 (DXR)** and **Vulkan (VK_KHR_ray_tracing and related extensions)**. Implementing it in a real‑time app or game involves these high‑level steps: enable the API extensions, build acceleration structures (BLAS/TLAS), create ray tracing pipelines and shaders, dispatch ray queries, integrate results into raster or hybrid render passes, and optimize for performance and memory. 
+
+---
+
+### Key concepts (what you must understand first)
+
+| **Concept** | **Why it matters** |
+|---|---|
+| **Acceleration structures (BLAS / TLAS)** | Organize scene geometry for fast ray traversal; must be built/updated efficiently.  |
+| **Ray tracing pipeline / shader stages** | Separate shader types (raygen, miss, closest hit, any‑hit, intersection) drive ray behavior and shading.  |
+| **Ray dispatch / trace calls** | API call that launches rays (e.g., `DispatchRays` in DXR, `vkCmdTraceRaysKHR` in Vulkan).  |
+| **Hybrid rendering** | Combine rasterization for primary visibility and ray tracing for effects to balance quality and performance.  |
+| **Memory and synchronization** | Acceleration structures, shader binding tables, and scratch buffers require careful memory management and GPU/CPU sync.  |
+
+---
+
+### Practical implementation roadmap
+
+#### 1. Choose API and enable extensions
+- **Direct3D 12 (DXR)**: Use DirectX 12 with DXR feature levels; enable device features for ray tracing and create a ray tracing device/command list.   
+- **Vulkan**: Enable `VK_KHR_acceleration_structure`, `VK_KHR_ray_tracing_pipeline`, `VK_KHR_deferred_host_operations`, and `VK_KHR_buffer_device_address` (and platform‑specific helper extensions). Query physical device support and required feature flags. 
+
+#### 2. Build acceleration structures
+- **BLAS (Bottom Level AS)**: Build per‑mesh or per‑object structures from vertex/index buffers. Use fast build flags for static geometry and updateable builds for dynamic objects.   
+- **TLAS (Top Level AS)**: Instance BLASes with transforms to form the scene TLAS. Update TLAS when objects move. Use compact or updateable builds to reduce memory and rebuild cost. 
+
+#### 3. Create ray tracing pipeline and shader binding table (SBT)
+- **Shaders**: Implement `raygen`, `closest hit`, `any hit`, `miss`, and optional `intersection` shaders. In Vulkan these are SPIR‑V modules; in DXR they are HLSL with `raytracing` profile.   
+- **Pipeline**: Create a ray tracing pipeline object that links shader groups and root/signature layouts (descriptor sets in Vulkan, root signatures in DXR).   
+- **Shader Binding Table**: Populate SBT entries mapping shader groups to GPU addresses and resource identifiers; the SBT is read by the hardware during ray traversal. 
+
+#### 4. Dispatch rays and handle payloads
+- Use `DispatchRays` (DXR) or `vkCmdTraceRaysKHR` (Vulkan) to launch rays across a 2D grid or custom dimensions. Pass payloads (per‑ray data) and attributes (e.g., barycentrics) between shaders. Keep payload size minimal for performance. 
+
+#### 5. Integrate with rasterization (hybrid approach)
+- Render primary visibility with rasterization to get G‑buffer (normals, albedo, depth). Use ray tracing for reflections, soft shadows, ambient occlusion, or path tracing denoising. Blend ray results into final frame. 
+
+#### 6. Performance and quality tradeoffs
+- **Reduce ray count**: Use screen‑space or temporal accumulation, importance sampling, and denoising to lower rays per pixel.   
+- **Use LOD and simplified BLAS** for distant objects.  
+- **Batch builds and updates**: Reuse BLAS where possible; update TLAS incrementally.  
+- **Async compute and overlap**: Build AS or run denoising on separate queues to hide latency. 
+
+---
+
+### Implementation details and tips
+
+#### Shader design
+- Keep **payloads small** and avoid heavy recursion in shaders. Use iterative approaches or limited recursion depth.   
+- Use **any‑hit** for alpha/transparent geometry or custom intersection filtering; use **intersection** for procedural primitives. 
+
+#### Memory and buffers
+- Allocate GPU buffers with device address capability (Vulkan `bufferDeviceAddress`, DXR equivalent) for SBT and AS. Align SBT entries to hardware requirements. 
+
+#### Debugging and validation
+- Use vendor and API validation layers: **D3D12 debug layer + DXR tools**, **Vulkan validation layers + ray tracing extension validation**. Use GPU vendor tools (NVIDIA Nsight, AMD Radeon GPU Profiler, Intel GPA) to inspect AS builds, trace counts, and shader performance. 
+
+#### Denoising and temporal reuse
+- Real‑time ray tracing often uses **denoisers** (spatial or temporal) to reconstruct high‑quality images from few rays. Integrate temporal accumulation with motion vectors and history rejection. Consider open‑source denoisers (e.g., Intel Open Image Denoise, NVIDIA NRD) or custom filters. 
+
+---
+
+### Minimal starting checklist (practical next steps)
+1. **Confirm GPU & driver support** for DXR or Vulkan ray tracing.   
+2. **Set up a minimal project** using Microsoft’s DXR samples or Khronos Vulkan ray tracing samples to study pipeline creation and SBT layout.   
+3. **Implement BLAS/TLAS** for a simple scene and verify traversal with a debug miss shader that outputs hit/no‑hit.   
+4. **Add a raygen shader** that casts primary rays and writes to an output texture; display that texture to confirm correct dispatch.   
+5. **Iterate**: add closest‑hit shading, integrate with raster G‑buffer, then add reflections/soft shadows and denoising. 
+
+---
+
+### Recommended learning resources and samples
+- **DirectX Raytracing (DXR) samples and docs** — official Microsoft DXR guide and sample repository.   
+- **Khronos Vulkan Ray Tracing extensions and samples** — spec pages and reference samples showing `vkCmdTraceRaysKHR`, AS builds, and SBT creation.   
+- **GPU vendor guides and tools** (NVIDIA, AMD, Intel) for performance tuning and debugging. 
+
+---
+
+### Quick example sketch (conceptual, not full code)
+- **DXR flow**: create D3D12 device → enable DXR features → create acceleration structures (BLAS/TLAS) → compile HLSL raytracing shaders → create state object (ray tracing pipeline) → build SBT → `DispatchRays` → copy/resolve output to swapchain.   
+- **Vulkan flow**: create VkDevice with ray tracing extensions → build BLAS/TLAS via `vkCmdBuildAccelerationStructuresKHR` → compile GLSL→SPIR‑V ray tracing shaders → create `VkPipeline` with ray tracing shader groups → build SBT buffers → `vkCmdTraceRaysKHR` → present. 
+
+---
+
+### Final recommendations
+
+- Start from official samples and incrementally add features; validate each step (AS build, SBT, dispatch). Use hybrid rendering and denoising early to get acceptable frame rates. Profile often and tune ray counts, payload sizes, and AS update strategies to meet your target performance budget.
+
+![3d_gaussian_raytracing_shadows](images/3d_gaussian_raytracing_shadows.png)
+
+| Stage | Interaction Mechanism | Description |
+| --- | --- | --- |
+| **[G‑Buffer Output](ca://s?q=Explain_GBuffer_in_rasterization)** | UAV / Render Target | The Pixel Shader writes per‑pixel data (depth, normal, albedo, roughness, motion vectors) into G‑buffer textures. These textures become **read‑only inputs** for ray tracing shaders. |
+| **[Ray Generation Shader](ca://s?q=Ray_generation_shader_in_DXR)** | Texture Sampling | Reads G‑buffer data to determine ray origin and direction — e.g., reflection rays use the normal and view vector from the Pixel Shader’s output. |
+| **[Closest Hit Shader](ca://s?q=Closest_hit_shader_in_ray_tracing)** | Material Lookup | Uses material IDs written by the Pixel Shader to fetch textures or BRDF parameters for shading. |
+| **[Miss Shader](ca://s?q=Miss_shader_in_ray_tracing)** | Environment Sampling | If no geometry is hit, it samples environment maps that the Pixel Shader might have bound earlier. |
+| **[Composite Pass](ca://s?q=Hybrid_rendering_composite_pass)** | Texture Blending | The Pixel Shader (or a post‑lighting compute shader) reads ray tracing results (reflections, shadows, AO) and blends them with raster lighting to produce the final color. |
+
+<br />
+
+<a name="combine_raytracing_with_rasterization" id="combine_raytracing_with_rasterization"></a>
+## Combining hardware‑accelerated ray tracing with traditional rasterization
+
+### Overview
+Combining hardware‑accelerated ray tracing with traditional rasterization (a **hybrid renderer**) means using rasterization for fast primary visibility and raster‑friendly tasks, while invoking GPU ray tracing for effects that benefit from ray queries (reflections, shadows, AO, secondary visibility, path‑traced lighting). The integration has three main goals: **correctness** (consistent lighting/visibility), **performance** (minimize rays and synchronization), and **quality** (use denoising/temporal reuse to reduce ray counts). Below is a practical, step‑by‑step guide with concrete data flow, synchronization, resource layout, shader interactions, and optimization strategies.
+
+---
+
+### High‑level data flow (frame by frame)
+| Stage | Purpose | Key outputs |
+|---|---:|---|
+| **Raster G‑buffer pass** | Produce primary visibility and material data cheaply | **Depth**, **normal**, **albedo**, **roughness/metalness**, **motion vectors**, **material IDs** |
+| **Build/Update TLAS** | Ensure acceleration structures reflect current scene transforms | **TLAS GPU address** |
+| **Ray tracing dispatch** | Launch rays for reflections, shadows, AO, or path samples | **Ray outputs**: hit position, normal, material, radiance, hit distance, instance ID |
+| **Denoise / temporal accumulate** | Reconstruct high‑quality results from few rays | **Filtered radiance**; history buffers updated |
+| **Composite / lighting** | Combine raster lighting and ray results into final color | Final color buffer |
+| **Postprocess & present** | Tone mapping, UI, present | Swapchain image |
+
+---
+
+### Detailed integration steps
+
+#### 1. Produce a robust G‑buffer with rasterization
+- Render the scene with a standard raster pipeline to fill a **G‑buffer**. Include:
+  - **Depth** (32‑bit float or 24/8)
+  - **World or view space normal**
+  - **Albedo / base color**
+  - **Material parameters** (roughness, metallic, specular, emissive)
+  - **Object/primitive IDs** (for material lookup or skipping self‑hits)
+  - **Motion vectors** (for temporal reprojection)
+- Keep G‑buffer formats GPU‑friendly (packed 16/16/16/16 or 32‑bit floats where needed).
+
+#### 2. Maintain acceleration structures (BLAS/TLAS)
+- Build BLAS per mesh and TLAS per frame or when objects move. For dynamic objects:
+  - Use **updateable BLAS** or rebuild only changed BLAS.
+  - Rebuild TLAS each frame if many instances move; otherwise update transforms.
+- Ensure BLAS/TLAS memory and scratch buffers are created on the correct queue and synchronized with the command stream that will trace rays. Use async compute or a separate build queue if supported to hide build cost.
+
+#### 3. Prepare resources for ray shaders
+- Create output textures/buffers for ray results (e.g., reflection radiance, shadow occlusion, AO). These are UAVs (unordered access views) or storage images.
+- Create a **Shader Binding Table (SBT)** mapping shader groups to GPU addresses and root/signature/descriptor layouts.
+- Provide descriptor sets/root signatures that expose:
+  - TLAS handle
+  - G‑buffer textures (read‑only)
+  - Material/texture arrays or bindless descriptors
+  - Output UAVs for ray results
+  - Random seeds, frame index, and other uniforms
+
+#### 4. Ray generation and shader logic
+- **Raygen shader**:
+  - For screen‑space effects, iterate over pixels (or a tile pattern) and read G‑buffer to determine ray origin/direction.
+  - Example: for reflections, compute origin = worldPos + normal * bias; direction = reflect(viewDir, normal) or importance sample microfacet lobe for rough surfaces.
+  - Pack minimal payload (radiance accumulator, remaining bounces, flags).
+- **Closest hit / any hit**:
+  - Sample material at hit point (texture fetch via material ID).
+  - Compute shading contribution (BRDF evaluation) and write to output buffer or accumulate into payload for multi‑bounce.
+  - Use **any‑hit** to implement alpha testing or to skip self‑hits.
+- **Miss shader**:
+  - Return environment radiance (skybox) or default occlusion.
+
+#### 5. Dispatch rays efficiently
+- Use `DispatchRays` (DXR) or `vkCmdTraceRaysKHR` (Vulkan) with dimensions matching the effect:
+  - **Full‑screen**: one ray per pixel for primary reflection/one‑bounce effects.
+  - **Sparse/tiling**: trace fewer rays per pixel and reconstruct (checkerboard, interleaved tiles).
+  - **Custom workgroups**: trace per‑object or per‑light for shadow maps.
+- Keep payload size small and avoid large stack usage in shaders.
+- Consider **ray flags** and **shader record indexing** to reduce branching and SBT size.
+
+#### 6. Synchronization and resource hazards
+- Ray tracing reads TLAS and read‑only G‑buffer; ensure TLAS build completes before trace dispatch.
+- Use proper pipeline barriers:
+  - In Vulkan: `vkCmdPipelineBarrier` or `vkCmdWaitEvents` to ensure AS build and G‑buffer writes are visible to ray tracing.
+  - In D3D12: use resource barriers and ensure `BuildRaytracingAccelerationStructure` commands are completed before `DispatchRays`.
+- If using async compute queues for AS builds or denoising, use cross‑queue semaphores/fences to synchronize.
+
+#### 7. Denoising and temporal accumulation
+- Because real‑time budgets limit rays per pixel, apply denoising:
+  - **Spatial denoisers**: bilateral filters guided by normals, depth, and albedo.
+  - **Temporal accumulation**: reproject previous frames using motion vectors and blend with current noisy samples; use history rejection when disocclusion or large motion occurs.
+  - Use vendor or open denoisers (NVIDIA NRD, Intel Open Image Denoise, AMD FidelityFX Denoiser) or implement a custom filter.
+- Denoiser inputs: noisy radiance, normal, depth, albedo, motion vectors, and confidence/variance estimates.
+
+#### 8. Composite ray results into raster pipeline
+- After denoising, composite ray outputs into the lighting pass:
+  - **Additive**: add reflection radiance to the rasterized direct lighting.
+  - **Replace**: for effects like screen‑space reflections you may blend between raster reflection and ray result based on roughness or confidence.
+  - **Multiply/occlusion**: apply shadow/AO factors to ambient or direct lighting.
+- Use a full‑screen pass or deferred lighting pass to combine G‑buffer lighting with ray contributions.
+
+---
+
+### Practical patterns and optimizations
+
+#### Hybrid patterns
+- **Primary raster + ray secondary**: rasterize primary visibility and shade direct lights; use rays for reflections, soft shadows, and indirect bounces.
+- **Raster fallback**: when ray budget is low, fall back to screen‑space approximations (SSR, SSAO).
+- **Tile‑based ray tracing**: trace rays only in tiles where effect is visible (specular highlights, reflective materials).
+- **Temporal accumulation + reprojection**: trace fewer rays per frame and accumulate over time.
+
+#### Performance tips
+- **Minimize ray count**: importance sample BRDF lobes; use roughness to reduce reflection ray length.
+- **Use LODs and simplified geometry** in BLAS for distant objects.
+- **Instance culling**: avoid tracing against invisible or occluded geometry by using visibility masks or per‑instance flags.
+- **Compact SBT**: group shaders by material similarity to reduce SBT entries.
+- **Async AS builds**: update AS on a background queue and swap TLAS handles when ready.
+- **Use ray flags**: `SKIP_CLOSEST_HIT_SHADER` or `OPAQUE` flags where appropriate to reduce shader invocations.
+
+---
+
+### Example integration scenarios
+
+#### Screen‑space reflection hybrid
+1. Raster G‑buffer produced.
+2. For each pixel with a reflective material, compute reflection vector in raygen.
+3. Trace a single reflection ray; if hit, sample material and write radiance; if miss, fallback to environment map or SSR.
+4. Denoise and composite additively into final lighting.
+
+#### Soft shadows from area lights
+1. Rasterize direct lighting without shadowing or with cheap shadow maps.
+2. For each light sample, trace shadow rays toward the light (multiple samples for soft penumbra).
+3. Accumulate occlusion factor per pixel; denoise and multiply into direct lighting.
+
+#### One‑bounce global illumination (path tracing hybrid)
+1. Rasterize primary visibility and materials.
+2. For each pixel, spawn a small number of importance‑sampled rays for indirect bounce.
+3. Accumulate radiance into a buffer; denoise and temporally accumulate to approximate GI.
+
+---
+
+### Debugging and validation
+- Visualize intermediate buffers: ray hit/no‑hit, ray distance, instance IDs, and per‑ray payloads.
+- Use API validation layers (Vulkan ray tracing validation, D3D12 debug + PIX).
+- Profile shader invocation counts and memory bandwidth with vendor tools (Nsight, Radeon GPU Profiler).
+
+---
+
+### Checklist to implement a hybrid frame
+1. Rasterize scene into G‑buffer (depth, normal, albedo, material params, motion vectors).  
+2. Build or update BLAS/TLAS and ensure synchronization.  
+3. Create ray tracing pipeline and SBT; bind TLAS and G‑buffer resources.  
+4. Dispatch rays for chosen effects (reflections, shadows, AO).  
+5. Denoise and temporally accumulate ray outputs.  
+6. Composite ray results into deferred lighting or forward pass.  
+7. Postprocess and present.
+
+---
+
+### Final notes
+- Start small: implement a single effect (e.g., reflections) with one ray per pixel and a simple denoiser, then expand.  
+- Profile early and often; ray tracing shifts the bottleneck from triangle throughput to memory bandwidth and shader execution.  
+- Use hybrid fallbacks to maintain frame rate on lower‑end hardware.
+
+![full_programmble_graphics_pipeline_with_raytracing](images/full_programmble_graphics_pipeline_with_raytracing.png)
+
+Here’s the **full programmable graphics pipeline** you asked for — the complete flow from geometry processing through rasterization, ray tracing, and final composition.  
+
+[View the full diagram](https://copilot.microsoft.com/th/id/BCO.f8548d01-5ddd-40c6-8999-e7ae68f5defe.png)  
+
+It visualizes:  
+- **Geometry Processing** → Vertex or Mesh Shader transforms object vertices into clip space, followed by Primitive Assembly.  
+- **Rasterization Stage** → Pixel Shader generates G‑buffer outputs (depth, normals, albedo, roughness).  
+- **Ray Tracing Stage** → Ray Generation, Closest Hit, Any Hit, Miss, and Intersection shaders use TLAS handles and G‑buffer textures to compute reflections, shadows, and AO.  
+- **Final Composition** → Combines lighting and ray results into the final frame.  
+- **Synchronization Barriers** → GPU memory transitions ensure coherent data exchange between geometry, raster, and ray tracing stages.  
+
+This diagram completes the **modern hybrid rendering pipeline**, showing how programmable shader stages cooperate across geometry, raster, and ray domains to produce physically accurate real‑time graphics.
 
 <br />
 
