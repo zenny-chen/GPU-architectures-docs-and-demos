@@ -18,6 +18,7 @@
 - [About Ray Tracing](#about_ray_tracing)
   - [How to utilize hardware accelerated Ray tracing feature via a Graphics API](#how_to_utilize_hardware_ray_tracing)
   - [Combining hardware‑accelerated ray tracing with traditional rasterization](#combine_raytracing_with_rasterization)
+  - [GPU-Driven Timeline Overlap](#gpu_driven_timeline_overlap)
 - [各大图形 API 以及基于 GPU 设备的通用计算 API 的基本术语](#graphics_api_terminology)
 - [GLSL源文件扩展名](#glsl_source_suffix)
 - [GLSL中的一些内建函数用法](#glsl_intrinsic_functions)
@@ -927,11 +928,9 @@ Combining hardware‑accelerated ray tracing with traditional rasterization (a *
 - Profile early and often; ray tracing shifts the bottleneck from triangle throughput to memory bandwidth and shader execution.  
 - Use hybrid fallbacks to maintain frame rate on lower‑end hardware.
 
-![full_programmble_graphics_pipeline_with_raytracing](images/full_programmble_graphics_pipeline_with_raytracing.png)
-
 Here’s the **full programmable graphics pipeline** you asked for — the complete flow from geometry processing through rasterization, ray tracing, and final composition.  
 
-[View the full diagram](https://copilot.microsoft.com/th/id/BCO.f8548d01-5ddd-40c6-8999-e7ae68f5defe.png)  
+![full_programmble_graphics_pipeline_with_raytracing](images/full_programmble_graphics_pipeline_with_raytracing.png)
 
 It visualizes:  
 - **Geometry Processing** → Vertex or Mesh Shader transforms object vertices into clip space, followed by Primitive Assembly.  
@@ -973,6 +972,43 @@ Here’s how it works in detail:
 So, the **Final Composition** is a **GPU‑driven pass**, with the host merely orchestrating and synchronizing. This design keeps all heavy pixel operations on the device, maximizing throughput and minimizing CPU overhead.  
 
 This diagram completes the **modern hybrid rendering pipeline**, showing how programmable shader stages cooperate across geometry, raster, and ray domains to produce physically accurate real‑time graphics.
+
+![raytracing_render_loop_chart](images/raytracing_render_loop_chart.PNG)
+
+<br />
+
+<a name="gpu_driven_timeline_overlap" id="gpu_driven_timeline_overlap"></a>
+## GPU-Driven Timeline Overlap
+
+这里是你要的 **CPU–GPU 时间线图**，直观展示了 **Final Composition** 的处理过程、重叠与同步：
+
+![cpu_gpu_timeline_overlap_for_raytracing](images/cpu_gpu_timeline_overlap_for_raytracing.png)
+
+---
+
+### 图表说明  
+- **CPU (Host)** 时间线：  
+  - **Frame Setup** → 更新场景数据与命令缓冲。  
+  - **Ray Tracing Dispatch** → 提交光线追踪命令。  
+  - **Present Frame** → 调用呈现接口。  
+
+- **GPU (Device)** 时间线：  
+  - **Geometry & Rasterization** → 顶点/网格着色器与像素着色器生成 G‑buffer。  
+  - **Ray Tracing + Async Compute** → 光线追踪着色器运行，同时异步队列执行 TLAS 构建与去噪。  
+  - **Final Composition** → 光照混合与后处理，生成最终帧。  
+
+- **同步屏障**：确保 G‑buffer 写入在光线追踪读取前完成，光线输出在合成前完成。  
+
+---
+
+### 🔄 关键点  
+- **异步计算重叠**：TLAS 构建与去噪与光栅化并行。  
+- **同步屏障**：保证数据一致性。  
+- **CPU–GPU 并行**：GPU 渲染当前帧时，CPU 准备下一帧。  
+
+---
+
+要不要我进一步扩展成一个 **详细的帧流水线图**，展示每个 Pass（几何、光栅、光追、去噪、合成、后处理）的顺序和可能的并行执行？这样能更清晰地看到整个渲染管线的执行节奏。
 
 <br />
 
