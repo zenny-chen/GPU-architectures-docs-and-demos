@@ -938,7 +938,39 @@ It visualizes:
 - **Rasterization Stage** → Pixel Shader generates G‑buffer outputs (depth, normals, albedo, roughness).  
 - **Ray Tracing Stage** → Ray Generation, Closest Hit, Any Hit, Miss, and Intersection shaders use TLAS handles and G‑buffer textures to compute reflections, shadows, and AO.  
 - **Final Composition** → Combines lighting and ray results into the final frame.  
-- **Synchronization Barriers** → GPU memory transitions ensure coherent data exchange between geometry, raster, and ray tracing stages.  
+- **Synchronization Barriers** → GPU memory transitions ensure coherent data exchange between geometry, raster, and ray tracing stages.
+
+The **Final Composition** stage is processed almost entirely on the **device end (GPU)** — not the host CPU.  
+
+Here’s how it works in detail:  
+
+---
+
+### ⚙️ Device‑End Processing
+- **GPU composition pass**: The GPU executes a full‑screen shader (often a **Pixel** (**Fragment**) or **Compute** shader) that reads the **ray tracing outputs** (reflections, shadows, AO) and **rasterized G‑buffer** textures.  
+- **Lighting integration**: The shader blends these textures using physically based lighting equations, tone mapping, and post‑processing filters (bloom, color grading, etc.).  
+- **Frame presentation**: The composed color buffer is resolved and copied to the swapchain for display — still on the GPU.  
+
+---
+
+### 🧠 Host‑End Responsibilities
+- **Command orchestration**: The CPU (host) prepares command lists or command buffers, sets pipeline states, and submits them to the GPU.  
+- **Resource management**: It allocates textures, buffers, and synchronization primitives, but does not perform the composition math itself.  
+- **Frame scheduling**: The host coordinates frame timing and presentation (e.g., `Present()` in Direct3D or `vkQueuePresentKHR` in Vulkan).  
+
+---
+
+### 🔄 Summary
+| Role | Host (CPU) | Device (GPU) |
+|------|-------------|--------------|
+| Command setup | ✅ | — |
+| Shader execution | — | ✅ |
+| Lighting & blending | — | ✅ |
+| Frame presentation | ✅ (trigger) | ✅ (execution) |
+
+---
+
+So, the **Final Composition** is a **GPU‑driven pass**, with the host merely orchestrating and synchronizing. This design keeps all heavy pixel operations on the device, maximizing throughput and minimizing CPU overhead.  
 
 This diagram completes the **modern hybrid rendering pipeline**, showing how programmable shader stages cooperate across geometry, raster, and ray domains to produce physically accurate real‑time graphics.
 
