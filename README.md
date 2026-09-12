@@ -61,16 +61,20 @@
 PFN_vkGetBufferDeviceAddressEXT custom_vkGetBufferDeviceAddressEXT = 
     (PFN_vkGetBufferDeviceAddressEXT)vkGetInstanceProcAddr(s_instance, "vkGetBufferDeviceAddressEXT");
 ```
+
 - 如果从 **Vulkan Instance** 无法加载，那么可以尝试从Vulkan设备加载Vulkan API，通过：[vkGetDeviceProcAddr](https://registry.khronos.org/vulkan/specs/1.3-extensions/man/html/vkGetDeviceProcAddr.html)。比如：
+
 ```c
 PFN_vkCmdPushDescriptorSetWithTemplateKHR spec_PFN_vkCmdPushDescriptorSetWithTemplateKHR = 
     (PFN_vkCmdPushDescriptorSetWithTemplateKHR)vkGetDeviceProcAddr(s_specDevice, "vkCmdPushDescriptorSetWithTemplateKHR");
 ```
+
 - [Understanding Vulkan Synchronization](https://www.khronos.org/blog/understanding-vulkan-synchronization)
 - [Vulkan Push Constants](https://registry.khronos.org/vulkan/site/guide/latest/push_constants.html)
 - [Pipeline Dynamic State](https://registry.khronos.org/vulkan/site/guide/latest/dynamic_state.html)
 - [Vulkan Timeline Semaphores](https://www.khronos.org/blog/vulkan-timeline-semaphores)
 - [Vulkan Subgroup Tutorial](https://www.khronos.org/blog/vulkan-subgroup-tutorial)
+- [Mesh Shading for Vulkan](https://www.khronos.org/blog/mesh-shading-for-vulkan)
 - [Ray Tracing In Vulkan](https://www.khronos.org/blog/ray-tracing-in-vulkan)
 - [RayTracingInVulkan](https://github.com/GPSnoopy/RayTracingInVulkan)
 - [Provide functionality equivalent to GL_EXT_shader_framebuffer_fetch](https://github.com/KhronosGroup/Vulkan-Docs/issues/1649)
@@ -259,24 +263,10 @@ void vkCmdSetRasterizationSamplesEXT(
 - [nBody DirectX 12 sample (asynchronous compute version)](https://gpuopen.com/gaming-product/nbody-directx-12-async-compute-edition/)
 - [nVidia关于最新D3D的样例](https://developer.nvidia.com/gameworks-directx-samples)
 - [nVidia关于D3D11的样例](https://developer.nvidia.com/dx11-samples)
-- [NVIDIA NVAPI](https://docs.nvidia.com/gameworks/content/gameworkslibrary/coresdk/nvapi/index.html)
-- [NVIDIA/nvapi](https://github.com/NVIDIA/nvapi)
 - [Introduction to 3D Game Programming With DirectX 11书中代码样例](https://github.com/jjuiddong/Introduction-to-3D-Game-Programming-With-DirectX11)
 - [Introduction to 3D Game Programming with DirectX 12书中代码样例](https://github.com/d3dcoder/d3d12book/)
-- [Metal API介绍](https://developer.apple.com/metal/)
-- [Metal developer workflows](https://developer.apple.com/documentation/Xcode/Metal-developer-workflows)
-- [Tailor Your Apps for Apple GPUs and Tile-Based Deferred Rendering](https://developer.apple.com/documentation/metal/tailor_your_apps_for_apple_gpus_and_tile-based_deferred_rendering?language=objc)
-- [Using a Render Pipeline to Render Primitives](https://developer.apple.com/documentation/metal/using_a_render_pipeline_to_render_primitives?language=objc)
-- [Metal Sample Code](https://developer.apple.com/metal/sample-code/)
-- [Introduction to Tessellation in Metal](https://metalbyexample.com/tessellation/)
-- [Mesh Shaders and Meshlet Culling in Metal 3](https://metalbyexample.com/mesh-shaders/)
-- [15. Tile-Based Deferred Rendering](https://www.kodeco.com/books/metal-by-tutorials/v3.0/chapters/15-tile-based-deferred-rendering)
-- [Metal 2 on A11-The Shading](https://nilotic.github.io/2018/10/02/Metal-2-on-A11-The-Shading.html)
-- [Metal2研发笔录（五）：Forward+ with Tile Shading](https://zhuanlan.zhihu.com/p/95567955)
-- [Metal2研发笔录（六）：Metal图像处理后处理基础（上）](https://zhuanlan.zhihu.com/p/98782433)（包含对 tile shader 的使用）
 - [DirectX-Specs -- **Mesh Shader**](https://microsoft.github.io/DirectX-Specs/d3d/MeshShader.html)
 - [Coming to DirectX 12— Mesh Shaders and Amplification Shaders: Reinventing the Geometry Pipeline](https://devblogs.microsoft.com/directx/coming-to-directx-12-mesh-shaders-and-amplification-shaders-reinventing-the-geometry-pipeline/)
-- [Mesh Shading for Vulkan](https://www.khronos.org/blog/mesh-shading-for-vulkan)
 - [Introduction to Turing Mesh Shaders](https://developer.nvidia.com/blog/introduction-turing-mesh-shaders/)
 - [Using Mesh Shaders for Professional Graphics](https://developer.nvidia.com/blog/using-mesh-shaders-for-professional-graphics/)
 - [Quick Introduction to Mesh Shaders (OpenGL and Vulkan)](https://www.geeks3d.com/20200519/introduction-to-mesh-shaders-opengl-and-vulkan/)
@@ -284,6 +274,18 @@ void vkCmdSetRasterizationSamplesEXT(
 - [Direct3D 12 Raytracing](https://learn.microsoft.com/en-us/windows/win32/direct3d12/direct3d-12-raytracing)
 - [Direct3D 12 raytracing samples](https://learn.microsoft.com/en-us/samples/microsoft/directx-graphics-samples/d3d12-raytracing-samples-win32/)
 - [D3D12 Raytracing Fallback Layer](https://github.com/microsoft/DirectX-Graphics-Samples/tree/master/Libraries/D3D12RaytracingFallback)
+- [Metal API介绍](https://developer.apple.com/metal/)
+- [Metal developer workflows](https://developer.apple.com/documentation/Xcode/Metal-developer-workflows)
+- [Tailor Your Apps for Apple GPUs and Tile-Based Deferred Rendering](https://developer.apple.com/documentation/metal/tailor_your_apps_for_apple_gpus_and_tile-based_deferred_rendering?language=objc)
+- [Using a Render Pipeline to Render Primitives](https://developer.apple.com/documentation/metal/using_a_render_pipeline_to_render_primitives?language=objc)
+- [Metal Sample Code](https://developer.apple.com/metal/sample-code/)
+- [Introduction to Tessellation in Metal](https://metalbyexample.com/tessellation/)
+- [Mesh Shaders and Meshlet Culling in Metal 3](https://metalbyexample.com/mesh-shaders/)
+- [Accelerating ray tracing using Metal](https://developer.apple.com/documentation/metal/accelerating-ray-tracing-using-metal)
+- [15. Tile-Based Deferred Rendering](https://www.kodeco.com/books/metal-by-tutorials/v3.0/chapters/15-tile-based-deferred-rendering)
+- [Metal 2 on A11-The Shading](https://nilotic.github.io/2018/10/02/Metal-2-on-A11-The-Shading.html)
+- [Metal2研发笔录（五）：Forward+ with Tile Shading](https://zhuanlan.zhihu.com/p/95567955)
+- [Metal2研发笔录（六）：Metal图像处理后处理基础（上）](https://zhuanlan.zhihu.com/p/98782433)（包含对 tile shader 的使用）
 - [OpenGL wiki](https://en.wikipedia.org/wiki/OpenGL)
 - [History of OpenGL](https://www.khronos.org/opengl/wiki/History%20of%20OpenGL)
 - [基于macOS的OpenGL的使用](https://developer.apple.com/opengl/)
@@ -376,6 +378,8 @@ memoryBarrierShared();
 
 ![vulkan_combine_texture_sampler](images/vulkan_combine_texture_sampler.png)
 
+- [NVIDIA NVAPI](https://docs.nvidia.com/gameworks/content/gameworkslibrary/coresdk/nvapi/index.html)
+- [NVIDIA/nvapi](https://github.com/NVIDIA/nvapi)
 - [ROCm™ – 用于加速计算、支持高性能计算和机器学习的开放式软件生态系统](https://mp.weixin.qq.com/s?__biz=MjM5NDAyNjM0MA==&mid=2650787282&idx=8&sn=baa3373e1fa3b2564f223d5dc0dc9ca1)
 - [关于Drawcall](https://zhuanlan.zhihu.com/p/364918045)
 - [GPU渲染架构-IMR \& TBR \& TBDR](https://zhuanlan.zhihu.com/p/531900597)（被水印遮挡的部分：第一张图是“Framebuffer Working Set”，此图出处：[GPU专栏(四) 基于块的渲染\(Tile Based Rendering\)](https://www.cnblogs.com/Arnold-Zhang/p/15514499.html)；第二张图是“Compressed Framebuffer”）
