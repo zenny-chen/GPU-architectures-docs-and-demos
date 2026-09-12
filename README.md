@@ -282,6 +282,7 @@ void vkCmdSetRasterizationSamplesEXT(
 - [Introduction to Tessellation in Metal](https://metalbyexample.com/tessellation/)
 - [Mesh Shaders and Meshlet Culling in Metal 3](https://metalbyexample.com/mesh-shaders/)
 - [Accelerating ray tracing using Metal](https://developer.apple.com/documentation/metal/accelerating-ray-tracing-using-metal)
+- [Ray Tracing with Metal](https://developer.apple.com/videos/play/wwdc2019/613/)
 - [15. Tile-Based Deferred Rendering](https://www.kodeco.com/books/metal-by-tutorials/v3.0/chapters/15-tile-based-deferred-rendering)
 - [Metal 2 on A11-The Shading](https://nilotic.github.io/2018/10/02/Metal-2-on-A11-The-Shading.html)
 - [Metal2研发笔录（五）：Forward+ with Tile Shading](https://zhuanlan.zhihu.com/p/95567955)
