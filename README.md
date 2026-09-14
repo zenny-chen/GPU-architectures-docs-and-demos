@@ -1395,6 +1395,7 @@ int main(int argc, const char* argv[])
 <a name="machine_learning_nn"></a>
 # 神经网络机器学习相关
 
+- [CS336 Lecture 5 — GPU](https://mp.weixin.qq.com/s?__biz=Mzg5MTE4NTY3NQ==&mid=2247489510&idx=1&sn=4d5cc021dafe1a64489be191a8fcac8e)
 - [GPU为什么要划分为推理卡和训练卡？](https://mp.weixin.qq.com/s?__biz=MzUyNjQ0NjgwMA==&mid=2247483732&idx=1&sn=6aab5b10f60e0a3a7e3a6cbdcbd676c5)
 - [超万卡GPU集群关键技术深度分析 2024](https://www.toutiao.com/article/7398841862817120794/)
 - [Meta RoCE论文](https://mp.weixin.qq.com/s?__biz=Mzg5MzkxMDA5Ng==&mid=2247491610&idx=2&sn=ef40e187799d9165853edab7b97396d7)
