@@ -35,6 +35,8 @@
 
 - [open-gpu-kernel-modules](https://github.com/NVIDIA/open-gpu-kernel-modules)
 - [[原创] 写了个GPU（RTL已冻结）](https://bbs.eetop.cn/forum.php?mod=viewthread&tid=1006214&extra=page%3D1&page=2)
+- [Shader Slang](https://github.com/shader-slang/slang/)
+- [Neural Shading SIGGRAPH 2025](https://github.com/shader-slang/neural-shading-s25)
 - [官方Vulkan编程指南](http://www.vulkanprogrammingguide.com)
 - [nVidia的图形样例（含Vulkan API）](https://github.com/NVIDIAGameWorks/GraphicsSamples/tree/master/samples)
 - [Android Vulkan 图形 API](https://developer.android.google.cn/ndk/guides/graphics)
