@@ -1455,6 +1455,7 @@ int main(int argc, const char* argv[])
 - [103μs 降到 18μs 背后，Cursor 为何剑指英伟达，重写 GPU？](https://www.toutiao.com/article/7671239238746145331/)（**FFN** 最常指 **前馈神经网络** (**Feedforward Neural Network**)）
 - [从 GPU 到 Spine：一次完整 AllReduce 的物理路径追踪](https://mp.weixin.qq.com/s?__biz=Mzk0MzY3NTQzOQ==&mid=2247483856&idx=1&sn=7c0618119816fa8d632d1648775847a2)
 - [NCCL 通信原语全解析：AllReduce、AllGather、ReduceScatter 到底在传什么](https://mp.weixin.qq.com/s?__biz=MzY5NDMyMzU2MA==&mid=2247484115&idx=1&sn=7558c32ee9dcdba7516740653020fd48)
+- [GPU开始边算边通信，NVIDIA把网络推进CUDA Kernel](https://mp.weixin.qq.com/s?__biz=MzU3OTY1MTIzMA==&mid=2247522657&idx=1&sn=02c6fec09c34633eacced0387f1298da)
 - [GPU分布式训练：数据并行、模型并行与ZeRO策略](https://mp.weixin.qq.com/s?__biz=MzY4MzA5NTYyMg==&mid=2247483940&idx=1&sn=2c3d4b9858be958d5b37204ad173c909)
 - [GPU Kernel Scientist：LLM 驱动下的 GPGPU Kernel 迭代框架](https://mp.weixin.qq.com/s?__biz=MjM5NDczOTA4NQ==&mid=2447889551&idx=1&sn=606751b8d2b4190238f0fb800f1d5751)
 - [别被PCIe带宽骗了！你的GPU慢，根本不是带宽不够，是这个“隐形坑”在拖后腿](https://mp.weixin.qq.com/s?__biz=MjM5NTE3Nzk4MQ==&mid=2651249341&idx=1&sn=64c6133d61de9d90b936eea5dd085521)
