@@ -1422,6 +1422,7 @@ int main(int argc, const char* argv[])
 - [外积法硬件原理（一）](https://mp.weixin.qq.com/s?__biz=MzkwOTIzMDE0OQ==&mid=2247484168&idx=1&sn=dcedafa087763b568cd4617987e466f8)（参考论文：《[DSTC: Dual-Side Sparse Tensor Core for DNNs Acceleration on Modern GPU Architectures](https://arxiv.org/pdf/2105.09564)》）
 - [CUDA GEMM Kernel 优化图谱（一）：从矩阵乘法到 GPU 数据流](https://mp.weixin.qq.com/s?__biz=MzI1NDcwOTA3MQ==&mid=2247483770&idx=1&sn=fcf675af38f92cd6c6ed3bd09fec2b6c)
 - [数学博士眼中的NVIDIA GEMM 中的 ping-pong 流水](https://mp.weixin.qq.com/s?__biz=MzI1NDcwOTA3MQ==&mid=2247483833&idx=1&sn=177353f1afffd37111123960ac98781b)
+- [手写Blackwell GEMM:164到1401 TFLOP/s](https://mp.weixin.qq.com/s?__biz=MzYzNzE2MDA2Mg==&mid=2247492199&idx=1&sn=ca3e3cb622e6f06cdd9e240876fa7fb6)
 - [记一次MI308X上的DeepSeek-V4-Flash-0731优化](https://mp.weixin.qq.com/s?__biz=MzE5ODIyNzQyMg==&mid=2247484996&idx=1&sn=aaeadca1f0701a185aaf579981daf6fc)
 - [突破 22PFLOPS！ThunderKittens 深度适配 Vera Rubin NVL72，释放 NVFP4/FP8 矩阵乘法算力！](https://mp.weixin.qq.com/s?__biz=MjM5NDczOTA4NQ==&mid=2447906023&idx=1&sn=ca2aeea93200d095b06f39a5cb05307b)
 - [在NVFP4上超越cuBLAS: 从零手写+Claude极限优化Blackwell GEMM](https://mp.weixin.qq.com/s?__biz=MzYzNzE2MDA2Mg==&mid=2247490064&idx=1&sn=84f68f95bb346e6153c49a79d8b9e3a6)
