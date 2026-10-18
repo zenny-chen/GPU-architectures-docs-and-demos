@@ -393,6 +393,7 @@ memoryBarrierShared();
 - [GPU如何工作:PowerVR/高通Adreno/ARM Mali的渲染模式分析](https://www.sohu.com/a/84435483_279241)
 - [浅谈移动端GPU架构](https://www.toutiao.com/article/7301210736984965673/)
 - [移动端GPU架构学习笔记 + 关于移动端和MRT在消耗带宽上的设计这档子事](https://zhuanlan.zhihu.com/p/404711038)
+- [移动 GPU 架构：多 Pass 管线的带宽成本](https://mp.weixin.qq.com/s?__biz=MzA4NTkzNTI1NQ==&mid=2650237167&idx=1&sn=5183d3e1436bab2a3794f31a1c531690)
 - [当我们谈优化时，我们谈些什么](https://zhuanlan.zhihu.com/p/68158277)
 - [深入GPU硬件架构及运行机制](https://www.cnblogs.com/timlly/p/11471507.html)
 - [GPU 性能原理拆解](https://mp.weixin.qq.com/s?__biz=MjM5ODYwMjI2MA==&mid=2649784665&idx=1&sn=2f928c1484e7858772feec33180fa9c2)（在目前的 TBDR 架构中，在 binning 阶段之后，由于通过 vs 有了深度信息，可以利用这个深度信息来剔除远处的三角形（或像素）的绘制，减少后面 ps 的 overdraw。这个机制，Adreno GPU 称为 **LRZ** (**Low Resolution Depth**)，PowerVR GPU 称为 **HSR** (**Hidden Surface Removal**)，Mali 称为 **FPK** (**Forward Pixel Killing**)。）
