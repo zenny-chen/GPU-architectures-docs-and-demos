@@ -1437,6 +1437,7 @@ int main(int argc, const char* argv[])
 - [苹果 M5 芯片揭秘：专属矩阵硬件登场，GPU 架构迎来颠覆性升级](https://mp.weixin.qq.com/s?__biz=MzIwMjc1NDc1Nw==&mid=2247484298&idx=1&sn=de722c1cd0512f381a240891e7e7da48)
 - [DianNao:一种普适机器学习算法的小规模高吞吐率的加速器设计](https://zhuanlan.zhihu.com/p/109465959)（其中介绍了 **Neural Functional Unit (NFU)**）
 - [从gpu的内存访问视角对比NHWC和NCHW](https://www.toutiao.com/article/7287019163984396852/)
+- [【CS336】lecture6 占用率|bank冲突|Triton|GeLU算子|softmax算子|reduce算子|matmul算子](https://mp.weixin.qq.com/s?__biz=MzYzOTQ2MzE2Mg==&mid=2247484761&idx=1&sn=1e70b5337cd1f48bd16027d7f5fa6a0a)
 - [登上GitHub趋势榜！纯C推理引擎让25GB内存也能运行GLM-5.2](https://mp.weixin.qq.com/s?__biz=MjM5ODExNDA2MA==&mid=2450016773&idx=1&sn=607831dd9bd266ce833ff568864677f9)
 - [learnOpenCV4](https://github.com/fengzhenHIT/learnOpenCV4)
 - [OpenCV](https://github.com/opencv/opencv)
